@@ -1,0 +1,41 @@
+/*　main.css　*/
+
+p{
+	opacity:		0.67;
+ }
+span{
+	opacity:		0.67;
+ }
+div{
+	border:		1px dotted #fbfaf5;
+	border-radius:	16px;
+	color:		#51516c;
+	background-color:	#fbfaf5;
+	padding:		20px 20px 20px 20px;
+ }
+a:link {
+	color:		#baC0C0;
+ }
+
+a:visited {
+	color:		#606a6a;
+ }
+
+a:hover{
+	color:		#ff0a0a;
+ }
+
+.txtbox{
+	width:		320px;
+ }
+.imgbox{
+	width:		320px;
+ }
+img{
+	border-width:	0px;
+ }
+
+body{
+	color:		#fbfaf5;
+	background-color:	#31314c;
+ }
