@@ -31,9 +31,13 @@ a:hover{
 .imgbox{
 	width:		320px;
  }
+.imgbox img{
+	border-width:	0px;
+	max-width:	480px;
+}
 img{
 	border-width:	0px;
- }
+}
 
 body{
 	color:		#fbfaf5;
