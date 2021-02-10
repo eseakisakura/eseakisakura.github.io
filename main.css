@@ -1,5 +1,22 @@
 /*　main.css　*/
 
+table#footer{
+	width:		100%;
+ }
+table#footer tr td.right{
+	width:		25%;
+ }
+table#footer tr td.left{
+	width:		75%;
+ }
+
+hr{
+	opacity:		0.67;
+	border-width:1px 0px 0px 0px;
+	border-style:	solid;
+	border-color:	#fbfaf5;
+ }
+
 p{
 	opacity:		0.67;
  }
