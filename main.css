@@ -6,7 +6,7 @@ p{
 span{
 	opacity:		0.67;
  }
-div{
+div.box {
 	border:		1px dotted #fbfaf5;
 	border-radius:	16px;
 	color:		#51516c;
@@ -42,4 +42,6 @@ img{
 body{
 	color:		#fbfaf5;
 	background-color:	#31314c;
+	margin-left:	20px;
+	margin-right:	20px;
  }
