@@ -1,0 +1,119 @@
+Include(gs.h) ResetGS()r4 CH=10 GS_RHYTHM(1)r8 
+
+//  ReverbSetting          Time Dpth High  Mix
+    CuePoint={"TwmParam( 84, 112,  108,  96)"} // Def.(127,117,0,127)
+//                          Dpディレイ感/Hiプリセット感
+
+// ChorusSetting        Wave Mix Dpth FB Freq Dly Phs
+CuePoint={"TwmChorus(   1,  96, 111,  33,   1,  11,   1)"}
+
+TimeBase=120
+TrackSync
+Tempo=120
+ 
+TR=10 P=64 REV=77 V=100 @1,0 //Drum
+[
+  v80 l8 o4 t-2 BR=1 p%=5120
+  [
+    '""b"ce-''""b"cb''"c+"ee-'b  'e-'b'""b"ce-'f  '""b"ce-'b'"c+"de-'b  e-be-[b16]
+    '""b"ce-'b'"c+"ee-'b  e-b'""b"ce-':b  '""b"ce-'[b16]'"c+"de-'f  e-be-b
+  ]
+  f  '""b"ce-'[b16]'"c+"de-'b  e-be-"a+
+
+  v100 l8 o3 t-1
+  [
+    '"bcf+'g+'c+df+''"bcf+' '"bc'g+'c+e'a+ '"bcf+'g+'c+df+'f+ '"bc'g+'c+e'g+16f+16
+    '"bc'g+'c+df+''"bcf+' '"bc'g+'c+e':f+ '"bc'g+16f+16'c+df+'a+ '"bc'g+'c+e'f+
+  ]
+  a+  '"bcf+'g+16f+16'c+df+'f+ '"bc'g+'c+e'a+
+]
+
+#Bass1={ l8 q87 t_2
+[
+  [4 "a q_-33 "a q_+33]
+  [4 "a q_-33 "a q_+33]
+  [4 "a q_-33 "a q_+33]
+  [4 "a q_-33 "a q_+33]
+]
+ }
+
+#Bass2={ l8 q82 t_4 
+[
+  "a"bcd efga	//スケールチェンジシステム
+  "g"a"bc def+g
+  c+def+ gab`c+
+  :def+g+ ab`c+`d
+]
+ef+g+ ab`c+`d`e
+ }
+
+TR 3 V=100 REV=55 P=48 M.W(21,6,!8) @40,16 l8 v125 o2 [#Bass1 #Bass2]
+TR 4 V=100 REV=55 P=48 M.W(21,6,!8) @40,16 l8 v100 o3 [#Bass1 #Bass2]
+ 
+#SQ={ 
+[
+  [
+    "a"bcd e^rr	//スケールチェンジシステム
+    "a"bc+d e^rr
+    rrrr rrrr
+    rrrr rrrr
+
+    "a"bc+d e^rr	//f+
+    "a"bc+d+ e^rr	//f+g+
+    rrrr rrrr
+    "a"bc+d e^rr	//f+ <- 外れ感が強いので逆順
+  ]
+
+  [
+    cdef g^rr
+    cdef+ g^rr
+    c+def+ g^rr
+    rrrr rrrr
+
+    c+def+ g^rr
+    c+def+ g^rr
+    c+d+ef+ g+^rr
+    rrrr rrrr
+  ]
+]
+ }
+
+TR 6 V=100 REV=44 CHO.W(55,127,!4) P=64 EP.W(99,127,!12)  M.W(99,127,!4) //矩形波
+ @81,1 l16 q108 v96 o6 t1 r8
+ #SQ
+
+TR 7 V=100 REV=44 CHO.W(55,127,!4) P=64 EP.W(99,127,!12)  M.W(99,127,!4)
+ @81,1 l16 q118 v32 o6 t7 r8
+ #SQ
+ 	
+TR 1 V=100 REV=66 M.W(11,1,!2) P=90 @5,24 // E.P 
+q92 o5 l2 v96 t2 t_.N(6,0,2,4)
+[
+  [
+    // 4度ブログレッション A ->D
+    'aceg'		//Am7
+    'df+ac+'^^	//DM7
+
+    //5度プログレッション F ->C
+
+    'face'^	//FM7
+    :'egbd'^	//Em7 'egbd' <- CM7 'cegb'
+  ]
+  '"gbd-f'^	//G7b5
+
+  [
+    // 3度ブログレッション C ->E ->G#
+
+    'cegb'		//CM7
+    'egbd'		//Em7
+    'g+bd+f+'^	//G#7 <- スケール外音のため7thとした
+
+    //4度プログレッション C ->F
+
+    'cegb'	//CM7
+    'face'	//FM7
+    :'ac+eg+'^	//AM7 <- 平行移動
+  ]
+  '"ace-g+'^	//AmM7b5 = AbM7
+]
+ 
