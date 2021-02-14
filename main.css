@@ -1,5 +1,11 @@
 /*　main.css　*/
 
+hr{
+	opacity:		0.67;
+	border-width:1px 0px 0px 0px;
+	border-style:	solid;
+	border-color:	#fbfaf5;
+ }
 table#footer{
 	width:		100%;
  }
@@ -10,22 +16,36 @@ table#footer tr td.left{
 	width:		75%;
  }
 
-hr{
-	opacity:		0.67;
-	border-width:1px 0px 0px 0px;
-	border-style:	solid;
-	border-color:	#fbfaf5;
- }
 
-span{
-	opacity:		0.84;
- }
 div.box {
 	border:		1px dotted #fbfaf5;
 	border-radius:	16px;
 	color:		#51516c;
 	background-color:	#fbfaf5;
 	padding:		20px 20px 20px 20px;
+ }
+td.txtbox{
+	width:		320px;
+ }
+td.imgbox{
+	width:		320px;
+ }
+td.imgbox img{
+	max-width:	480px;
+ }
+
+
+body{
+	color:		#fbfaf5;
+	background-color:	#31314c;
+	margin-left:	20px;
+	margin-right:	20px;
+ }
+span{
+	opacity:		0.85;
+ }
+img{
+	border-width:	0px;
  }
 a:link {
 	color:		#606a6a;
@@ -37,25 +57,4 @@ a:visited {
 
 a:hover{
 	color:		#ff0a0a;
- }
-
-.txtbox{
-	width:		320px;
- }
-.imgbox{
-	width:		320px;
- }
-.imgbox img{
-	border-width:	0px;
-	max-width:	480px;
-}
-img{
-	border-width:	0px;
-}
-
-body{
-	color:		#fbfaf5;
-	background-color:	#31314c;
-	margin-left:	20px;
-	margin-right:	20px;
  }
