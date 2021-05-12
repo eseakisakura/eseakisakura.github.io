@@ -1,6 +1,9 @@
+Scale-Change-System.txt ------
 
-　□モード・スケールに対するメジャーダイアトニックの近似コード表 
+
+■□モード・スケールに対するメジャーダイアトニックの近似コード表 
 ﻿
+
 											Bb	F	C	G	D	A	E	B	F#
 
 Fm7b5	G#m7	C#7	BM7	                              b f+ c+ g+ d+ a+ e+	phr	loc						lyd	ion
