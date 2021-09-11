@@ -6,19 +6,19 @@ Scale-Change-System.txt ------
 
 											Bb	F	C	G	D	A	E	B	F#
 
-Fm7b5	G#m7	C#7	BM7	                              b f+ c+ g+ d+ a+ e+	phr	loc						lyd	ion
-A#m7b5	C#m7	F#7	EM7	                            e b f+ c+ g+ d+ a+		loc						lyd	ion	mixo
-D#m7b5	F#m7	B7	AM7	                          a e b f+ c+ g+ d+							lyd	ion	mixo	dor
-G#m7b5	Bm7	E7	DM7	                        d a e b f+ c+ g+						lyd	ion	mixo	dor	aeo
-C#m7b5	Em7	A7	GM7	                      g d a e b f+ c+						lyd	ion	mixo	dor	aeo	phr
-F#m7b5	Am7	D7	CM7	                    c g d a e b f+					lyd	ion	mixo	dor	aeo	phr	loc
-Bm7b5	Dm7	G7	FM7	                  f c g d a e b					lyd	ion.maj	mixo	dor	aeo.min	phr	loc
-Em7b5	Gm7	C7	BbM7	               b- f c g d a e				lyd	ion	mixo	dor	aeo	phr	loc
-Am7b5	Cm7	F7	EbM7	            e- b- f c g d a				ion	mixo	dor	aeo	phr	loc
-Dm7b5	Fm7	Bb7	AbM7	         a- e- b- f c g d				mixo	dor	aeo	phr	loc
-Gm7b5	Bbm7	Eb7	DbM7	      d- a- e- b- f c g					dor	aeo	phr	loc
-Cm7b5	Ebm7	Ab7	GbM7	   g- d- a- e- b- f c					aeo	phr	loc						lyd
-Fm7b5	Abm7	Db7	BM7	c- g- d- a- e- b- f					phr	loc						lyd	ion
++6	Fm7b5	G#m7	C#7	BM7	                              b f+ c+ g+ d+ a+ e+	phr	loc						lyd	ion
++5	A#m7b5	C#m7	F#7	EM7	                            e b f+ c+ g+ d+ a+		loc						lyd	ion	mixo
++4	D#m7b5	F#m7	B7	AM7	                          a e b f+ c+ g+ d+							lyd	ion	mixo	dor
++3	G#m7b5	Bm7	E7	DM7	                        d a e b f+ c+ g+						lyd	ion	mixo	dor	aeo
++2	C#m7b5	Em7	A7	GM7	                      g d a e b f+ c+						lyd	ion	mixo	dor	aeo	phr
++1	F#m7b5	Am7	D7	CM7	                    c g d a e b f+					lyd	ion	mixo	dor	aeo	phr	loc
+00	Bm7b5	Dm7	G7	FM7	                  f c g d a e b					lyd	ion.maj	mixo	dor	aeo.min	phr	loc
+-1	Em7b5	Gm7	C7	BbM7	               b- f c g d a e				lyd	ion	mixo	dor	aeo	phr	loc
+-2	Am7b5	Cm7	F7	EbM7	            e- b- f c g d a				ion	mixo	dor	aeo	phr	loc
+-3	Dm7b5	Fm7	Bb7	AbM7	         a- e- b- f c g d				mixo	dor	aeo	phr	loc
+-4	Gm7b5	Bbm7	Eb7	DbM7	      d- a- e- b- f c g					dor	aeo	phr	loc
+-5	Cm7b5	Ebm7	Ab7	GbM7	   g- d- a- e- b- f c					aeo	phr	loc						lyd
+-6	Fm7b5	Abm7	Db7	BM7	c- g- d- a- e- b- f					phr	loc						lyd	ion
 
 
 　//　Scale Change System　//
@@ -39,6 +39,12 @@ cgdaebf+ -> ebf+c+g+d+a+
 
 ただし上がり転調は初期化感(解決感)があるため、リスタートの演出となる。
 fcgdaeb -> cgdaebf+では、解決感が発生する
+
+
+Am7とCM7は等価、Bm7b5 Dm7 G7 FM7も等価となる
+
+Db7(C#7) -> FM7での、6つ下りの場合、6つ上がりとの判別が難しいためng
+Db7(C#7) -> CM7では、5つ下りのためok
 
 
 　■コード選択と転調の共通性

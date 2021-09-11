@@ -7,54 +7,68 @@
 </head>
 <body>
 <h4><img style="border-width:0" src="./image/FE_icon.png" /> FM Synthesis Chip - Tone Editor</h4>
-<h5>(PMDのケースで説明します。)</h5>
 
+<table><tr>
+<td class="txtbox"><div class="box">
 <h5>
-<span>※ PMD98用 Preset FM音色セットである、<br/>
-"PC88.mml","X68ED.mml","EFFEC.mml"の3つを、<br/>
-</span>"MC.EXE"のあるフォルダ<span>ないし、<br/>
-mml_watch_GUI以下の</span>script - presetフォルダ<span>へ置く必要があります。<br/>
-起動(or リロード)時に、このpresetデータを読み込みます。</span>
+<span>
+<strong style="color:#ff0a0a">※</strong> Preset音色の準備<br/>
+<br/>
+PMD98用 Preset FM音色セットである、<br/>
+<strong style="color:#31314c">"PC88.mml","X68ED.mml","EFFEC.mml"</strong>　3つのファイルを、<br/>
+<br/>
+
+<strong style="color:#31314c">"MC.EXEのあるフォルダ"</strong>ないし、<br/>
+
+mml_watch_GUI以下の<strong style="color:#31314c">"script - presetフォルダ"</strong>へ置く必要があります。<br/>
+<br/>
+起動(or リロード)時に、このpresetファイルが読み込まれます。
+</span>
 </h5>
+</div></td></tr></table>
+
+
+<h5>PMDのケースで説明します。------</h5>
 
 <table><tr><td class="imgbox">
 <img style="border-width:0" src="./image/FMedit/11.png" />
 </td><td class="txtbox"><div class="box">
 fm_editor.exeを起動します。<br/>
-本体パネルのOptionからSettingを選択します。<br/>
+本体パネルの<strong>"Option - Setting"</strong>を選択します。<br/>
 </div></td></tr></table>
 
 <table><tr><td class="imgbox">
 <img style="border-width:0" src="./image/FMedit/12.png" />
 </td><td class="txtbox"><div class="box">
 環境設定パネルから、<br/>
-<strong>binaryタブ</strong>のラジオボタンからPMDを選択、<br/>
-"MC.EXE"をリストボックスへDrug&Dropで登録します。<br/>
 <br/>
-同じく<strong>playerタブ</strong>をクリックし、<br/>
+<strong>"binaryタブ"</strong>ラジオボタンでPMDを選択、<br/>
+"MC.EXE"を<strong>"リストボックス"</strong>へDrug&Dropで登録します。<br/>
+<br/>
+同じく、<strong>"playerタブ"</strong>をクリックし、<br/>
 "FMPMD.exe"を登録します。<br/>
 </div></td></tr></table>
 
 <table><tr><td class="imgbox">
 <img style="border-width:0" src="./image/FMedit/13.png" />
 </td><td class="txtbox"><div class="box">
-<strong>dosタブ</strong>をクリックし、<br/>
+<strong>"dosタブ"</strong>をクリックし、<br/>
 "msdos.exe"を登録します。<br/>
 <br/>
-PMDは16bit appなので、x64対応にチェックを入れ、
+PMDは16bit appなので、<strong>"x64対応"</strong>にチェックを入れ、
 環境設定を閉じます。<br/>
 </div></td></tr></table>
 
 <table><tr><td class="imgbox">
 <img style="border-width:0" src="./image/FMedit/14.png" />
 </td><td class="txtbox"><div class="box">
-本体パネルのメニューにある、FileからPresetを選択し、Preset波形ウィンドウを開きます。<br/>
+本体パネルのメニューにある、<strong>"File - Preset"</strong>を選択し、Preset波形ウィンドウを開きます。<br/>
 <br/>
-<strong>pc88タブ</strong>を選択します。<br/>
+<strong>"pc88タブ"</strong>を選択します。<br/>
 <br/>
-リストボックス内の"@000"などをクリック、これで音が出れば、環境設定がうまくいってます。<br/>
+<strong>"リストボックス"</strong>内の"@000"などをクリック、これで音が出れば、環境設定がうまくいってます。<br/>
 <br/>
-続けて、Preset波形ウィンドウの"Import"ボタンを押すと、本体にpresetデータが読み込まれます。<br/>
+続けて、<strong>"Import"ボタン</strong>を押すと、本体にpresetデータが読み込まれます。<br/>
 </div></td></tr></table>
 
 
@@ -64,7 +78,7 @@ PMDは16bit appなので、x64対応にチェックを入れ、
 <img style="border-width:0" src="./image/FMedit/15.png" />
 </td><td class="txtbox"><div class="box">
 本体パネルのメニューにある、<br/>
-window - FM OP windowをクリック、<br/>
+<strong>"window - FM OP window"</strong>をクリック、<br/>
 <br/>
 Operator windowが開きます。<br/>
 <br/>
@@ -75,15 +89,17 @@ Operator windowが開きます。<br/>
 <table><tr><td class="imgbox">
 <img style="border-width:0" src="./image/FMedit/16.png" />
 </td><td class="txtbox"><div class="box">
-本体パネルの、Frequency Modulationにある、<br/>
-Multiple - overtoneのスライダーを、<br/>
+本体パネル、<br/>
+Frequency Modulationの、<br/>
+<br/>
+<strong>"Multiple - overtone"</strong>のスライダーを、<br/>
 左右に動かして見て下さい。<br/>
 <br/>
 Operator windowの表示が、変化します。<br/>
 <br/>
-聞いて確認するときは、再生ボタン(or スペースキー)を押します。<br/>
+この音色を確認するときは、<strong>"再生ボタン"</strong>(or スペースキー)を押します。<br/>
 <br/>
-基本的な手順は、この繰り返しです。<br/>
+基本的な手順は、この繰り返しとなります。<br/>
 </div></td></tr></table>
 <br/>
 <br/>
