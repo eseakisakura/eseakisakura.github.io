@@ -35,20 +35,20 @@ Fm7b5	Abm7	Db7	BM7	-6	c- g- d- a- e- b- f
 
 対スケールのモード対比表 □■
 
-						Bb	F	C	G	D	A	E	B	F#
+										Bb	F	C	G	D	A	E	B	F#
                               b f+ c+ g+ d+ a+ e+	+6	phr	loc						lyd	ion
-                            e b f+ c+ g+ d+ a+	+5	loc						lyd	ion	mixo
+                            e b f+ c+ g+ d+ a+		+5	loc						lyd	ion	mixo
                           a e b f+ c+ g+ d+		+4						lyd	ion	mixo	dor
-                        d a e b f+ c+ g+		+3					lyd	ion	mixo	dor	aeo
-                      g d a e b f+ c+		+2				lyd	ion	mixo	dor	aeo	phr
-                    c g d a e b f+			+1			lyd	ion	mixo	dor	aeo	phr	loc
-                  f c g d a e b			00		lyd	ion	mixo	dor	aeo	phr	loc	
-               b- f c g d a e			-1	lyd	ion	mixo	dor	aeo	phr	loc		
-            e- b- f c g d a			-2	ion	mixo	dor	aeo	phr	loc			
-         a- e- b- f c g d			-3	mixo	dor	aeo	phr	loc				
-      d- a- e- b- f c g			-4	dor	aeo	phr	loc					
-   g- d- a- e- b- f c			-5	aeo	phr	loc						lyd
-c- g- d- a- e- b- f			-6	phr	loc						lyd	ion
+                        d a e b f+ c+ g+			+3					lyd	ion	mixo	dor	aeo
+                      g d a e b f+ c+				+2				lyd	ion	mixo	dor	aeo	phr
+                    c g d a e b f+				+1			lyd	ion	mixo	dor	aeo	phr	loc
+                  f c g d a e b					00		lyd	ion	mixo	dor	aeo	phr	loc	
+               b- f c g d a e					-1	lyd	ion	mixo	dor	aeo	phr	loc		
+            e- b- f c g d a					-2	ion	mixo	dor	aeo	phr	loc			
+         a- e- b- f c g d					-3	mixo	dor	aeo	phr	loc				
+      d- a- e- b- f c g					-4	dor	aeo	phr	loc					
+   g- d- a- e- b- f c						-5	aeo	phr	loc						lyd
+c- g- d- a- e- b- f						-6	phr	loc						lyd	ion
 
 
 　// Scale Change System -- 解説 --  //
