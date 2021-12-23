@@ -1,41 +1,44 @@
-Scale-Change-System.txt ------
+Scale-Change-System.txt ------ 
+“–ƒeƒLƒXƒg‚ÍA\‘¢‰»ƒGƒfƒBƒ^‘Î‰‚Å‚·B
 
-ã€€// Scale Change System -- æ¦‚å¿µ --  //
+ 
+@// Scale Change System -- ŠT”O --  // 
+	
+@¡Major Diatonic 
 
-ã€€â– Major Diatonic
+@------ ƒR[ƒhAƒXƒP[ƒ‹Aƒ‚[ƒh‚Ìe˜a«
 
-ã€€------ ã‚³ãƒ¼ãƒ‰ã€ã‚¹ã‚±ãƒ¼ãƒ«ã€ãƒ¢ãƒ¼ãƒ‰ã®è¦ªå’Œæ€§
+	//Chord		//ŒÜ“xŒ—				//“K—pƒ‚[ƒh
 
-	//Chord		//Mode		//Scale
-	CM7	+1	Clyd		c g [d] (a) e b [f+]
-	C7	-1	Cmixo		b- [f] c g [d] (a) e
-	Cm7	-2	Cdor		e- b- [f] c g [d] (a)
-	Cm7b5	-5	Cloc		g- [d-] (a-) e- b- [f] c
-
-	â€»Scale[5,7åº¦ã®å€éŸ³æˆåˆ†]
-
-ã€€------
-
-å¯¾ã‚¹ã‚±ãƒ¼ãƒ«ã®ã‚³ãƒ¼ãƒ‰è¿‘ä¼¼è¡¨ ï»¿â–¡â– 
-
-Fm7b5	G#m7	C#7	BM7	+6	                              b f+ c+ g+ d+ a+ e+	
-A#m7b5	C#m7	F#7	EM7	+5	                            e b f+ c+ g+ d+ a+	
-D#m7b5	F#m7	B7	AM7	+4	                          a e b f+ c+ g+ d+		
-G#m7b5	Bm7	E7	DM7	+3	                        d a e b f+ c+ g+		
-C#m7b5	Em7	A7	GM7	+2	                      g d a e b f+ c+		
-F#m7b5	Am7	D7	CM7	+1	                    c g d a e b f+			
-Bm7b5	Dm7	G7	FM7	00	                  f c g d a e b			
-Em7b5	Gm7	C7	BbM7	-1	               b- f c g d a e			
-Am7b5	Cm7	F7	EbM7	-2	            e- b- f c g d a			
-Dm7b5	Fm7	Bb7	AbM7	-3	         a- e- b- f c g d			
-Gm7b5	Bbm7	Eb7	DbM7	-4	      d- a- e- b- f c g			
-Cm7b5	Ebm7	Ab7	GbM7	-5	   g- d- a- e- b- f c			
-Fm7b5	Abm7	Db7	BM7	-6	c- g- d- a- e- b- f			
+	CM7		+1	c g [d] (a) e b [f+]		Clyd
+	C7		-1	b- [f] c g [d] (a) e		Cmixo
+	Cm7		-2	e- b- [f] c g [d] (a)		Cdor
+	Cm7b5	-5	g- [d-] (a-) e- b- [f] c	Cloc
 
 
-å¯¾ã‚¹ã‚±ãƒ¼ãƒ«ã®ãƒ¢ãƒ¼ãƒ‰å¯¾æ¯”è¡¨ â–¡â– 
+	¦[5,7“x‚Ì”{‰¹¬•ª], (•âŠ®¬•ª)
 
-Bb	F	C	G	D	A	E	B	F#			
+@------
+ 
+‘ÎƒXƒP[ƒ‹‚ÌƒR[ƒh‹ß—•\  ¡ 
+
+Fm7b5	G#m7	C#7	BM7		+6	                              b f+ c+ g+ d+ a+ e+
+A#m7b5	C#m7	F#7	EM7		+5	                            e b f+ c+ g+ d+ a+
+D#m7b5	F#m7	B7	AM7		+4	                          a e b f+ c+ g+ d+
+G#m7b5	Bm7		E7	DM7		+3	                        d a e b f+ c+ g+
+C#m7b5	Em7		A7	GM7		+2	                      g d a e b f+ c+
+F#m7b5	Am7		D7	CM7		+1	                    c g d a e b f+
+Bm7b5	Dm7		G7	FM7		00	                  f c g d a e b
+Em7b5	Gm7		C7	BbM7	-1	               b- f c g d a e
+Am7b5	Cm7		F7	EbM7	-2	            e- b- f c g d a
+Dm7b5	Fm7		Bb7	AbM7	-3	         a- e- b- f c g d
+Gm7b5	Bbm7	Eb7	DbM7	-4	      d- a- e- b- f c g
+Cm7b5	Ebm7	Ab7	GbM7	-5	   g- d- a- e- b- f c
+Fm7b5	Abm7	Db7	BM7		-6	c- g- d- a- e- b- f
+ 
+‘ÎƒXƒP[ƒ‹‚Ìƒ‚[ƒh‘Î”ä•\  ¡ 
+
+Bb	F	C	G	D	A	E	B	F#
 phr	loc						lyd	ion	+6	                              b f+ c+ g+ d+ a+ e+
 loc						lyd	ion	mixo	+5	                            e b f+ c+ g+ d+ a+
 					lyd	ion	mixo	dor	+4	                          a e b f+ c+ g+ d+
@@ -49,45 +52,54 @@ mixo	dor	aeo	phr	loc					-3	         a- e- b- f c g d
 dor	aeo	phr	loc						-4	      d- a- e- b- f c g
 aeo	phr	loc						lyd	-5	   g- d- a- e- b- f c
 phr	loc						lyd	ion	-6	c- g- d- a- e- b- f
+  
+@// Scale Change System -- ‰ğà --  // 
+	
+@@¡ƒZƒIƒŠ[ 
 
+@------ ŒÜ“xŒ—
 
-ã€€// Scale Change System -- è§£èª¬ --  //
-
-ã€€ã€€â– ã‚»ã‚ªãƒªãƒ¼
-
-ã€€------ äº”åº¦åœ
 
 Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
-[bottom]<-				->[outscale]
+              [bottom(4“x)]<-             ->[outscale(5“x)]
 
-ã€€------
+@------
+ 
+@ ŠŠ‚ç‚©‚È“]’²‚ÍAŒÜ“xŒ—‚Ì[bottom]•ûŒü‚Ì‚İ 
 
-ã€€â–¡æ»‘ã‚‰ã‹ãªè»¢èª¿ã¯ã€äº”åº¦åœã®[bottom]æ–¹å‘ã®ã¿
+	C -> Eb	[3x bottom]	3‚Âƒ_ƒEƒ“‚ÆŠ´‚¶‚é
 
-	C -> Eb	[3x bottom]	3ã¤ãƒ€ã‚¦ãƒ³ã¨æ„Ÿã˜ã‚‹
 
-	C -> E	[4x outscale]	8ã¤ãƒ€ã‚¦ãƒ³ã§ã¯ãªãã€4ã¤ã‚¢ãƒƒãƒ—ã¨æ„Ÿã˜ã‚‹
+	C -> E	[4x outscale]	8‚Âƒ_ƒEƒ“‚Å‚Í‚È‚­A4‚ÂƒAƒbƒv‚ÆŠ´‚¶‚é
 
-	exp.	C -> Eb -> E -> C ã¨ã™ã‚Œã°ã€æ»‘ã‚‰ã‹ã«ã¤ãªãŒã‚‹ã€‚
+
+	exp.	C -> Eb -> E -> C ‚Æ‚·‚ê‚ÎAŠŠ‚ç‚©‚É‚Â‚È‚ª‚éB
+
 
 	C -> Eb	[3x bottom]
+
 	Eb -> E	[5x bottom]
 	E -> C	[4x bottom]
+ 
+@ ŒÜ“x‚Ì“®‚«‚ÍAl“x‚Ö•Ï‚¦‚é 
 
 
-ã€€â–¡äº”åº¦ã®å‹•ãã¯ã€å››åº¦ã¸å¤‰ãˆã‚‹
+	@@‚@‚ƒ@‚…@‚‡@‚‚@‚„
 
-	ã€€ã€€ï½ã€€ï½ƒã€€ï½…ã€€ï½‡ã€€ï½‚ã€€ï½„
-	ã€€ï½‡ã€€ï½‚ã€€ï½„ã€€ï½†ã€€ï½ã€€ï½ƒ
-
-	'ceg' | 'gb>d<' ã¨ã™ã‚‹å ´åˆã€å‰ã®ã‚³ãƒ¼ãƒ‰ã®ãƒ†ãƒ³ã‚·ãƒ§ãƒ³ã®ã‚ˆã†ãªæ„Ÿã˜ã¨ãªã‚‹ã€‚
-	'ceg' | '<gb>d' ã§ã‚ã‚Œã°ã€é•ã†éŸ³åˆ—ã®3åº¦æŠ¼ã•ãˆã¨ãªã‚Šã€å¤‰åŒ–ã‚’åŠ ãˆã‚‰ã‚Œã‚‹ã€‚
+	@‚‡@‚‚@‚„@‚†@‚@‚ƒ
 
 
-ã€€â–¡ã‚³ãƒ¼ãƒ‰ãƒ¯ãƒ¼ã‚¯ã¯ã€ä¸­ç›¤ã¯ç©ã‚„ã‹ã«ã€çµ‚ã‚ã‚Šã¯åˆºæ¿€çš„
+	'ceg' | 'gb>d<' ‚Æ‚·‚éê‡A‘O‚ÌƒR[ƒh‚Ìƒeƒ“ƒVƒ‡ƒ“‚Ì‚æ‚¤‚ÈŠ´‚¶‚Æ‚È‚éB
 
-	[bottom]ã¯ã€ç©ã‚„ã‹ã«ã¤ãªãŒã‚Šã€è§£æ±ºæ„Ÿ
-	[outscale]ã¯ã€åˆºæ¿€ãŒå¼·ãã€æœŸå¾…æ„Ÿ
+	'ceg' | '<gb>d' ‚Å‚ ‚ê‚ÎAˆá‚¤3“x‰¹—ñ‚Ì‰Ÿ‚³‚¦‚Æ‚È‚èA•Ï‰»‚ğ‰Á‚¦‚ç‚ê‚éB
+
+ 
+@ ƒR[ƒhƒ[ƒN‚ÍA’†”Õ‚Í‰¸‚â‚©‚ÉAI‚í‚è‚ÍhŒƒ“I 
+
+
+	[bottom]‚ÍA‰¸‚â‚©‚É‚Â‚È‚ª‚èA‰ğŒˆŠ´
+
+	[outscale]‚ÍAhŒƒ‚ª‹­‚­AŠú‘ÒŠ´
 
 	exp.	| Am7 | Em7 | Dmadd9 |  %  |
 		| Am7 | Em7 | F#m711 |  %  |
@@ -95,44 +107,32 @@ Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
 	Am7 -> Em7	[1x outscale]
 	Em7 -> Dm7	[2x bottom]
 	Em7 -> F#m7	[2x outscale]
+  
+@https://twitter.com/huangbaihonglan 
+@= ‰©”’g—•Œº =
 
+@https://eseakisakura.wordpress.com/about
+@Copyright(C) 04coreworks
 
+ 
+€”õ’iŠK‚Ì‘—¿ ======== 
 
-fcgdaeb -> cgdaebf+ã§ã¯ã€è§£æ±ºæ„ŸãŒç™ºç”Ÿã™ã‚‹
+fcgdaeb -> cgdaebf+‚Å‚ÍA‰ğŒˆŠ´‚ª”­¶‚·‚é
 
+Am7‚ÆCM7‚Í“™‰¿ABm7b5 Dm7 G7 FM7‚à“™‰¿‚Æ‚È‚é
+Db7(C#7) -> FM7‚Å‚ÌA6‚Â‰º‚è‚Ìê‡A6‚Âã‚ª‚è‚Æ‚Ì”»•Ê‚ª“ï‚µ‚¢‚½‚ßng
+Db7(C#7) -> CM7‚Å‚ÍA5‚Â‰º‚è‚Ì‚½‚ßok
 
+@¡ƒR[ƒh‘I‘ğ‚Æ“]’²‚Ì‹¤’Ê«
+‚±‚ê‚ÍA”º‘t‚ÌƒR[ƒh‘I‘ğ‚É‚¨‚¢‚Ä‚à“¯‹`‚Å‚ ‚éB
+Dm7 -> “™‰¿ G7 -> ‰ğŒˆ CM7 -> ‡‘— FM7
+ƒRƒ‹ƒgƒŒ[ƒ“ƒ`ƒFƒ“ƒW‰»‚Ìê‡‚ÍA
+BM7  -> ‡‘— D7 -> ‰ğŒˆ GM7  -> ‡‘— Bb7 -> ‰ğŒˆ EbM7 ->  ‹t–ß Am7 -> “™‰¿ D7
 
+@¡ƒXƒP[ƒ‹ƒAƒEƒgŠ´
+fcgdaeb‚Å‚Ìƒ_ƒCƒAƒgƒjƒbƒN‚Å‚ ‚ê‚ÎA‚±‚Ìã2‚Â‚Ü‚Å‰Â”\B
 
-
-
-Am7ã¨CM7ã¯ç­‰ä¾¡ã€Bm7b5 Dm7 G7 FM7ã‚‚ç­‰ä¾¡ã¨ãªã‚‹
-
-Db7(C#7) -> FM7ã§ã®ã€6ã¤ä¸‹ã‚Šã®å ´åˆã€6ã¤ä¸ŠãŒã‚Šã¨ã®åˆ¤åˆ¥ãŒé›£ã—ã„ãŸã‚ng
-Db7(C#7) -> CM7ã§ã¯ã€5ã¤ä¸‹ã‚Šã®ãŸã‚ok
-
-
-ã€€â– ã‚³ãƒ¼ãƒ‰é¸æŠã¨è»¢èª¿ã®å…±é€šæ€§
-ã“ã‚Œã¯ã€ä¼´å¥ã®ã‚³ãƒ¼ãƒ‰é¸æŠã«ãŠã„ã¦ã‚‚åŒç¾©ã§ã‚ã‚‹ã€‚
-Dm7 -> ç­‰ä¾¡ G7 -> è§£æ±º CM7 -> é †é€ FM7
-
-ã‚³ãƒ«ãƒˆãƒ¬ãƒ¼ãƒ³ãƒã‚§ãƒ³ã‚¸åŒ–ã®å ´åˆã¯ã€
-BM7  -> é †é€ D7 -> è§£æ±º GM7  -> é †é€ Bb7 -> è§£æ±º EbM7 ->  é€†æˆ» Am7 -> ç­‰ä¾¡ D7
-
-
-
-
-ã€€â– ã‚¹ã‚±ãƒ¼ãƒ«ã‚¢ã‚¦ãƒˆæ„Ÿ
-fcgdaebã§ã®ãƒ€ã‚¤ã‚¢ãƒˆãƒ‹ãƒƒã‚¯ã§ã‚ã‚Œã°ã€ã“ã®ä¸Š2ã¤ã¾ã§å¯èƒ½ã€‚
-ä¼´å¥ãŒ'dfac' 'gbdf' 'cegb'ã§ ã‚¹ã‚±ãƒ¼ãƒ«ãŒf c g d a e bã§ã‚ã‚Œã°ã€
-cgdaebf+ã§ã‚¢ã‚¦ãƒˆæ„ŸãŒå‡ºã‚‹ã€‚
-gdaebf+c+ãã‚‰ã„ã¾ã§ãªã‚‰ã€è€ãˆã‚‹ã€‚
-
-
-
-ã€€https://twitter.com/huangbaihonglan
-ã€€= é»„ç™½ç´…è—ç„ =
-
-ã€€https://eseakisakura.wordpress.com/about
-ã€€Copyright(C) 04coreworks
-
-
+”º‘t‚ª'dfac' 'gbdf' 'cegb'‚Å ƒXƒP[ƒ‹‚ªf c g d a e b‚Å‚ ‚ê‚ÎA
+cgdaebf+‚ÅƒAƒEƒgŠ´‚ªo‚éB
+gdaebf+c+‚®‚ç‚¢‚Ü‚Å‚È‚çA‘Ï‚¦‚éB
+ 	

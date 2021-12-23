@@ -1,73 +1,71 @@
-Key-and-Scale-Change-List.txt ------
+Key-and-Scale-Change-List.txt ------ 
+“–ƒeƒLƒXƒg‚ÍA\‘¢‰»ƒGƒfƒBƒ^‘Î‰‚Å‚·B
+
+ 
+¡ ƒL[ƒ`ƒFƒ“ƒW‚ÆƒXƒP[ƒ‹ƒ`ƒFƒ“ƒW‚Ì“™‰¿‘Î”ä•\ 
 
 
-
-â– â–¡ã‚­ãƒ¼ãƒã‚§ãƒ³ã‚¸ã¨ã‚¹ã‚±ãƒ¼ãƒ«ãƒã‚§ãƒ³ã‚¸ã®ç­‰ä¾¡å¯¾æ¯”è¡¨
-
-
-
-		=Key	Scaleé©ç”¨æ™‚ã®ã‚­ãƒ¼ä¸ŠãŒã‚Šåˆ† 
+		=Key	Scale“K—p‚ÌƒL[ã‚ª‚è•ª
 
 	-4	-40	+8	Lydian#1#2#3#4#5#6#7	c+d+e+f++g+a+b+
-	-11	-35	+1	Lydian#1#2#3#5#6#7	c+d+e+f+g+a+b+
-	-6	-30	+6	Lydian#1#2#3#5#6	c+d+e+f+g+a+b
+	-11	-35	+1	Lydian#1#2#3#5#6#7		c+d+e+f+g+a+b+
+	-6	-30	+6	Lydian#1#2#3#5#6		c+d+e+f+g+a+b
 
-	-1	-25	+11	Lydian#1#2#5#6	c+d+ef+g+a+b	<b>c+d+ef+g+a+
-	-8	-20	+4	Lydian#1#2#5	c+d+ef+g+ab
-	-3	-15	+9	Lydian#1#5	c+def+g+ab
-	-10	-10	+2	Lydian#1	c+def+gab
-	-5	-5	+7	Lydian		cdef+gab	<gab>cdef+
+	-1	-25	+11	Lydian#1#2#5#6		c+d+ef+g+a+b	<b>c+d+ef+g+a+
+	-8	-20	+4	Lydian#1#2#5			c+d+ef+g+ab
+	-3	-15	+9	Lydian#1#5			c+def+g+ab
+	-10	-10	+2	Lydian#1				c+def+gab
+	-5	-5	+7	Lydian				cdef+gab		<gab>cdef+
 
-	0	0	0	Ionian		cdefgab
+	0	0	0	Ionian				cdefgab
 
-	-7	+5	+5	Mixolydian	cdefgab-		fgab->cde<
-	-2	+10	+10	Dorian		cde-fgab-
-	-9	+15	+3	Aeolian		cde-fga-b-
-	-4	+20	+8	Phrygian		cd-e-fga-b-
-	-11	+25	+1	Locrian		cd-e-fg-a-b-	d-e-fg-a-b->c<
+	-7	+5	+5	Mixolydian				cdefgab-		fgab->cde<
+	-2	+10	+10	Dorian				cde-fgab-
+	-9	+15	+3	Aeolian				cde-fga-b-
+	-4	+20	+8	Phrygian				cd-e-fga-b-
+	-11	+25	+1	Locrian				cd-e-fg-a-b-	d-e-fg-a-b->c<
 
-	-6	+30	+6	Locrianb1	c-d-e-fg-a-b-
-	-1	+35	+11	Locrianb1b4	c-d-e-f-g-a-b-
-	-8	+40	+4	Locrianb1b4b7	c-d-e-f-g-a-b--
+	-6	+30	+6	Locrianb1				c-d-e-fg-a-b-
+	-1	+35	+11	Locrianb1b4			c-d-e-f-g-a-b-
+	-8	+40	+4	Locrianb1b4b7			c-d-e-f-g-a-b--
 
-	Check ------ (åŒã˜ã‚¹ã‚±ãƒ¼ãƒ«ã¨ãªã‚‹)
+ 
+	Check ------ (“¯‚¶ƒXƒP[ƒ‹‚Æ‚È‚é) 
+
 	l8
-	Key=0	cdefgab		r2
-	Key=-5	fgab->cde<	r2	//-5+5(Mixo)=0
-	Key=5	<gab>cdef+	r2	//+5-5(Lydi)=0
+	Key=0	cdefgab			r2
+	Key=-5	fgab->cde<		r2	//-5+5(Mixo)=0
+	Key=5	<gab>cdef+		r2	//+5-5(Lydi)=0
 	Key=-1	d-e-fg-a-b->c<	r2	//-1+1(Locrian)=0
 	Key=1	<b>c+d+ef+g+a+	r2	//+1-1(Lydian#1#2#5#6)=0
 
-	ãƒãƒ¼ãƒ¢ãƒ‹ãƒ¼ã‚’ã‚ã¦ã‚‹å ´åˆã€
-	efgab>cd<	//ä¸Šãƒãƒ¢ 1åº¦ãŒe
-	cdefgab		//ä¸»æ—‹å¾‹ 1åº¦ãŒc
-	<ab>cdefg	//ä¸‹ãƒãƒ¢ 1åº¦ãŒa
-	<fgab>cde	//ä¸‹ä¸‹ãƒãƒ¢ 1åº¦ãŒf
+ 
+	Check ------ (‘S‚ÄƒƒWƒƒ[ƒXƒP[ƒ‹‚Æ‚È‚é) 
 
-	Check ------ (å…¨ã¦ãƒ¡ã‚¸ãƒ£ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã¨ãªã‚‹)
-
-	TR=1	Key=4	cd-e-fga-b-	r2	//ä¸Šãƒãƒ¢+4-4(Phrygian)=0
+TR=1		Key=4	cd-e-fga-b-	r2	//ãƒnƒ‚+4-4(Phrygian)=0
 		Key=0	efgab>cd<
-	TR=2	Key=0	cdefgab		r2
-			cdefgab
-	TR=3	Key=-3	cde-fga-b-	r2	//ä¸‹ãƒãƒ¢-3+3(Aeolian)=0
+
+TR=2		Key=0	cdefgab		r2
+				cdefgab
+
+TR=3		Key=-3	cde-fga-b-	r2	//‰ºƒnƒ‚-3+3(Aeolian)=0
 		Key=0	<ab>cdefg
-	TR=4	Key=-5	cdefgab-	r2	//ä¸‹ä¸‹ãƒãƒ¢-5+5(Mixolydian)=0
+TR=4		Key=-5	cdefgab-		r2	//‰º‰ºƒnƒ‚-5+5(Mixolydian)=0
 		Key=0	<fgab>cde
  
+	ƒn[ƒ‚ƒj[‚ğ‚ ‚Ä‚éê‡AƒL[ƒ`ƒFƒ“ƒW‚Í‚µ‚È‚¢ 
 
+	efgab>cd<		//ãƒnƒ‚ 1“x‚ªe
 
+	cdefgab		//åù—¥ 1“x‚ªc
 
+	<ab>cdefg		//‰ºƒnƒ‚ 1“x‚ªa
+	<fgab>cde		//‰º‰ºƒnƒ‚ 1“x‚ªf
+ 
+@https://twitter.com/huangbaihonglan 
+@= ‰©”’g—•Œº =
 
+@https://eseakisakura.wordpress.com/about
+@Copyright(C) 04coreworks
 
-ã€€https://twitter.com/huangbaihonglan
-
-ã€€= é»„ç™½ç´…è—ç„ =
-
-
-
-ã€€https://eseakisakura.wordpress.com/about
-
-ã€€Copyright(C) 04coreworks
-
-
+ 
