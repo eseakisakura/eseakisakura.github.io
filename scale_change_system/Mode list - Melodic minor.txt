@@ -1,0 +1,17 @@
+﻿■□Melodic minor Mode List
+
+Ab	Eb	Bb	F	C	G	D	A	E	B			Cycle of 5th
+
+dor b2	loc n9		Altered				lyd #5		lyd 7th	+6	F# m.m	d+ a e+ b f+ c+ g+
+loc n9		Altered				lyd #5		lyd 7th	M.m	+5	B m.m	g+ d a+ e b f+ c+
+	Altered				lyd #5		lyd 7th	M.m	mixo b6	+4	E m.m	c+ g d+ a e b f+
+Altered				lyd #5		lyd 7th	M.m	mixo b6	dor b2	+3	A m.m	f+ c g+ d a e b
+			lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9	+2	D m.m	b f c+ g d a e
+		lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		+1	G m.m	e b- f+ c g d a
+	lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered	00	C m.m	a e- b f c g d
+lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered		-1	F m.m	d a- e b- f c g
+	lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered			-2	Bb m.m	g d- a e- b- f c
+lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-3	Eb m.m	c g- d a- e- b- f
+M.m	mixo b6	dor b2	loc n9		Altered				lyd #5	-4	Ab m.m	f c- g d- a- e- b-
+mixo b6	dor b2	loc n9		Altered				lyd #5		-5	Db m.m	b- f- c  g- d- a- e-
+dor b2	loc n9		Altered				lyd #5		lyd 7th	-6	Gb m.m	e- b-- f c- g- d- a-

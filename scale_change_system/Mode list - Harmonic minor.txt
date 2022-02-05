@@ -1,0 +1,17 @@
+﻿■□Harmonic minor Mode List
+
+Ab	Eb	Bb	F	C	G	D	A	E	B			Cycle of 5th
+
+loc #6			S.loc b7		lyd #2	ion #5		dor #4	+6	F# h.m	d a e+ b f+ c+ g+
+		S.loc b7		lyd #2	ion #5		dor #4	H.m	+5	B h.m	g d a+ e b f+ c+
+	S.loc b7		lyd #2	ion #5		dor #4	H.m	H.mP5b	+4	E h.m	c g d+ a e b f+
+S.loc b7		lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6	+3	A h.m	f c g+ d a e b
+		lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6		+2	D h.m	b- f c+ g d a e
+	lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			+1	G h.m	e- b- f+ c g d a
+lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			S.locb7	00	C h.m	a- e- b  f c g d
+ion #5		dor #4	H.m	H.mP5b	loc #6			S.loc b7	-1	F h.m	d- a- e  b- f c g
+	dor #4	H.m	H.mP5b	loc #6			S.loc b7		-2	Bb h.m	g- d- a  e- b- f c
+dor #4	H.m	H.mP5b	loc #6			S.loc b7		lyd #2	-3	Eb h.m	c- g- d a- e- b- f
+H.m	H.mP5b	loc #6			S.loc b7		lyd #2	ion #5	-4	Ab h.m	f- c- g d- a- e- b-
+H.mP5b	loc #6			S.loc b7		lyd #2	ion #5		-5	Db h.m	b-- f- c g- d- a- e-
+loc #6			S.loc b7		lyd #2	ion #5		dor #4	-6	Gb h.m	e-- b-- f c- g- d- a-

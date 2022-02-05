@@ -1,0 +1,33 @@
+﻿■□Major Scale Chord List
+
+IVM7,6	IIm7	V7	VIIm7b5			Cycle of 5th
+IM7,6	VIm7
+	IIIm7
+
+BM7	G#m7	C#7	Fm7b5	+6	F# maj.	b f+ c+ g+ d+ a+ e+
+EM7	C#m7	F#7	A#m7b5	+5	B maj.	e b f+ c+ g+ d+ a+
+AM7	F#m7	B7	D#m7b5	+4	E maj.	a e b f+ c+ g+ d+
+DM7	Bm7	E7	G#m7b5	+3	A maj.	d a e b f+ c+ g+
+GM7	Em7	A7	C#m7b5	+2	D maj.	g d a e b f+ c+
+CM7	Am7	D7	F#m7b5	+1	G maj.	c g d a e b f+
+FM7	Dm7	G7	Bm7b5	00	C maj.	f c g d a e b
+BbM7	Gm7	C7	Em7b5	-1	F maj.	b- f c g d a e
+EbM7	Cm7	F7	Am7b5	-2	Bb maj.	e- b- f c g d a
+AbM7	Fm7	Bb7	Dm7b5	-3	Eb maj.	a- e- b- f c g d
+DbM7	Bbm7	Eb7	Gm7b5	-4	Ab maj.	d- a- e- b- f c g
+GbM7	Ebm7	Ab7	Cm7b5	-5	Db maj.	g- d- a- e- b- f c
+CbM7	Abm7	Db7	Fm7b5	-6	Gb maj.	c- g- d- a- e- b- f
+
+
+　------ コードの親和性
+	//Chord		//五度圏		//適用モード
+
+	CM7	+1	c g [d] (a) e b [f+]		Clyd
+	C7	-1	b- [f] c g [d] (a) e		Cmixo
+	Cm7	-2	e- b- [f] c g [d] (a)		Cdor
+	Cm7b5	-5	g- [d-] (a-) e- b- [f] c	Cloc
+
+	※[5,7度の倍音成分], (補完の成分)
+
+
+　------

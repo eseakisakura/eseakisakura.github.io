@@ -1,0 +1,59 @@
+﻿				機能	スケール
+// Major //
+'cegb'	CM7	IM7,6		T	Ionian [n4]
+'dfac'	Dm7	IIm7		SD	Dorian [n6]
+'egbd'	Em7	IIIm7		T	Phrygian [b2]
+'face'	FM7	IVM7,6		SD	Lydian [#4]
+'gbdf'	G7	V7		D	Mixolydian [b7]
+'aceg'	Am7	VIm7		T	Aeolian [b6]
+'bdfa'	Bm7b5	VIIm7b5		D	Locrian [(b2)b5]
+
+
+// Natural  minor //
+'aceg'	Am7	Im7,m6		Tm	Aeolian
+'bdfa'	Bm7b5	IIm7b5		SDm	Locrian
+'cegb'	CM7	bIIIM7,6	Tm	Ionian
+'dfac'	Dm7	IVm7,m6		SDm	Dorian
+'egbd'	Em7	Vm7		Dm	Phrygian
+'face'	F(M7)	bVIM7		SDm	Lydian
+'gbdf'	G7	bVII7		SDm	Mixolydian
+
+
+// Harmonic minor //
+'aceg#'	AmM7	ImM7		Tm	Harmonic Minor	
+'bdfa'	Bm7b5	IIm7b5		SDm	Locrian #6	
+'ceg#b'	CM7#5	bIIIM7#5	Tm	 Ionian #5	
+'dfac'	Dm7	IVm7		SDm	Dorian #4	
+'eg#bd'	E7	V7		D	Hm Perfect5 Below
+'face'	FM7	bVIM7		SDm	Lydian #2	
+'g#bdf'	G#dim7	VIIdim7		D	Super Locrian b7	
+
+
+// Melodic minor //
+'aceg#'	AmM7	ImM7		Tm	Melodic Minor	
+'bdf#a'	Bm7	IIm7		SDm	Dorian b2	
+'ceg#b'	CM7#5	bIIIM7#5	Tm	Lydian Augmented (#5)	
+'df#ac'	D7	IV7		D(SDm)	Lydian 7th	
+'eg#bd'	E7	V7		D	Mixolydian b6	
+'f#ace'	F#m7b5	VIm7b5		Tm	Locrian n9	
+'g#bdf#'G#m7b5	VIIm7b5		D	Altered		
+
+
+　------ 広義のモーダルインターチェンジ
+　
+ダイアトニックスケールにおいて、コード機能が同系列であれば、
+
+このハーモニー(及びスケール)は、入れ換えて良い
+この代理コードのハーモニー(及びスケール)も入れ換えて良い
+
+
+ドミナント代理
+Major			Harmonic minor			Melodic minor
+V7 / D / Mixolydian b7	V7 / D / Hm Perfect5 Below	IV7 / D(SDm) / Lydian 7th
+							VIIm7b5 / D / Altered	
+II [SD]		V [D]		I [T]
+Dm7		G7		CM7
+Dorian		Altered		Ionian	
+		HP5B
+		Lydian 7th
+　------

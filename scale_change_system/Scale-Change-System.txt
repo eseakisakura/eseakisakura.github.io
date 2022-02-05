@@ -2,59 +2,11 @@ Scale-Change-System.txt ------
 当テキストは、構造化エディタ対応です。
 
  
-　// Scale Change System -- 概念 --  // 
+　// Scale Change System  // 
 	
-　■Major Diatonic 
+	-- 概念 -- 
 
-　------ コード、スケール、モードの親和性
-
-	//Chord		//五度圏				//適用モード
-
-	CM7		+1	c g [d] (a) e b [f+]		Clyd
-	C7		-1	b- [f] c g [d] (a) e		Cmixo
-	Cm7		-2	e- b- [f] c g [d] (a)		Cdor
-	Cm7b5	-5	g- [d-] (a-) e- b- [f] c	Cloc
-
-
-	※[5,7度の倍音成分], (補完成分)
-
-　------
  
-対スケールのコード近似表 □■ 
-
-Fm7b5	G#m7	C#7	BM7		+6	                              b f+ c+ g+ d+ a+ e+
-A#m7b5	C#m7	F#7	EM7		+5	                            e b f+ c+ g+ d+ a+
-D#m7b5	F#m7	B7	AM7		+4	                          a e b f+ c+ g+ d+
-G#m7b5	Bm7		E7	DM7		+3	                        d a e b f+ c+ g+
-C#m7b5	Em7		A7	GM7		+2	                      g d a e b f+ c+
-F#m7b5	Am7		D7	CM7		+1	                    c g d a e b f+
-Bm7b5	Dm7		G7	FM7		00	                  f c g d a e b
-Em7b5	Gm7		C7	BbM7	-1	               b- f c g d a e
-Am7b5	Cm7		F7	EbM7	-2	            e- b- f c g d a
-Dm7b5	Fm7		Bb7	AbM7	-3	         a- e- b- f c g d
-Gm7b5	Bbm7	Eb7	DbM7	-4	      d- a- e- b- f c g
-Cm7b5	Ebm7	Ab7	GbM7	-5	   g- d- a- e- b- f c
-Fm7b5	Abm7	Db7	BM7		-6	c- g- d- a- e- b- f
- 
-対スケールのモード対比表 □■ 
-
-Bb	F	C	G	D	A	E	B	F#
-phr	loc						lyd	ion	+6	                              b f+ c+ g+ d+ a+ e+
-loc						lyd	ion	mixo	+5	                            e b f+ c+ g+ d+ a+
-					lyd	ion	mixo	dor	+4	                          a e b f+ c+ g+ d+
-				lyd	ion	mixo	dor	aeo	+3	                        d a e b f+ c+ g+
-			lyd	ion	mixo	dor	aeo	phr	+2	                      g d a e b f+ c+
-		lyd	ion	mixo	dor	aeo	phr	loc	+1	                    c g d a e b f+
-	lyd	ion	mixo	dor	aeo	phr	loc		00	                  f c g d a e b
-lyd	ion	mixo	dor	aeo	phr	loc			-1	               b- f c g d a e
-ion	mixo	dor	aeo	phr	loc				-2	            e- b- f c g d a
-mixo	dor	aeo	phr	loc					-3	         a- e- b- f c g d
-dor	aeo	phr	loc						-4	      d- a- e- b- f c g
-aeo	phr	loc						lyd	-5	   g- d- a- e- b- f c
-phr	loc						lyd	ion	-6	c- g- d- a- e- b- f
-  
-　// Scale Change System -- 解説 --  // 
-	
 　　■セオリー 
 
 　------ 五度圏
@@ -64,6 +16,8 @@ Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
               [bottom(4度)]<-             ->[outscale(5度)]
 
 　------
+ 
+ -- 解説 -- 
  
 　□滑らかな転調は、五度圏の[bottom]方向のみ 
 
@@ -115,7 +69,7 @@ Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
 　Copyright(C) 04coreworks
 
  
-準備段階の資料 ======== 
+事前の資料 ======== 
 
 fcgdaeb -> cgdaebf+では、解決感が発生する
 

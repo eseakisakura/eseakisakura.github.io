@@ -1,0 +1,39 @@
+﻿■□Melodic minor Chord List
+
+ImM7	IIm7	bIIIM7#5	IV7	VIIm7b5			Cycle of 5th
+				V7	VIm7b5
+
+F#mM7	G#m7	AM7#5		B7	E#m7b5	+6	F# m.m	d+ a e+ b f+ c+ g+
+BmM7	C#m7	DM7#5		E7	A#m7b5	+5	B m.m	g+ d a+ e b f+ c+
+EmM7	F#m7	GM7#5		A7	D#m7b5	+4	E m.m	c+ g d+ a e b f+
+AmM7	Bm7	CM7#5		D7	G#m7b5	+3	A m.m	f+ c g+ d a e b
+DmM7	Em7	FM7#5		G7	C#m7b5	+2	D m.m	b f c+ g d a e
+GmM7	Am7	BbM7#5		C7	F#m7b5	+1	G m.m	e b- f+ c g d a
+CmM7	Dm7	EbM7#5		F7	Bm7b5	00	C m.m	a e- b f c g d
+FmM7	Gm7	AbM7#5		Bb7	Em7b5	-1	F m.m	d a- e b- f c g
+BbmM7	Cm7	DbM7#5		Eb7	Am7b5	-2	Bb m.m	g d- a e- b- f c
+EbmM7	Fm7	GbM7#5		Ab7	Dm7b5	-3	Eb m.m	c g- d a- e- b- f
+AbmM7	Bbm7	CbM7#5		Db7	Gm7b5	-4	Ab m.m	f c- g d- a- e- b-
+DbmM7	Ebm7	FbM7#5		Gb7	Cm7b5	-5	Db m.m	b- f- c  g- d- a- e-
+GbmM7	Abm7	AM7#5		Cb7	Fm7b5	-6	Gb m.m	e- b-- f c- g- d- a-
+
+
+　------ コードの親和性
+
+
+	//Chord		//疑似五度圏		//適用モード
+
+	CM7#5	+3	f+ c g+ d a e b		Clyd #5
+	C7	+1	e b- f+ c g d a		Clyd 7th
+	CmM7	00	a e- b f c g d		Cm.m
+	Cm7	-2	g d- a e- b- f c	Cdor b2
+	Cm7b5	-5	b- f- c  g- d- a- e-	CAltered
+
+
+	※	五度圏は左から1,3つめが+となる
+	※	コードの親和性については、
+		+2 b f c+ g d a e に親和性がない 'face-' F7 => 'gbdf' G7 をアサイン
+		-2 g d- a e- b- f cに親和性がない 'bdfa' Bm7b5 => 'ace-g' Am7b5 をアサイン
+
+
+　------

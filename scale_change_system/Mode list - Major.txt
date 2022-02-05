@@ -1,0 +1,17 @@
+﻿■□Major Scale Mode List
+
+Ab	Eb	Bb	F	C	G	D	A	E	B			Cycle of 5th
+
+dor	aeo	phr	loc						lyd	+6	F# maj.	b f+ c+ g+ d+ a+ e+
+aeo	phr	loc						lyd	ion	+5	B maj.	e b f+ c+ g+ d+ a+
+phr	loc						lyd	ion	mixo	+4	E maj.	a e b f+ c+ g+ d+
+loc						lyd	ion	mixo	dor	+3	A maj.	d a e b f+ c+ g+
+					lyd	ion	mixo	dor	aeo	+2	D maj.	g d a e b f+ c+
+				lyd	ion	mixo	dor	aeo	phr	+1	G maj.	c g d a e b f+
+			lyd	ion	mixo	dor	aeo	phr	loc	00	C maj.	f c g d a e b
+		lyd	ion	mixo	dor	aeo	phr	loc		-1	F maj.	b- f c g d a e
+	lyd	ion	mixo	dor	aeo	phr	loc			-2	Bb maj.	e- b- f c g d a
+lyd	ion	mixo	dor	aeo	phr	loc				-3	Eb maj.	a- e- b- f c g d
+ion	mixo	dor	aeo	phr	loc					-4	Ab maj.	d- a- e- b- f c g
+mixo	dor	aeo	phr	loc						-5	Db maj.	g- d- a- e- b- f c
+dor	aeo	phr	loc						lyd	-6	Gb maj.	c- g- d- a- e- b- f
