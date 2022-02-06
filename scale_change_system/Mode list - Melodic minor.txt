@@ -1,17 +1,28 @@
-﻿■□Melodic minor Mode List
+﻿■□Melodic minor Mode Conversion
 
-Ab	Eb	Bb	F	C	G	D	A	E	B			Cycle of 5th
+Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level		Cycle of 5th
 
-dor b2	loc n9		Altered				lyd #5		lyd 7th	+6	F# m.m	d+ a e+ b f+ c+ g+
-loc n9		Altered				lyd #5		lyd 7th	M.m	+5	B m.m	g+ d a+ e b f+ c+
-	Altered				lyd #5		lyd 7th	M.m	mixo b6	+4	E m.m	c+ g d+ a e b f+
-Altered				lyd #5		lyd 7th	M.m	mixo b6	dor b2	+3	A m.m	f+ c g+ d a e b
-			lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9	+2	D m.m	b f c+ g d a e
-		lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		+1	G m.m	e b- f+ c g d a
-	lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered	00	C m.m	a e- b f c g d
-lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered		-1	F m.m	d a- e b- f c g
-	lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered			-2	Bb m.m	g d- a e- b- f c
-lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-3	Eb m.m	c g- d a- e- b- f
-M.m	mixo b6	dor b2	loc n9		Altered				lyd #5	-4	Ab m.m	f c- g d- a- e- b-
-mixo b6	dor b2	loc n9		Altered				lyd #5		-5	Db m.m	b- f- c  g- d- a- e-
-dor b2	loc n9		Altered				lyd #5		lyd 7th	-6	Gb m.m	e- b-- f c- g- d- a-
+	lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				lyd #5	+6	D# m.m	b+ f+ c++ g+ d+ a+ e+
+lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				lyd #5		+5	G# m.m	e+ b f++ c+ g+ d+ a+
+M.m	mixo b6	dor b2	loc n9		Altered				lyd #5		lyd 7th	+4	C# m.m	a+ e b+ f+ c+ g+ d+
+mixo b6	dor b2	loc n9		Altered				lyd #5		lyd 7th	M.m	+3	F# m.m	d+ a e+ b f+ c+ g+
+dor b2	loc n9		Altered				lyd #5		lyd 7th	M.m	mixo b6	+2	B m.m	g+ d a+ e b f+ c+
+loc n9		Altered				lyd #5		lyd 7th	M.m	mixo b6	dor b2	+1	E m.m	c+ g d+ a e b f+
+ ----	Altered	 ----	 ----	 ----	lyd #5	 ----	lyd 7th	M.m	mixo b6	dor b2	loc n9	00	A m.m	f+ c g+ d a e b
+Altered				lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		-1	D m.m	b f c+ g d a e
+			lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered	-2	G m.m	e b- f+ c g d a
+		lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered		-3	C m.m	a e- b f c g d
+	lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered			-4	F m.m	d a- e b- f c g
+lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-5	Bb m.m	g d- a e- b- f c
+	lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				lyd #5	-6	Eb m.m	c g- d a- e- b- f
+
+
+	※	疑似五度圏は左から1,3つめが+となる
+
+	BbAltered(Vの裏コード)はLevel:+2
+	Elyd 7th(Vドミナント)はLevel:+2
+	Ebloc n9(SDケーデンスの#IVm7b5)はLevel:+3
+		
+
+	ImM7	IIm7	bIIIM7#5	IV7	V7	VIm7b5	VIIm7b5
+	M.m	dor b2	lyd #5		lyd 7th	mixo b6	loc n9	Altered

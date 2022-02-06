@@ -1,17 +1,25 @@
-﻿■□Harmonic minor Mode List
+﻿■□Harmonic minor Mode Conversion
 
-Ab	Eb	Bb	F	C	G	D	A	E	B			Cycle of 5th
+Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level		Cycle of 5th
 
-loc #6			S.loc b7		lyd #2	ion #5		dor #4	+6	F# h.m	d a e+ b f+ c+ g+
-		S.loc b7		lyd #2	ion #5		dor #4	H.m	+5	B h.m	g d a+ e b f+ c+
-	S.loc b7		lyd #2	ion #5		dor #4	H.m	H.mP5b	+4	E h.m	c g d+ a e b f+
-S.loc b7		lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6	+3	A h.m	f c g+ d a e b
-		lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6		+2	D h.m	b- f c+ g d a e
-	lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			+1	G h.m	e- b- f+ c g d a
-lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			S.locb7	00	C h.m	a- e- b  f c g d
-ion #5		dor #4	H.m	H.mP5b	loc #6			S.loc b7	-1	F h.m	d- a- e  b- f c g
-	dor #4	H.m	H.mP5b	loc #6			S.loc b7		-2	Bb h.m	g- d- a  e- b- f c
-dor #4	H.m	H.mP5b	loc #6			S.loc b7		lyd #2	-3	Eb h.m	c- g- d a- e- b- f
-H.m	H.mP5b	loc #6			S.loc b7		lyd #2	ion #5	-4	Ab h.m	f- c- g d- a- e- b-
-H.mP5b	loc #6			S.loc b7		lyd #2	ion #5		-5	Db h.m	b-- f- c g- d- a- e-
-loc #6			S.loc b7		lyd #2	ion #5		dor #4	-6	Gb h.m	e-- b-- f c- g- d- a-
+	dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	ion #5	+6	D# h.m	b f+ c++ g+ d+ a+ e+
+dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	ion #5		+5	G# h.m	e b f++ c+ g+ d+ a+
+H.m	H.mP5b	loc #6			Sloc b7			lyd #2	ion #5		dor #4	+4	C# h.m	a e b+ f+ c+ g+ d+
+H.mP5b	loc #6			Sloc b7			lyd #2	ion #5		dor #4	H.m	+3	F# h.m	d a e+ b f+ c+ g+
+loc #6			Sloc b7			lyd #2	ion #5		dor #4	H.m	H.mP5b	+2	B h.m	g d a+ e b f+ c+
+		Sloc b7			lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6	+1	E h.m	c g d+ a e b f+
+ ----	Sloc b7	 ----	 ----	lyd #2	ion #5	 ----	dor #4	H.m	H.mP5b	loc #6	 ----	00	A h.m	f c g+ d a e b
+Sloc b7			lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			-1	D h.m	b- f c+ g d a e
+		lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7	-2	G h.m	e- b- f+ c g d a
+	lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7		-3	C h.m	a- e- b  f c g d
+lyd #2	ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7			-4	F h.m	d- a- e  b- f c g
+ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	-5	Bb h.m	g- d- a  e- b- f c
+	dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	ion #5	-6	Eb h.m	c- g- d a- e- b- f
+
+
+	※	疑似五度圏は左から3つめが+となる
+
+	EH.mP5bはLevel:00
+
+	ImM7	IIm7b5	bIIIM7#5	IVm7	V7	bVIM7	VIIdim7
+	H.m	loc #6	ion #5		dor #4	H.mP5b	lyd #2	Sloc b7
