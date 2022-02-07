@@ -1,41 +1,40 @@
-Key-and-Scale-Change-List.txt ------ 
-当テキストは、構造化エディタ対応です。
+﻿Key-and-Scale-Change-List.txt ------ 
 
  
 ■□キーチェンジとスケールチェンジの等価対比表 
 
 
-		=Key	Scale適用時のキー上がり分
+	=Key	Scale適用時、キー上がり分
 
-	-4	-40	+8	Lydian#1#2#3#4#5#6#7	c+d+e+f++g+a+b+
-	-11	-35	+1	Lydian#1#2#3#5#6#7		c+d+e+f+g+a+b+
-	-6	-30	+6	Lydian#1#2#3#5#6		c+d+e+f+g+a+b
+	-4	-40	+8	Lydian #1#2#3#4#5#6#7	c+d+e+f++g+a+b+
+	-11	-35	+1	Lydian #1#2#3#5#6#7	c+d+e+f+g+a+b+
+	-6	-30	+6	Lydian #1#2#3#5#6	c+d+e+f+g+a+b
 
-	-1	-25	+11	Lydian#1#2#5#6		c+d+ef+g+a+b	<b>c+d+ef+g+a+
-	-8	-20	+4	Lydian#1#2#5			c+d+ef+g+ab
-	-3	-15	+9	Lydian#1#5			c+def+g+ab
-	-10	-10	+2	Lydian#1				c+def+gab
-	-5	-5	+7	Lydian				cdef+gab		<gab>cdef+
+	-1	-25	+11	Lydian #1#2#5#6		c+d+ef+g+a+b	<b>c+d+ef+g+a+
+	-8	-20	+4	Lydian #1#2#5		c+d+ef+g+ab
+	-3	-15	+9	Lydian #1#5		c+def+g+ab
+	-10	-10	+2	Lydian #1		c+def+gab
+	-5	-5	+7	Lydian			cdef+gab	<gab>cdef+
 
-	0	0	0	Ionian				cdefgab
+	0	0	0	Ionian			cdefgab
 
-	-7	+5	+5	Mixolydian				cdefgab-		fgab->cde<
-	-2	+10	+10	Dorian				cde-fgab-
-	-9	+15	+3	Aeolian				cde-fga-b-
-	-4	+20	+8	Phrygian				cd-e-fga-b-
-	-11	+25	+1	Locrian				cd-e-fg-a-b-	d-e-fg-a-b->c<
+	-7	+5	+5	Mixolydian		cdefgab-	fgab->cde<
+	-2	+10	+10	Dorian			cde-fgab-
+	-9	+15	+3	Aeolian			cde-fga-b-
+	-4	+20	+8	Phrygian		cd-e-fga-b-
+	-11	+25	+1	Locrian			cd-e-fg-a-b-	d-e-fg-a-b->c<
 
-	-6	+30	+6	Locrianb1				c-d-e-fg-a-b-
-	-1	+35	+11	Locrianb1b4			c-d-e-f-g-a-b-
-	-8	+40	+4	Locrianb1b4b7			c-d-e-f-g-a-b--
+	-6	+30	+6	Locrian b1		c-d-e-fg-a-b-
+	-1	+35	+11	Locrian b1b4		c-d-e-f-g-a-b-
+	-8	+40	+4	Locrian b1b4b7		c-d-e-f-g-a-b--
 
  
 	Check ------ (同じスケールとなる) 
 
 	l8
-	Key=0	cdefgab			r2
-	Key=-5	fgab->cde<		r2	//-5+5(Mixo)=0
-	Key=5	<gab>cdef+		r2	//+5-5(Lydi)=0
+	Key=0	cdefgab		r2
+	Key=-5	fgab->cde<	r2	//-5+5(Mixo)=0
+	Key=5	<gab>cdef+	r2	//+5-5(Lydi)=0
 	Key=-1	d-e-fg-a-b->c<	r2	//-1+1(Locrian)=0
 	Key=1	<b>c+d+ef+g+a+	r2	//+1-1(Lydian#1#2#5#6)=0
 
@@ -44,23 +43,21 @@ Key-and-Scale-Change-List.txt ------
 
 TR=1		Key=4	cd-e-fga-b-	r2	//上ハモ+4-4(Phrygian)=0
 		Key=0	efgab>cd<
-
 TR=2		Key=0	cdefgab		r2
-				cdefgab
-
+			cdefgab
 TR=3		Key=-3	cde-fga-b-	r2	//下ハモ-3+3(Aeolian)=0
 		Key=0	<ab>cdefg
-TR=4		Key=-5	cdefgab-		r2	//下下ハモ-5+5(Mixolydian)=0
+TR=4		Key=-5	cdefgab-	r2	//下下ハモ-5+5(Mixolydian)=0
 		Key=0	<fgab>cde
  
+
 	ハーモニーをあてる場合、キーチェンジはしない 
 
-	efgab>cd<		//上ハモ 1度がe
+	efgab>cd<	//上ハモ 1度は e
+	cdefgab		//主旋律 1度は c
+	<ab>cdefg	//下ハモ 1度は a
+	<fgab>cde	//下下ハモ 1度は f
 
-	cdefgab		//主旋律 1度がc
-
-	<ab>cdefg		//下ハモ 1度がa
-	<fgab>cde		//下下ハモ 1度がf
  
 　https://twitter.com/huangbaihonglan 
 　= 黄白紅藍玄 =

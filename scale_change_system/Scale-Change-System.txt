@@ -1,66 +1,83 @@
-Scale-Change-System.txt ------ 
-当テキストは、構造化エディタ対応です。
-
- 
+﻿Scale-Change-System.txt ------ 
 　// Scale Change System  // 
-	
+	 
+ 　------ 五度圏
+
 	-- 概念 -- 
 
+maj.	min.
+
+A#	
+D#	
+G#	
+C#	A#	+6	[outscale(5度)]
+F#	D#	+5
+B	G#	+4
+E	C#	+3
+A	F#	+3
+D	B	+2
+G	E	+1
+C	A	00
+F	D	-1
+Bb	G	-2
+Eb	C	-3
+Ab	F	-4
+Db	Bb	-5
+Gb	Eb	-6	[bottom(4度)]
+	Ab	
+	Db	
+	Gb	
+
+ 	
+ -- 解説 -- 
  
 　　■セオリー 
 
-　------ 五度圏
 
-
-Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
-              [bottom(4度)]<-             ->[outscale(5度)]
-
-　------
- 
- -- 解説 -- 
- 
 　□滑らかな転調は、五度圏の[bottom]方向のみ 
 
+
 	C -> Eb	[3x bottom]	3つダウンと感じる
-
-
 	C -> E	[4x outscale]	8つダウンではなく、4つアップと感じる
 
 
 	exp.	C -> Eb -> E -> C とすれば、滑らかにつながる。
 
-
 	C -> Eb	[3x bottom]
-
 	Eb -> E	[5x bottom]
 	E -> C	[4x bottom]
- 
-　□五度の動きは、四度へ変える 
 
 
-	　　ａ　ｃ　ｅ　ｇ　ｂ　ｄ
+　□コードワークは、3度音列を意識する
 
-	　ｇ　ｂ　ｄ　ｆ　ａ　ｃ
 
+	exp.	五度は四度の動きへ変える
+
+	　　ａ　c　ｅ　g　ｂ　ｄ	Tonic side - 3度音列 
+	　g　ｂ　ｄ　ｆ　ａ　ｃ		Dominant side - 3度音列 
 
 	'ceg' | 'gb>d<' とする場合、前のコードのテンションのような感じとなる。
-
 	'ceg' | '<gb>d' であれば、違う3度音列の押さえとなり、変化を加えられる。
 
  
-　□コードワークは、中盤は穏やかに、終わりは刺激的 
-
+　□コードワークは、クール側(スリリング)に振る
 
 	[bottom]は、穏やかにつながり、解決感
-
 	[outscale]は、刺激が強く、期待感
 
-	exp.	| Am7 | Em7 | Dmadd9 |  %  |
-		| Am7 | Em7 | F#m711 |  %  |
+
+	exp.	中盤は穏やかに、終わりは刺激的
+
+	| Am7 | Em7 | Dmadd9 |  %  |
+	| Am7 | Em7 | F#m711 |  %  |
 
 	Am7 -> Em7	[1x outscale]
-	Em7 -> Dm7	[2x bottom]
-	Em7 -> F#m7	[2x outscale]
+	Em7 -> Dmadd9	[2x bottom] //解決
+	Dmadd9 -> Am7	[1x outscale]
+
+	Am7 -> Em7	[1x outscale]
+	Em7 -> F#m711	[2x outscale] //期待
+
   
 　https://twitter.com/huangbaihonglan 
 　= 黄白紅藍玄 =
@@ -89,4 +106,4 @@ fcgdaebでのダイアトニックであれば、この上2つまで可能。
 伴奏が'dfac' 'gbdf' 'cegb'で スケールがf c g d a e bであれば、
 cgdaebf+でアウト感が出る。
 gdaebf+c+ぐらいまでなら、耐える。
- 	
+ 
