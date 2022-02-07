@@ -1,4 +1,6 @@
-﻿■□Mode - Melodic minor Conversion
+﻿Mode - Melodic minor Conversion.txt ------
+
+■□Mode - Melodic minor Conversion
 
 Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level	Key	Circle of 5th
 

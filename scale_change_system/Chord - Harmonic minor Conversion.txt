@@ -1,4 +1,6 @@
-﻿■□Chord - Harmonic minor Conversion
+﻿Chord - Harmonic minor Conversion.txt ------
+
+■□Chord - Harmonic minor Conversion
 
 Degree								Level	Key	Circle of 5th
 ImM7	IIm7b5	bIIIM7#5	IVm7	V7	bVIM7	VIIdim7

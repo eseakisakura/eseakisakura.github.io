@@ -1,4 +1,6 @@
-﻿■□Chord - Major Scale Conversion
+﻿Chord - Major Scale Conversion.txt ------
+
+■□Chord - Major Scale Conversion
 
 Degree				Level	Key		Circle of 5th
 IVM7,6	IIm7	V7	VIIm7b5

@@ -1,4 +1,6 @@
-﻿■□Chord - Melodic minor Conversion
+﻿Chord - Melodic minor Conversion.txt ------ 
+
+■□Chord - Melodic minor Conversion
 
 Degree						Level	Key	Circle of 5th
 ImM7	IIm7	bIIIM7#5	IV7	VIIm7b5
@@ -35,5 +37,3 @@ EbmM7	Fm7	GbM7#5		Ab7	Dm7b5	-6	Eb m.m	c g- d a- e- b- f
 	コードの親和性の定義について
 	-1 b f c+ g d a e に親和性がない 'face-' F7 => 'gbdf' G7 をアサイン
 	-5 g d- a e- b- f cに親和性がない 'bdfa' Bm7b5 => 'ace-g' Am7b5 をアサイン
-
-　------

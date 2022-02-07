@@ -1,4 +1,6 @@
-﻿				機能	スケール
+﻿Modal-Interchange-List.txt ------
+
+				機能	スケール
 // Major //
 'cegb'	CM7	IM7,6		T	Ionian [n4]
 'dfac'	Dm7	IIm7		SD	Dorian [n6]

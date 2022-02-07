@@ -1,4 +1,5 @@
-﻿Scale-Change-System.txt ------ 
+﻿Scale-Change-System.txt ------
+
 　// Scale Change System  // 
 	 
  　------ 五度圏

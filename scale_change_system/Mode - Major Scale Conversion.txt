@@ -1,4 +1,6 @@
-﻿■□Mode - Major Scale Conversion
+﻿Mode - Major Scale Conversion.txt ------
+
+■□Mode - Major Scale Conversion
 
 Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level	Key		Circle of 5th
 
