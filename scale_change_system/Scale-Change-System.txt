@@ -1,33 +1,33 @@
 Scale-Change-System.txt ------ 
-���e�L�X�g�́A�\�����G�f�B�^�Ή��ł��B
+当テキストは、構造化エディタ対応です。
 
  
-�@// Scale Change System  // 
+　// Scale Change System  // 
 	
-	-- �T�O -- 
+	-- 概念 -- 
 
  
-�@�@���Z�I���[ 
+　　■セオリー 
 
-�@------ �ܓx��
+　------ 五度圏
 
 
 Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
-              [bottom(4�x)]<-             ->[outscale(5�x)]
+              [bottom(4度)]<-             ->[outscale(5度)]
 
-�@------
+　------
  
- -- ��� -- 
+ -- 解説 -- 
  
-�@�����炩�ȓ]���́A�ܓx����[bottom]�����̂� 
+　□滑らかな転調は、五度圏の[bottom]方向のみ 
 
-	C -> Eb	[3x bottom]	3�_�E���Ɗ�����
-
-
-	C -> E	[4x outscale]	8�_�E���ł͂Ȃ��A4�A�b�v�Ɗ�����
+	C -> Eb	[3x bottom]	3つダウンと感じる
 
 
-	exp.	C -> Eb -> E -> C �Ƃ���΁A���炩�ɂȂ���B
+	C -> E	[4x outscale]	8つダウンではなく、4つアップと感じる
+
+
+	exp.	C -> Eb -> E -> C とすれば、滑らかにつながる。
 
 
 	C -> Eb	[3x bottom]
@@ -35,25 +35,25 @@ Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
 	Eb -> E	[5x bottom]
 	E -> C	[4x bottom]
  
-�@���ܓx�̓����́A�l�x�֕ς��� 
+　□五度の動きは、四度へ変える 
 
 
-	�@�@���@���@���@���@���@��
+	　　ａ　ｃ　ｅ　ｇ　ｂ　ｄ
 
-	�@���@���@���@���@���@��
+	　ｇ　ｂ　ｄ　ｆ　ａ　ｃ
 
 
-	'ceg' | 'gb>d<' �Ƃ���ꍇ�A�O�̃R�[�h�̃e���V�����̂悤�Ȋ����ƂȂ�B
+	'ceg' | 'gb>d<' とする場合、前のコードのテンションのような感じとなる。
 
-	'ceg' | '<gb>d' �ł���΁A�Ⴄ3�x����̉������ƂȂ�A�ω�����������B
+	'ceg' | '<gb>d' であれば、違う3度音列の押さえとなり、変化を加えられる。
 
  
-�@���R�[�h���[�N�́A���Ղ͉��₩�ɁA�I���͎h���I 
+　□コードワークは、中盤は穏やかに、終わりは刺激的 
 
 
-	[bottom]�́A���₩�ɂȂ���A������
+	[bottom]は、穏やかにつながり、解決感
 
-	[outscale]�́A�h���������A���Ҋ�
+	[outscale]は、刺激が強く、期待感
 
 	exp.	| Am7 | Em7 | Dmadd9 |  %  |
 		| Am7 | Em7 | F#m711 |  %  |
@@ -62,31 +62,31 @@ Fb Cb Gb Db Ab Eb Bb F C G D A E B F# C# G# D# A# E# B#
 	Em7 -> Dm7	[2x bottom]
 	Em7 -> F#m7	[2x outscale]
   
-�@https://twitter.com/huangbaihonglan 
-�@= �����g���� =
+　https://twitter.com/huangbaihonglan 
+　= 黄白紅藍玄 =
 
-�@https://eseakisakura.wordpress.com/about
-�@Copyright(C) 04coreworks
+　https://eseakisakura.wordpress.com/about
+　Copyright(C) 04coreworks
 
  
-���O�̎��� ======== 
+事前の資料 ======== 
 
-fcgdaeb -> cgdaebf+�ł́A����������������
+fcgdaeb -> cgdaebf+では、解決感が発生する
 
-Am7��CM7�͓����ABm7b5 Dm7 G7 FM7�������ƂȂ�
-Db7(C#7) -> FM7�ł́A6����̏ꍇ�A6�オ��Ƃ̔��ʂ��������ng
-Db7(C#7) -> CM7�ł́A5����̂���ok
+Am7とCM7は等価、Bm7b5 Dm7 G7 FM7も等価となる
+Db7(C#7) -> FM7での、6つ下りの場合、6つ上がりとの判別が難しいためng
+Db7(C#7) -> CM7では、5つ下りのためok
 
-�@���R�[�h�I���Ɠ]���̋��ʐ�
-����́A���t�̃R�[�h�I���ɂ����Ă����`�ł���B
-Dm7 -> ���� G7 -> ���� CM7 -> ���� FM7
-�R���g���[���`�F���W���̏ꍇ�́A
-BM7  -> ���� D7 -> ���� GM7  -> ���� Bb7 -> ���� EbM7 ->  �t�� Am7 -> ���� D7
+　■コード選択と転調の共通性
+これは、伴奏のコード選択においても同義である。
+Dm7 -> 等価 G7 -> 解決 CM7 -> 順送 FM7
+コルトレーンチェンジ化の場合は、
+BM7  -> 順送 D7 -> 解決 GM7  -> 順送 Bb7 -> 解決 EbM7 ->  逆戻 Am7 -> 等価 D7
 
-�@���X�P�[���A�E�g��
-fcgdaeb�ł̃_�C�A�g�j�b�N�ł���΁A���̏�2�܂ŉ\�B
+　■スケールアウト感
+fcgdaebでのダイアトニックであれば、この上2つまで可能。
 
-���t��'dfac' 'gbdf' 'cegb'�� �X�P�[����f c g d a e b�ł���΁A
-cgdaebf+�ŃA�E�g�����o��B
-gdaebf+c+���炢�܂łȂ�A�ς���B
+伴奏が'dfac' 'gbdf' 'cegb'で スケールがf c g d a e bであれば、
+cgdaebf+でアウト感が出る。
+gdaebf+c+ぐらいまでなら、耐える。
  	

@@ -1,11 +1,11 @@
 Key-and-Scale-Change-List.txt ------ 
-“–ƒeƒLƒXƒg‚ÍA\‘¢‰»ƒGƒfƒBƒ^‘Î‰‚Å‚·B
+å½“ãƒ†ã‚­ã‚¹ãƒˆã¯ã€æ§‹é€ åŒ–ã‚¨ãƒ‡ã‚£ã‚¿å¯¾å¿œã§ã™ã€‚
 
  
-¡ ƒL[ƒ`ƒFƒ“ƒW‚ÆƒXƒP[ƒ‹ƒ`ƒFƒ“ƒW‚Ì“™‰¿‘Î”ä•\ 
+â– â–¡ã‚­ãƒ¼ãƒã‚§ãƒ³ã‚¸ã¨ã‚¹ã‚±ãƒ¼ãƒ«ãƒã‚§ãƒ³ã‚¸ã®ç­‰ä¾¡å¯¾æ¯”è¡¨ 
 
 
-		=Key	Scale“K—p‚ÌƒL[ã‚ª‚è•ª
+		=Key	Scaleé©ç”¨æ™‚ã®ã‚­ãƒ¼ä¸ŠãŒã‚Šåˆ†
 
 	-4	-40	+8	Lydian#1#2#3#4#5#6#7	c+d+e+f++g+a+b+
 	-11	-35	+1	Lydian#1#2#3#5#6#7		c+d+e+f+g+a+b+
@@ -30,7 +30,7 @@ Key-and-Scale-Change-List.txt ------
 	-8	+40	+4	Locrianb1b4b7			c-d-e-f-g-a-b--
 
  
-	Check ------ (“¯‚¶ƒXƒP[ƒ‹‚Æ‚È‚é) 
+	Check ------ (åŒã˜ã‚¹ã‚±ãƒ¼ãƒ«ã¨ãªã‚‹) 
 
 	l8
 	Key=0	cdefgab			r2
@@ -40,32 +40,32 @@ Key-and-Scale-Change-List.txt ------
 	Key=1	<b>c+d+ef+g+a+	r2	//+1-1(Lydian#1#2#5#6)=0
 
  
-	Check ------ (‘S‚ÄƒƒWƒƒ[ƒXƒP[ƒ‹‚Æ‚È‚é) 
+	Check ------ (å…¨ã¦ãƒ¡ã‚¸ãƒ£ãƒ¼ã‚¹ã‚±ãƒ¼ãƒ«ã¨ãªã‚‹) 
 
-TR=1		Key=4	cd-e-fga-b-	r2	//ãƒnƒ‚+4-4(Phrygian)=0
+TR=1		Key=4	cd-e-fga-b-	r2	//ä¸Šãƒãƒ¢+4-4(Phrygian)=0
 		Key=0	efgab>cd<
 
 TR=2		Key=0	cdefgab		r2
 				cdefgab
 
-TR=3		Key=-3	cde-fga-b-	r2	//‰ºƒnƒ‚-3+3(Aeolian)=0
+TR=3		Key=-3	cde-fga-b-	r2	//ä¸‹ãƒãƒ¢-3+3(Aeolian)=0
 		Key=0	<ab>cdefg
-TR=4		Key=-5	cdefgab-		r2	//‰º‰ºƒnƒ‚-5+5(Mixolydian)=0
+TR=4		Key=-5	cdefgab-		r2	//ä¸‹ä¸‹ãƒãƒ¢-5+5(Mixolydian)=0
 		Key=0	<fgab>cde
  
-	ƒn[ƒ‚ƒj[‚ğ‚ ‚Ä‚éê‡AƒL[ƒ`ƒFƒ“ƒW‚Í‚µ‚È‚¢ 
+	ãƒãƒ¼ãƒ¢ãƒ‹ãƒ¼ã‚’ã‚ã¦ã‚‹å ´åˆã€ã‚­ãƒ¼ãƒã‚§ãƒ³ã‚¸ã¯ã—ãªã„ 
 
-	efgab>cd<		//ãƒnƒ‚ 1“x‚ªe
+	efgab>cd<		//ä¸Šãƒãƒ¢ 1åº¦ãŒe
 
-	cdefgab		//åù—¥ 1“x‚ªc
+	cdefgab		//ä¸»æ—‹å¾‹ 1åº¦ãŒc
 
-	<ab>cdefg		//‰ºƒnƒ‚ 1“x‚ªa
-	<fgab>cde		//‰º‰ºƒnƒ‚ 1“x‚ªf
+	<ab>cdefg		//ä¸‹ãƒãƒ¢ 1åº¦ãŒa
+	<fgab>cde		//ä¸‹ä¸‹ãƒãƒ¢ 1åº¦ãŒf
  
-@https://twitter.com/huangbaihonglan 
-@= ‰©”’g—•Œº =
+ã€€https://twitter.com/huangbaihonglan 
+ã€€= é»„ç™½ç´…è—ç„ =
 
-@https://eseakisakura.wordpress.com/about
-@Copyright(C) 04coreworks
+ã€€https://eseakisakura.wordpress.com/about
+ã€€Copyright(C) 04coreworks
 
  
