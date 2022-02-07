@@ -1,6 +1,6 @@
-﻿■□Melodic minor Mode Conversion
+﻿■□Mode - Melodic minor Conversion
 
-Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level		Cycle of 5th
+Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level	Key	Circle of 5th
 
 	lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				lyd #5	+6	D# m.m	b+ f+ c++ g+ d+ a+ e+
 lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				lyd #5		+5	G# m.m	e+ b f++ c+ g+ d+ a+
@@ -19,9 +19,9 @@ lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-5	Bb m.m	g d- a e- b- f c
 
 	※	疑似五度圏は左から1,3つめが+となる
 
-	BbAltered(Vの裏コード)はLevel:+2
-	Elyd 7th(Vドミナント)はLevel:+2
-	Ebloc n9(SDケーデンスの#IVm7b5)はLevel:+3
+	AbAltered(IVの裏コード)はLevel:00
+	Dlyd 7th(IVドミナント)はLevel:00
+	Dbloc n9(SDケーデンスのIIIm7b5)はLevel:+1
 		
 
 	ImM7	IIm7	bIIIM7#5	IV7	V7	VIm7b5	VIIm7b5

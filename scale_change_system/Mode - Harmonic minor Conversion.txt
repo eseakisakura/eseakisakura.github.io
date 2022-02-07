@@ -1,6 +1,6 @@
-﻿■□Harmonic minor Mode Conversion
+﻿■□Mode - Harmonic minor Conversion
 
-Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level		Cycle of 5th
+Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level	Key	Circle of 5th
 
 	dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	ion #5	+6	D# h.m	b f+ c++ g+ d+ a+ e+
 dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	ion #5		+5	G# h.m	e b f++ c+ g+ d+ a+
