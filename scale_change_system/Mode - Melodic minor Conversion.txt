@@ -21,6 +21,8 @@ lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-5	Bb m.m	g d- a e- b- f c
 
 	※	疑似五度圏は左から1,3つめが+となる
 
+　------
+
 	AbAltered(IVの裏コード)はLevel:00
 	Dlyd 7th(IVドミナント)はLevel:00
 	Dbloc n9(SDケーデンスのIIIm7b5)はLevel:+1
@@ -28,3 +30,7 @@ lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-5	Bb m.m	g d- a e- b- f c
 
 	ImM7	IIm7	bIIIM7#5	IV7	V7	VIm7b5	VIIm7b5
 	M.m	dor b2	lyd #5		lyd 7th	mixo b6	loc n9	Altered
+
+　------
+
+　Copyright(C) 04coreworks

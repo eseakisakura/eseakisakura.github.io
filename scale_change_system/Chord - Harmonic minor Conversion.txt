@@ -19,6 +19,7 @@ FmM7	Gm7b5	AbM7#5		Bbm7	C7	DbM7	Edim7	-4	F h.m	d- a- e  b- f c g
 BbmM7	Cm7b5	DbM7#5		Ebm7	F7	GbM7	Adim7	-5	Bb h.m	g- d- a  e- b- f c
 EbmM7	Fm7b5	GbM7#5		Abm7	Bb7	CbM7	Ddim7	-6	Eb h.m	c- g- d a- e- b- f
 
+
 	※	疑似五度圏は左から3つめを+とする
 
 　------ コードの親和性
@@ -35,4 +36,5 @@ EbmM7	Fm7b5	GbM7#5		Abm7	Bb7	CbM7	Ddim7	-6	Eb h.m	c- g- d a- e- b- f
 	※	親和性についてはダイアトニック通りアサイン
 
 　------
-　
+
+　Copyright(C) 04coreworks

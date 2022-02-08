@@ -11,20 +11,20 @@ maj.	min.
 A#	
 D#	
 G#	
-C#	A#	+6	[outscale(5度)]
-F#	D#	+5
-B	G#	+4
-E	C#	+3
+C#	A#	+7
+F#	D#	+6
+B	G#	+5
+E	C#	+4
 A	F#	+3
-D	B	+2
-G	E	+1
+D	B	+2	[x2 outscale]
+G	E	+1	[x1 outscale(5度)]
 C	A	00
-F	D	-1
-Bb	G	-2
+F	D	-1	[x1 bottom(4度)]
+Bb	G	-2	[x2 bottom]
 Eb	C	-3
 Ab	F	-4
 Db	Bb	-5
-Gb	Eb	-6	[bottom(4度)]
+Gb	Eb	-6
 	Ab	
 	Db	
 	Gb	
@@ -49,19 +49,7 @@ Gb	Eb	-6	[bottom(4度)]
 	E -> C	[4x bottom]
 
 
-　□コードワークは、3度音列を意識する
-
-
-	exp.	五度は四度の動きへ変える
-
-	　　ａ　c　ｅ　g　ｂ　ｄ	Tonic side - 3度音列 
-	　g　ｂ　ｄ　ｆ　ａ　ｃ		Dominant side - 3度音列 
-
-	'ceg' | 'gb>d<' とする場合、前のコードのテンションのような感じとなる。
-	'ceg' | '<gb>d' であれば、違う3度音列の押さえとなり、変化を加えられる。
-
- 
-　□コードワークは、クール側(スリリング)に振る
+　□コードワークは、クール側(スリリング)に振る　(Chord - Major Scale Conversion)
 
 	[bottom]は、穏やかにつながり、解決感
 	[outscale]は、刺激が強く、期待感
@@ -80,6 +68,31 @@ Gb	Eb	-6	[bottom(4度)]
 	Em7 -> F#m711	[2x outscale] //期待
 
   
+　□三度音列を意識する (Chord - Major Scale Conversion)
+
+
+	exp.	少ない音数でのコードチェンジを目指す
+
+
+	　    ａ   c   ｅ	Tonic系統	- 三度音列
+	　  g   ｂ  ｄ   f	Dominant系統	- 三度音列
+
+	C G7
+	'gb>d<'		| '<gb>d'
+	[x1 bottom]
+
+	'gb>d<' とする場合、前のコードのテンションのような感じとなる。
+	'<gb>d' であれば、違う三度音列の押さえとなり、変化を加えられる。
+
+	Em C
+	'egb'		| '<b>eg'
+	[x1 bottom]
+	
+	A C
+	'<a>ce'		| 'cea'
+	[x0 ]
+ 
+
 　https://twitter.com/huangbaihonglan 
 　= 黄白紅藍玄 =
 
