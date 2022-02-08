@@ -2,13 +2,13 @@
 
 				機能	スケール
 // Major //
-'cegb'	CM7	IM7,6		T	Ionian [n4]
-'dfac'	Dm7	IIm7		SD	Dorian [n6]
-'egbd'	Em7	IIIm7		T	Phrygian [b2]
-'face'	FM7	IVM7,6		SD	Lydian [#4]
-'gbdf'	G7	V7		D	Mixolydian [b7]
-'aceg'	Am7	VIm7		T	Aeolian [b6]
-'bdfa'	Bm7b5	VIIm7b5		D	Locrian [(b2)b5]
+'cegb'	CM7	IM7,6		T	Ionian (n4)
+'dfac'	Dm7	IIm7		SD	Dorian (n6)
+'egbd'	Em7	IIIm7		T	Phrygian (b2)
+'face'	FM7	IVM7,6		SD	Lydian (#4)
+'gbdf'	G7	V7		D	Mixolydian (b7)
+'aceg'	Am7	VIm7		T	Aeolian (b6)
+'bdfa'	Bm7b5	VIIm7b5		D	Locrian ((b2)b5)
 
 
 // Natural  minor //
@@ -48,10 +48,11 @@
 このハーモニー(及びスケール)は、入れ換え可能
 その代理コードのハーモニー(及びスケール)も入れ換えて良い
 
+
 exp.	ドミナント代理
 
 Major			Harmonic minor			Melodic minor
-V7 / D / Mixolydian b7	V7 / D / Hm Perfect5 Below	IV7 / D(SDm) / Lydian 7th
+V7 / D / Mixolydian	V7 / D / Hm Perfect5 Below	IV7 / D(SDm) / Lydian 7th
 							VIIm7b5 / D / Altered	
 II [SD]		V [D]		I [T]
 Dm7		G7		CM7
