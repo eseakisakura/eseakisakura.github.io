@@ -4,55 +4,119 @@
 	 
  　------ 五度圏
 
-	-- 概念 -- 
-
 maj.	min.
 
 A#	
 D#	
 G#	
-C#	A#	+7
+C#	A#	+7	[outscale]
 F#	D#	+6
 B	G#	+5
 E	C#	+4
 A	F#	+3
-D	B	+2	[x2 outscale]
-G	E	+1	[x1 outscale(5度)]
+D	B	+2
+G	E	+1
 C	A	00
-F	D	-1	[x1 bottom(4度)]
-Bb	G	-2	[x2 bottom]
+F	D	-1
+Bb	G	-2
 Eb	C	-3
 Ab	F	-4
 Db	Bb	-5
-Gb	Eb	-6
+Gb	Eb	-6	[bottom]
 	Ab	
 	Db	
 	Gb	
 
- 	
- -- 解説 -- 
- 
-　　■セオリー 
+
+	-- 概念 -- 
+
+　　■セオリー
 
 
 　□滑らかな転調は、五度圏の[bottom]方向のみ 
 
 
-	C -> Eb	[3x bottom]	3つダウンと感じる
-	C -> E	[4x outscale]	8つダウンではなく、4つアップと感じる
+	C-3 -> Eb-6	[3x bottom]	3つダウンと感じる
+	C-3 -> E+1	[4x outscale]	8つダウンではなく、4つアップと感じる
 
 
 	exp.	C -> Eb -> E -> C とすれば、滑らかにつながる。
 
-	C -> Eb	[3x bottom]
-	Eb -> E	[5x bottom]
-	E -> C	[4x bottom]
+	C-3 -> Eb-6	[3x bottom]
+	Eb-6 -> E-11	[5x bottom]
+	E+1 -> C-3	[4x bottom]
 
 
-　□コードワークは、クール側(スリリング)に振る　(Chord - Major Scale Conversion)
+　□コードのルートは転調感を避けるため、五度以上の跳躍を避ける
 
-	[bottom]は、穏やかにつながり、解決感
-	[outscale]は、刺激が強く、期待感
+
+	exp.	三度音列を意識した飛躍の少ないコードチェンジ
+
+	　    ａ   c   ｅ	Tonic系統	- 三度音列
+	　  g   ｂ  ｄ   f	Dominant系統	- 三度音列
+
+	G7
+	'gb>d<'		| '<gb>d'
+
+
+	'gb>d<' とする場合、前のコードのテンションのような感じとなる。
+	'<gb>d' であれば、違う三度音列の押さえとなって変化を加えられる。
+
+	Em
+	'egb'		| '<b>eg'
+
+	
+	Am
+	'<a>ce'		| 'cea'
+
+
+　□伴奏とスケールアウト感
+
+
+	スケール fcgdaeb であれば、[2x outscale] まで
+
+
+	exp.	伴奏 Dm7 G7 CM7 FM7 で、スケールが fcgdaeb の場合、
+
+	[1x outscale] cgdaebf+ でアウト感が出る。
+	[2x outscale] gdaebf+c+ ぐらいまでなら耐える。
+
+
+ -- 解説 --
+ 
+
+　　■期待と解決のスケール構造
+　　(Chord - Major Scale Conversion 参照)
+
+
+　□解決感とスケール
+
+	fcgdaeb -> cgdaebf+では、[1x outscale]となり、解決感が発生する
+
+　□増四度の調性感
+
+	C#7+6 -> FM700 の場合、[6x bottom]は、[6x outscale]との判別が難しい
+	C#7+6 -> CM7+1 では、[5x bottom]のため、強い期待感
+
+　□コード選択とスケールチェンジの共通性
+
+	基本ケーデンスの場合、
+	Dm700 -> G700 -> CM7+1 -> FM700
+
+	コルトレーンチェンジ化の場合は、
+	BM7+6  ->  D7+1 ->  GM7+2  -> Bb7-3 -> EbM7-2 ->  Am7+1 -> D7+1
+	F# maj     G maj
+        	   G7       CM7
+	                    D maj     Eb maj
+	                              G7       CM7
+	                                       FM7        Em7
+	                                                  Dm7      G7
+
+
+　□コードワークは、クール(スリリング)側に振る
+
+	[bottom]は、穏やかにつながり、期待感
+	[outscale]は、刺激が強く、解決感
 
 
 	exp.	中盤は穏やかに、終わりは刺激的
@@ -60,64 +124,17 @@ Gb	Eb	-6
 	| Am7 | Em7 | Dmadd9 |  %  |
 	| Am7 | Em7 | F#m711 |  %  |
 
-	Am7 -> Em7	[1x outscale]
-	Em7 -> Dmadd9	[2x bottom] //解決
-	Dmadd9 -> Am7	[1x outscale]
+	Am7+1 -> Em7+2		[1x outscale]
+	Em7+2 -> Dmadd900	[2x bottom] //2x 期待
+	Dmadd900 -> Am7+1	[1x outscale]
 
-	Am7 -> Em7	[1x outscale]
-	Em7 -> F#m711	[2x outscale] //期待
+	Am7+1 -> Em7+2		[1x outscale]
+	Em7+2 -> F#m711+4	[2x outscale] //2x 解決
 
-  
-　□三度音列を意識する (Chord - Major Scale Conversion)
-
-
-	exp.	少ない音数でのコードチェンジを目指す
-
-
-	　    ａ   c   ｅ	Tonic系統	- 三度音列
-	　  g   ｂ  ｄ   f	Dominant系統	- 三度音列
-
-	C G7
-	'gb>d<'		| '<gb>d'
-	[x1 bottom]
-
-	'gb>d<' とする場合、前のコードのテンションのような感じとなる。
-	'<gb>d' であれば、違う三度音列の押さえとなり、変化を加えられる。
-
-	Em C
-	'egb'		| '<b>eg'
-	[x1 bottom]
-	
-	A C
-	'<a>ce'		| 'cea'
-	[x0 ]
- 
+　------
 
 　https://twitter.com/huangbaihonglan 
 　= 黄白紅藍玄 =
 
 　https://eseakisakura.wordpress.com/about
 　Copyright(C) 04coreworks
-
- 
-事前の資料 ======== 
-
-fcgdaeb -> cgdaebf+では、解決感が発生する
-
-Am7とCM7は等価、Bm7b5 Dm7 G7 FM7も等価となる
-Db7(C#7) -> FM7での、6つ下りの場合、6つ上がりとの判別が難しいためng
-Db7(C#7) -> CM7では、5つ下りのためok
-
-　■コード選択と転調の共通性
-これは、伴奏のコード選択においても同義である。
-Dm7 -> 等価 G7 -> 解決 CM7 -> 順送 FM7
-コルトレーンチェンジ化の場合は、
-BM7  -> 順送 D7 -> 解決 GM7  -> 順送 Bb7 -> 解決 EbM7 ->  逆戻 Am7 -> 等価 D7
-
-　■スケールアウト感
-fcgdaebでのダイアトニックであれば、この上2つまで可能。
-
-伴奏が'dfac' 'gbdf' 'cegb'で スケールがf c g d a e bであれば、
-cgdaebf+でアウト感が出る。
-gdaebf+c+ぐらいまでなら、耐える。
- 

@@ -19,6 +19,12 @@ ion	mixo	dor	aeo	phr	loc						lyd	-5	Db maj.	Bbmin	g- d- a- e- b- f c
 mixo	dor	aeo	phr	loc						lyd	ion	-6	Gb maj.	Ebmin	c- g- d- a- e- b- f
 
 
+
+		C	D	E	F	G	A	B
+	maj.	IM7	IIm7	IIIm7	IVM7	V7	VIm7	VIIm7b5
+	min	bIIIM7	IVm7	Vm7	bVIM7	bVII7	Im7	IIm7b5
+		ion	dor	phr	lyd	mixo	aeo	loc
+
 　------
 
 　Copyright(C) 04coreworks

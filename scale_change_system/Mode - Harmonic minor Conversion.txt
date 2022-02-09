@@ -22,8 +22,9 @@ ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	-5	Bb h.m	g- d- a  e- b- f c
 　------
 	※	疑似五度圏は左から3つめが+となる
 
-	EH.mP5bはLevel:00
+	Gh.mP5bはC h.m
 
+	A	B	C		D	E	F	G#
 	ImM7	IIm7b5	bIIIM7#5	IVm7	V7	bVIM7	VIIdim7
 	H.m	loc #6	ion #5		dor #4	H.mP5b	lyd #2	Sloc b7
 
