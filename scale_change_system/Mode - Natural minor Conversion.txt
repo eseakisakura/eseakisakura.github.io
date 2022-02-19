@@ -1,0 +1,32 @@
+﻿Mode - Natural minor Conversion.txt ------
+
+■□Mode - Natural minor Conversion
+
+Db	Ab	Eb	Bb	F	C	G	D	A	E	B	F#	Level	Key		Circle of 5th
+
+mixo	dor	aeo	phr	loc						lyd	ion	+6	D# min	F# Maj	b f+ c+ g+ d+ a+ e+
+dor	aeo	phr	loc						lyd	ion	mixo	+5	G# min	B Maj	e b f+ c+ g+ d+ a+
+aeo	phr	loc						lyd	ion	mixo	dor	+4	C# min	E Maj	a e b f+ c+ g+ d+
+phr	loc						lyd	ion	mixo	dor	aeo	+3	F# min	A Maj	d a e b f+ c+ g+
+loc						lyd	ion	mixo	dor	aeo	phr	+2	B min	D Maj	g d a e b f+ c+
+					lyd	ion	mixo	dor	aeo	phr	loc	+1	E min	G Maj	c g d a e b f+
+ ----	 ----	 ----	 ----	lyd	ion	mixo	dor	aeo	phr	loc	 ----	00	A min	C Maj	f c g d a e b
+			lyd	ion	mixo	dor	aeo	phr	loc			-1	D min	F Maj	b- f c g d a e
+		lyd	ion	mixo	dor	aeo	phr	loc				-2	G min	Bb Maj	e- b- f c g d a
+	lyd	ion	mixo	dor	aeo	phr	loc					-3	C min	Eb Maj	a- e- b- f c g d
+lyd	ion	mixo	dor	aeo	phr	loc						-4	F min	Ab Maj	d- a- e- b- f c g
+ion	mixo	dor	aeo	phr	loc						lyd	-5	Bb min	Db Maj	g- d- a- e- b- f c
+mixo	dor	aeo	phr	loc						lyd	ion	-6	Eb min	Gb Maj	c- g- d- a- e- b- f
+
+
+
+　------
+		A	B	C	D	E	F	G
+	C Maj.	VIm7	VIIm7b5	IM7	IIm7	IIIm7	IVM7	V7
+	A min.	Im7	IIm7b5	bIIIM7	IVm7	Vm7	bVIM7	bVII7
+		aeo	loc	ion	dor	phr	lyd	mixo
+
+
+　------
+
+　Copyright(C) 04coreworks

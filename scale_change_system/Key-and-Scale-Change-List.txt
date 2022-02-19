@@ -59,7 +59,9 @@ TR=4		Key=-5	cdefgab-	r2	//下下ハモ-5+5(Mixolydian)=0
 	<fgab>cde	//下下ハモ 1度は f
 
  
-　https://twitter.com/huangbaihonglan 
+　------
+
+　https://twitter.com/huangbaihonglan
 　= 黄白紅藍玄 =
 
 　https://eseakisakura.wordpress.com/about

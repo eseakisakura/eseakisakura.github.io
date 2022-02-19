@@ -1,0 +1,44 @@
+﻿Chord - Natural minor Conversion.txt ------
+
+■□Chord - Natural minor Conversion
+
+Degree				Level	Key		Circle of 5th
+IVM7,6	IIm7	V7	VIIm7b5
+IM7,6	VIm7
+	IIIm7
+
+BM7	G#m7	C#7	Fm7b5	+6	D# min	F# Maj	b f+ c+ g+ d+ a+ e+
+EM7	C#m7	F#7	A#m7b5	+5	G# min	B Maj	e b f+ c+ g+ d+ a+
+AM7	F#m7	B7	D#m7b5	+4	C# min	E Maj	a e b f+ c+ g+ d+
+DM7	Bm7	E7	G#m7b5	+3	F# min	A Maj	d a e b f+ c+ g+
+GM7	Em7	A7	C#m7b5	+2	B min	D Maj	g d a e b f+ c+
+CM7	Am7	D7	F#m7b5	+1	E min	G Maj	c g d a e b f+
+FM7	Dm7	G7	Bm7b5	00	A min	C Maj	f c g d a e b
+BbM7	Gm7	C7	Em7b5	-1	D min	F Maj	b- f c g d a e
+EbM7	Cm7	F7	Am7b5	-2	G min	Bb Maj	e- b- f c g d a
+AbM7	Fm7	Bb7	Dm7b5	-3	C min	Eb Maj	a- e- b- f c g d
+DbM7	Bbm7	Eb7	Gm7b5	-4	F min	Ab Maj	d- a- e- b- f c g
+GbM7	Ebm7	Ab7	Cm7b5	-5	Bb min	Db Maj	g- d- a- e- b- f c
+CbM7	Abm7	Db7	Fm7b5	-6	Eb min	Gb Maj	c- g- d- a- e- b- f
+
+
+　------
+		A	B	C	D	E	F	G
+	C Maj.	VIm7	VIIm7b5	IM7	IIm7	IIIm7	IVM7	V7
+	A min.	Im7	IIm7b5	bIIIM7	IVm7	Vm7	bVIM7	bVII7
+		aeo	loc	ion	dor	phr	lyd	mixo
+
+　------ コードの親和性
+	//Chord		//五度圏		//適用モード
+
+	CM7	+1	c g [d] (a) e b [f+]		Clyd
+	C7	-1	b- [f] c g [d] (a) e		Cmixo
+	Cm7	-2	e- b- [f] c g [d] (a)		Cdor
+	Cm7b5	-5	g- [d-] (a-) e- b- [f] c	Cloc
+
+	※[5,7度の倍音成分], (補完の成分)
+
+
+　------
+
+　Copyright(C) 04coreworks

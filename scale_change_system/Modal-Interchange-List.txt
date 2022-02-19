@@ -1,6 +1,6 @@
 ﻿Modal-Interchange-List.txt ------
 
-				機能	スケール
+		Degree		機能	スケール
 // Major //
 'cegb'	CM7	IM7,6		T	Ionian (n4)
 'dfac'	Dm7	IIm7		SD	Dorian (n6)
@@ -56,7 +56,7 @@ V7 / D / Mixolydian	V7 / D / Hm Perfect5 Below	IV7 / D(SDm) / Lydian 7th
 							VIIm7b5 / D / Altered	
 II [SD]		V [D]		I [T]
 Dm7		G7		CM7
-Dorian		Altered		Ionian	
+Dorian		Altered		Ionian
 		HP5B
 		Lydian 7th
 

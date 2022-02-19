@@ -9,7 +9,7 @@ maj.	min.
 A#	
 D#	
 G#	
-C#	A#	+7	[outscale]
+C#	A#	+7	[x outscale]
 F#	D#	+6
 B	G#	+5
 E	C#	+4
@@ -22,7 +22,7 @@ Bb	G	-2
 Eb	C	-3
 Ab	F	-4
 Db	Bb	-5
-Gb	Eb	-6	[bottom]
+Gb	Eb	-6	[x bottom]
 	Ab	
 	Db	
 	Gb	
@@ -33,21 +33,136 @@ Gb	Eb	-6	[bottom]
 　　■セオリー
 
 
-　□滑らかな転調は、五度圏の[bottom]方向のみ 
+　□滑らかな転調は、五度圏の[x bottom]方向のみ
 
 
-	C-3 -> Eb-6	[3x bottom]	3つダウンと感じる
-	C-3 -> E+1	[4x outscale]	8つダウンではなく、4つアップと感じる
+	-3 C -> -6 Eb	[3x bottom]	3つダウンと感じる
+	-3 C -> +1 E	[4x outscale]	8つダウンではなく、4つアップと感じる
 
 
 	exp.	C -> Eb -> E -> C とすれば、滑らかにつながる。
 
-	C-3 -> Eb-6	[3x bottom]
-	Eb-6 -> E-11	[5x bottom]
-	E+1 -> C-3	[4x bottom]
+	-3 C -> -6 Eb	[3x bottom]
+	-6 Eb -> -11 E	[5x bottom]
+	+1 E -> -3 C	[4x bottom]
 
 
-　□コードのルートは転調感を避けるため、五度以上の跳躍を避ける
+　□キーアウトと調性崩壊感
+
+	fcgdaeb -> cgdaebf+では、[1x outscale]となり、調性崩壊感が発生する
+
+
+　□伴奏とスケールアウト感
+
+
+	スケール fcgdaeb であれば、[2x outscale] まで交換できる
+
+
+	exp.	伴奏 Dm7 G7 CM7 FM7 で、スケールが fcgdaeb の場合、
+
+	[1x outscale] cgdaebf+ でアウト感が出る。
+	[2x outscale] gdaebf+c+ ぐらいまでなら耐える。
+
+
+
+　□コードのケーデンスとスケールチェンジレベル
+　(各minor Conversion.txt 参照)
+
+	[x bottom]方向への落下によるキーへの意識はあるが、
+	[x outscale]方向への強いキーアウトは避けている。
+
+
+	基本ケーデンスの場合、
+	00 Dm7 ->	00 G7 ->	+1 CM7 ->	00 FM7
+
+	コルトレーンチェンジ化の場合は、
+	+6 BM7 ->	+1 D7 ->	+2 GM7 ->	-3 Bb7 ->	-2 EbM7 ->	+1 Am7 ->	+1 D7
+	F# Maj		G Maj
+			V7		IM7
+					D Maj		Eb Maj
+							V7		IM7
+									bVIM7		IIm7		V7
+
+ -- 理論解説 --
+
+
+　　■調性崩壊感[outscale]と調性重力感[bottom]
+　　(各minor Conversion.txt 参照)
+
+
+　□増四度の浮遊感
+
+	+6 C#7 -> 00 FM7 の場合、[6x bottom]は、[6x outscale]との判別が難しく、地に足が付かない。
+	+6 C#7 -> +1 CM7 では、[5x bottom]のため強く、キーという地面を感じる。
+
+
+
+　□同主短調の借用和音(SDM)は、-3 C Harmonic minorへの一時転調と考える。
+
+	AbM7 ->	Fm7 ->	Dm7b5 ->G7 ->	CM7
+	bVIM7	IVm7	IIm7b5			-3 C H.m
+			II m7	V7		00 C Maj [3x outscale] キーアウト感
+					IM7	+1 G Maj [1x outscale]
+
+
+　□スケールとドミナントモーション
+
+	G Altered= +5 G# m.mは、G7= -1 D m.mと増四度の組合せとなっており一旦、調性崩壊を行うことになる。
+	この後、CM7= +1 E h.mへ向う[4x bottom]のため、E h.mへの強いドミナントモーションを感じる。
+	VIm7	IIm7	V7	IM7
+			Altered	lyd #2
+
+	Db Altered= -1 Dm.mは、Db7= +5 G# m.mと増四度の組合せとなっており一旦、調性崩壊を行うことになる。
+	この後、CM7= +1 E minへ向う[2x outscale]のため、ドミナントモーションとして見ると弱く映る。
+	bIIIM7	IIm7	bII7	IM7
+			Altered
+
+	G lyd 7th= -1 D m.mは、G7= -1 D m.mと同列で、
+	CM7= +1 E minへ向う[2x outscale]となるため、繋がりが綺麗でサブドミナント的に響く。
+	IIm7	V7	IM7	IVM7
+		lyd 7th
+
+	Db lyd 7th= +5 G# m.mと、Db7= +5 G# m.mは同列で、
+	CM7= +1 E minへ向かう[4x bottom]となるため、調性崩壊を伴わないのでサブドミナント的なモーションとなる。
+	bIIIM7	IIm7	bII7	IM7
+			lyd 7th
+
+	G H.mP5b= -3 C h.mは、G7= -3 C h.mと同列で、
+	CM7= +1 E minへ向う[4x outscale]となるため、スケールアウト感が強く出る。
+	もし、Cm7= -2 G h.mへ向かうのであれば[1x outscale]となるため、綺麗につながる。
+	III7	VIm7	IIm7	V7
+	H.mP5b
+
+	Db H.mP5b= +3 F# h.mは、Db7= +3 F# h.mと同列で、
+	CM7= +1 E minへ向う[2x bottom]となるため、スムーズに繋がる。
+	もし、Cm7= -2 G h.mへ向かうのであれば[5x bottom]となるため、キーを強く感じる。
+	bIIIM7	IIm7	bII7	Im7
+			H.mP5b
+
+
+	G Combination Of Diminished= G dim7(=C#,E,+2 Bb)+ 00 G#dim7(=D,F,B)のため、ポリトーナル(多調)感が強く出る。
+	CM7= +1 E minへ向う[1x outscale]+ [1x bottom]となるため、一過的なE minへのドミナントモーションと感じる。
+	IIIm7	VI7	IIm7	V7
+		ComDim
+
+	Db Combination Of Diminished= Db dim7(=E,G,Bb)+ D dim7(=D,F,G#)となり、裏のため扱いはG ConDimと同じ。
+	IIIm7	bIII7	IIm7	V7
+		ComDim
+
+
+	同じポリトーナル系統の、Db Diminished= Db dim7(E,G,+2 Bb)+ +1 Eb dim7(=C,F#,A)の場合、
+	CM7= +1 E minへ向う[0x ]となりモーションが存在しないため、上か下へひとつずらす必要がある。
+	IIm7	bIIdim7	Im7	VIIM7
+		Diminished
+
+
+
+ -- 実践 --
+
+　　■調性世界の構築
+
+
+　□コードのルートはキーアウト感を避けるため、五度以上の跳躍を避ける
 
 
 	exp.	三度音列を意識した飛躍の少ないコードチェンジ
@@ -70,53 +185,11 @@ Gb	Eb	-6	[bottom]
 	'<a>ce'		| 'cea'
 
 
-　□伴奏とスケールアウト感
-
-
-	スケール fcgdaeb であれば、[2x outscale] まで
-
-
-	exp.	伴奏 Dm7 G7 CM7 FM7 で、スケールが fcgdaeb の場合、
-
-	[1x outscale] cgdaebf+ でアウト感が出る。
-	[2x outscale] gdaebf+c+ ぐらいまでなら耐える。
-
-
- -- 解説 --
  
-
-　　■期待と解決のスケール構造
-　　(Chord - Major Scale Conversion 参照)
-
-
-　□解決感とスケール
-
-	fcgdaeb -> cgdaebf+では、[1x outscale]となり、解決感が発生する
-
-　□増四度の調性感
-
-	C#7+6 -> FM700 の場合、[6x bottom]は、[6x outscale]との判別が難しい
-	C#7+6 -> CM7+1 では、[5x bottom]のため、強い期待感
-
-　□コード選択とスケールチェンジの共通性
-
-	基本ケーデンスの場合、
-	Dm700 -> G700 -> CM7+1 -> FM700
-
-	コルトレーンチェンジ化の場合は、
-	BM7+6  ->  D7+1 ->  GM7+2  -> Bb7-3 -> EbM7-2 ->  Am7+1 -> D7+1
-	F# maj     G maj
-        	   G7       CM7
-	                    D maj     Eb maj
-	                              G7       CM7
-	                                       FM7        Em7
-	                                                  Dm7      G7
-
-
 　□コードワークは、クール(スリリング)側に振る
 
-	[bottom]は、穏やかにつながり、期待感
-	[outscale]は、刺激が強く、解決感
+	[bottom]は、穏やかにつながり、調性重力感。
+	[outscale]は、刺激が強く、調性崩壊感。
 
 
 	exp.	中盤は穏やかに、終わりは刺激的
@@ -124,12 +197,13 @@ Gb	Eb	-6	[bottom]
 	| Am7 | Em7 | Dmadd9 |  %  |
 	| Am7 | Em7 | F#m711 |  %  |
 
-	Am7+1 -> Em7+2		[1x outscale]
-	Em7+2 -> Dmadd900	[2x bottom] //2x 期待
-	Dmadd900 -> Am7+1	[1x outscale]
+	+1 Am7 -> +2 Em7	[1x outscale]
+	+2 Em7 -> 00 Dmadd	[2x bottom] //2x キーを強調
+	00 Dmadd9 -> +1 Am7	[1x outscale]
 
-	Am7+1 -> Em7+2		[1x outscale]
-	Em7+2 -> F#m711+4	[2x outscale] //2x 解決
+	+1 Am7 -> +2 Em7	[1x outscale]
+	+2 Em7 -> +4 F#m711	[2x outscale] //2x キーアウト
+
 
 　------
 
