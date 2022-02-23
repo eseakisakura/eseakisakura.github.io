@@ -1,7 +1,7 @@
 ﻿Modal-Interchange-List.txt ------
 
 		Degree		機能	スケール
-// Major //
+// C Major //
 'cegb'	CM7	IM7,6		T	Ionian (n4)
 'dfac'	Dm7	IIm7		SD	Dorian (n6)
 'egbd'	Em7	IIIm7		T	Phrygian (b2)
@@ -11,7 +11,7 @@
 'bdfa'	Bm7b5	VIIm7b5		D	Locrian ((b2)b5)
 
 
-// Natural  minor //
+// A Natural  minor //
 'aceg'	Am7	Im7,m6		Tm	Aeolian
 'bdfa'	Bm7b5	IIm7b5		SDm	Locrian
 'cegb'	CM7	bIIIM7,6	Tm	Ionian
@@ -21,7 +21,7 @@
 'gbdf'	G7	bVII7		SDm	Mixolydian
 
 
-// Harmonic minor //
+// A Harmonic minor //
 'aceg#'	AmM7	ImM7		Tm	Harmonic Minor	
 'bdfa'	Bm7b5	IIm7b5		SDm	Locrian #6	
 'ceg#b'	CM7#5	bIIIM7#5	Tm	 Ionian #5	
@@ -31,7 +31,7 @@
 'g#bdf'	G#dim7	VIIdim7		D	Super Locrian b7	
 
 
-// Melodic minor //
+// A Melodic minor //
 'aceg#'	AmM7	ImM7		Tm	Melodic Minor	
 'bdf#a'	Bm7	IIm7		SDm	Dorian b2	
 'ceg#b'	CM7#5	bIIIM7#5	Tm	Lydian Augmented (#5)	
