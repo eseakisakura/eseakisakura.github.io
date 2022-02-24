@@ -4,13 +4,13 @@
 	 
  　------ 五度圏
 
-C maj.	A min.
+C Maj.	A min.
 
 A#	
 D#	
 G#	
-C#	A#	+7	[x outscale]
-F#	D#	+6
+C#	A#
+F#	D#	+6	[x outscale]
 B	G#	+5
 E	C#	+4
 A	F#	+3
@@ -49,6 +49,7 @@ Gb	Eb	-6	[x bottom]
 
 　□キーアウトとスケールアウト
 　(各minor Conversion.txt 参照)
+
 
 	00 fcgdaeb -> +1 cgdaebf+では、[1x outscale]となり、調性崩壊感が発生する
 
@@ -109,38 +110,49 @@ Gb	Eb	-6	[x bottom]
 
 　□スケールアサインとドミナントモーション
 
+	Altered ====
+
 	G Altered= +5 G# m.mは、G7= -1 D m.mと増四度の組合せとなっており一旦、調性崩壊を行うことになる。
 	この後、CM7= +1 E h.mへ向う[4x bottom]のため、E h.mへの強いドミナントモーションを感じる。
-	VIm7	IIm7	V7	IM7
-			Altered	lyd #2
 
+	VIm7	IIm7	V7	IM7
+			Altered
+
+	Lydian 7th ====
 
 	G lyd 7th= -1 D m.mは、G7= -1 D m.mと同列で、
 	CM7= +1 E minへ向う[2x outscale]となるため、調性崩壊を伴わないのでサブドミナント的に響く。
+
 	IIm7	V7	IM7	IVM7
 		lyd 7th
 
 	Db lyd 7th= +5 G# m.mと、Db7= +5 G# m.mは同列で、
 	CM7= +1 E minへ向かう[4x bottom]となるため、繋がりが綺麗なドミナントモーションとなる。
+
 	bIIIM7	IIm7	bII7	IM7
 			lyd 7th
 
+	Harmonic Minor Perfect 5th Below ====
 
 	G H.mP5b= -3 C h.mは、G7= -3 C h.mと同列で、
 	CM7= +1 E minへ向かう場合、[4x outscale]となるため、キーアウト感が強く出る。
 	Cm7= -2 G h.mへ向かうのであれば、[1x outscale]となるため、綺麗につながる。
+
 	III7	VIm7	IIm7	V7
 	H.mP5b			ComDim
 
 
+	Combination Of Diminished ====
 
-	G Combination Of Diminished= G dim7(=C#,E,+2 Bb)+ 00 G#dim7(=D,F,B)のため、ポリトーナル(多調)感が強く出る。
+	G ComDim= G dim7(=C#,E,+2 Bb)+ 00 G#dim7(=D,F,B)のため、ポリトーナル(多調)感が強く出る。
 	CM7= +1 E minへ向う[1x outscale]+ [1x bottom]となるため、一過的なE minへのドミナントモーションと感じる。
+
 	IIIm7	VI7	IIm7	V7
 		ComDim		ComDim
 
 	同じポリトーナル系統の、Db Diminished= Db dim7(E,G,+2 Bb)+ +1 Eb dim7(=C,F#,A)の場合、
 	CM7= +1 E minへ向う[0x ]となりモーションが存在しないため、上か下へひとつずらす必要がある。
+
 	IIm7	bIIdim7	Im7	VIIM7
 		Diminished
 
@@ -159,12 +171,14 @@ Gb	Eb	-6	[x bottom]
 	　    ａ   c   ｅ	Tonic系統	- 三度音列
 	　  g   ｂ  ｄ   f	Dominant系統	- 三度音列
 
+	CM7
+	'ceg'
 	G7
 	'gb>d<'		| '<gb>d'
 
-
 	'gb>d<' とする場合、前のコードのテンションのような感じとなる。
 	'<gb>d' であれば、違う三度音列の押さえとなって変化を加えられる。
+
 
 	Em
 	'egb'		| '<b>eg'
@@ -177,8 +191,8 @@ Gb	Eb	-6	[x bottom]
  
 　□コードワークは、クール(スリリング)を意識する
 
-	[bottom]は、穏やかにつながり、調性重力感。
-	[outscale]は、刺激が強く、調性崩壊感。
+	[x bottom]は、穏やかにつながり、調性重力感。
+	[x outscale]は、刺激が強く、調性崩壊感。
 
 
 	exp.	中盤は穏やかに、終わりは刺激的
@@ -187,11 +201,11 @@ Gb	Eb	-6	[x bottom]
 	| Am7 | Em7 | F#m711 |  %  |
 
 	+1 Am7 -> +2 Em7	[1x outscale]
-	+2 Em7 -> 00 Dmadd	[2x bottom] //2x キーを強調
+	+2 Em7 -> 00 Dmadd	[2x bottom] // キーを強調
 	00 Dmadd9 -> +1 Am7	[1x outscale]
 
 	+1 Am7 -> +2 Em7	[1x outscale]
-	+2 Em7 -> +4 F#m711	[2x outscale] //2x キーアウト
+	+2 Em7 -> +4 F#m711	[2x outscale] // キーアウト感
 
 
 　------
