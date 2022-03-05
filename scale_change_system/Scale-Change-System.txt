@@ -70,8 +70,8 @@ Gb	Eb	-6	[x bottom]
 　□コードのケーデンスとスケールチェンジレベル
 
 
-	[x bottom]方向への落下は、キーへの意識づけ
-	[x outscale]方向へは、キーアウト感
+	[x bottom]マイナス-方向への落下は、キーへの意識づけ
+	[x outscale]プラス+方向へは、キーアウト感
 
 
 	基本ケーデンスの場合、
@@ -81,7 +81,9 @@ Gb	Eb	-6	[x bottom]
 	コルトレーンチェンジ化の場合は、
 	BM7 ->		D7 ->		GM7 ->		Bb7 ->		EbM7 ->		Am7 ->		D7
 	-6 Eb h.m	-2 G h.m	+2 B h.m	+6(-6) D# h.m	-2 G h.m	+1 E h.m	-2 G h.m
+	3 tonic (aug)
 			V7		IM7
+					3 tonic (aug)
 							V7		IM7
 									bVIM7		IIm7(b5)	V7
 
@@ -123,9 +125,6 @@ Gb	Eb	-6	[x bottom]
 	G lyd 7th= -1 D m.mは、G7= -1 D m.mと同列で、
 	CM7= +1 E minへ向う[2x outscale]となるため、調性崩壊を伴わないのでサブドミナント的に響く。
 
-	IIm7	V7	IM7	IVM7
-		lyd 7th
-
 	Db lyd 7th= +5 G# m.mと、Db7= +5 G# m.mは同列で、
 	CM7= +1 E minへ向かう[4x bottom]となるため、繋がりが綺麗なドミナントモーションとなる。
 
@@ -136,6 +135,7 @@ Gb	Eb	-6	[x bottom]
 
 	G H.mP5b= -3 C h.mは、G7= -3 C h.mと同列で、
 	CM7= +1 E minへ向かう場合、[4x outscale]となるため、キーアウト感が強く出る。
+
 	Cm7= -2 G h.mへ向かうのであれば、[1x outscale]となるため、綺麗につながる。
 
 	III7	VIm7	IIm7	V7
