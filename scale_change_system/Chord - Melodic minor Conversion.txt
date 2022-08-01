@@ -32,11 +32,11 @@ EbmM7	Fm7	GbM7#5		Ab7	Dm7b5	-6	Eb m.m	c g- d a- e- b- f
 
 	//Chord		//疑似五度圏		//適用モード
 
-	CM7#5	00	f+ c g+ d a e b		Clyd #5
-	C7	-2	e b- f+ c g d a		Clyd 7th
-	CmM7	-3	a e- b f c g d		Cm.m
-	Cm7	-5	g d- a e- b- f c	Cdor b2
-	Cm7b5	+4	b- f- c  g- d- a- e-	CAltered
+	CM7#5	00	f+ c g+ d a e b		C lyd #5
+	C7	-2	e b- f+ c g d a		C lyd 7th
+	CmM7	-3	a e- b f c g d		C m.m
+	Cm7	-5	g d- a e- b- f c	C dor b2
+	Cm7b5	+4	b- f- c  g- d- a- e-	C Altered
 
 
 	コードの親和性の定義について

@@ -31,10 +31,10 @@ CbM7	Abm7	Db7	Fm7b5	-6	Eb min	Gb Maj	c- g- d- a- e- b- f
 　------ コードの親和性
 	//Chord		//五度圏		//適用モード
 
-	CM7	+1	c g [d] (a) e b [f+]		Clyd
-	C7	-1	b- [f] c g [d] (a) e		Cmixo
-	Cm7	-2	e- b- [f] c g [d] (a)		Cdor
-	Cm7b5	-5	g- [d-] (a-) e- b- [f] c	Cloc
+	CM7	+1	c g [d] (a) e b [f+]		C lyd
+	C7	-1	b- [f] c g [d] (a) e		C mixo
+	Cm7	-2	e- b- [f] c g [d] (a)		C dor
+	Cm7b5	-5	g- [d-] (a-) e- b- [f] c	C loc
 
 	※[5,7度の倍音成分], (補完の成分)
 

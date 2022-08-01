@@ -43,12 +43,10 @@
 
 　------ 広義のモーダルインターチェンジ
 　
-ダイアトニックスケールにおいて、
-コード機能が同系列であれば、
+ダイアトニックスケールにおいて、コード機能が同系列であれば、
 
 このハーモニー(及びスケール)は、入れ換え可能
 その代理コードのハーモニー(及びスケール)も入れ換えて良い
-
 
 
 exp.	ドミナント代理
@@ -56,16 +54,17 @@ exp.	ドミナント代理
 Major			Harmonic minor			Melodic minor
 V7 / D / Mixolydian	V7 / D / Hm Perfect5 Below	IV7 / D(SDm) / Lydian 7th
 							VIIm7b5 / D / Altered	
-
-
-II [SD]			V [D]			I [T]
-Dm7			G7			CM7
-Dorian			Altered			Ionian
-			HP5B
-			Lydian 7th
-
+II [SD]		V [D]		I [T]
+Dm7		G7		CM7
+Dorian		Altered		Ionian
+		HP5B
+		Lydian 7th
 
 　------
 
+　https://twitter.com/huangbaihonglan 
+　= 黄白紅藍玄 =
+
+　https://eseakisakura.wordpress.com/about
 　Copyright(C) 04coreworks
 

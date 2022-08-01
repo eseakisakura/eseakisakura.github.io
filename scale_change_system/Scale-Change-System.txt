@@ -70,20 +70,20 @@ Gb	Eb	-6	[x bottom]
 　□コードのケーデンスとスケールチェンジレベル
 
 
-	[x bottom]マイナス-方向への落下は、キーへの意識づけ
-	[x outscale]プラス+方向へは、キーアウト感
+	[x bottom][-方向]マイナスへの落下は、キーへの意識づけ
+	[x outscale][+方向]プラスは、キーアウト感
 
 
 	基本ケーデンスの場合、
-	Dm7 ->		G7 ->		CM7 ->		FM7
-	00 C Maj	00 C Maj	+1 G Maj	00 C Maj
+	Bm7b5 ->	Em7 ->		Am7 ->		Dm7 ->		G7 ->		CM7 ->		FM7
+	00 C Maj	+2 D Maj	+1 G Maj	00 C Maj	00 C Maj	+1 G Maj	00 C Maj
 
 	コルトレーンチェンジ化の場合は、
 	BM7 ->		D7 ->		GM7 ->		Bb7 ->		EbM7 ->		Am7 ->		D7
 	-6 Eb h.m	-2 G h.m	+2 B h.m	+6(-6) D# h.m	-2 G h.m	+1 E h.m	-2 G h.m
-	3 tonic (aug)
+	3 tonic system(aug)
 			V7		IM7
-					3 tonic (aug)
+					3 tonic system(aug)
 							V7		IM7
 									bVIM7		IIm7(b5)	V7
 
@@ -163,7 +163,7 @@ Gb	Eb	-6	[x bottom]
 　　■調性世界の構築
 
 
-　□コードのルートは、五度以上の跳躍を避ける
+　□コードのルートは、五度以上の跳躍は避ける
 
 
 	exp.	三度音列を意識したキーアウト感の少ないコードチェンジ
