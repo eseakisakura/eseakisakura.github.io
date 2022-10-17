@@ -2,6 +2,6 @@
 
 <h4>
 ホームページへのリンク <br/>
-・<a href="https://eseakisakura.github.io/">Home Page</a><br/>
+・<a href="https://eseakisakura.github.io/home.html">Home Page</a><br/>
 </h4>
  
