@@ -20,6 +20,8 @@ ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	-5	Bb h.m	g- d- a  e- b- f c
 
 
 	※	疑似五度圏は左から3つめが+となる
+
+
 　------
 
 		A	B	C		D	E	F	G
@@ -27,7 +29,7 @@ ion #5		dor #4	H.m	H.mP5b	loc #6			Sloc b7			lyd #2	-5	Bb h.m	g- d- a  e- b- f c
 		H.m	loc #6	ion #5		dor #4	H.mP5b	lyd #2	Sloc b7(ComDim)
 
 
-	exp. G h.mP5bは -3 C h.m
+	exp. G h.mP5b(完全五度下のh.m)は、 level:-3 にある C h.mと等価
 
 　------
 

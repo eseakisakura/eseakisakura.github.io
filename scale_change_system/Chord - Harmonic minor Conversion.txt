@@ -2,32 +2,33 @@
 
 ■□Chord - Harmonic minor Conversion
 
-Degree								Level	Key	Circle of 5th
-ImM7	IIm7b5	bIIIM7#5	IVm7	V7	bVIM7	VIIdim7
+Degree							Level	Key	Circle of 5th
+ImM7	IIm7b5	bIIIM7#5IVm7	V7	bVIM7	VIIdim7
+00	00	00	00	00	00	00
+D#mM7	E#m7b5	F#M7#5	G#m7	A#7	BM7	Ddim7	+6	D# h.m	b f+ c++ g+ d+ a+ e+
+G#mM7	A#m7b5	BM7#5	C#m7	D#7	EM7	Gdim7	+5	G# h.m	e b f++ c+ g+ d+ a+
+C#mM7	D#m7b5	EM7#5	F#m7	G#7	AM7	Cdim7	+4	C# h.m	a e b+ f+ c+ g+ d+	
+F#mM7	G#m7b5	AM7#5	Bm7	C#7	DM7	Fdim7	+3	F# h.m	d a e+ b f+ c+ g+
+BmM7	C#m7b5	DM7#5	Em7	F#7	GM7	A#dim7	+2	B h.m	g d a+ e b f+ c+
+EmM7	F#m7b5	GM7#5	Am7	B7	CM7	D#dim7	+1	E h.m	c g d+ a e b f+	
+AmM7	Bm7b5	CM7#5	Dm7	E7	FM7	G#dim7	00	A h.m	f c g+ d a e b
+DmM7	Em7b5	FM7#5	Gm7	A7	BbM7	C#dim7	-1	D h.m	b- f c+ g d a e
+GmM7	Am7b5	BbM7#5	Cm7	D7	EbM7	F#dim7	-2	G h.m	e- b- f+ c g d a
+CmM7	Dm7b5	EbM7#5	Fm7	G7	AbM7	Bdim7	-3	C h.m	a- e- b  f c g d
+FmM7	Gm7b5	AbM7#5	Bbm7	C7	DbM7	Edim7	-4	F h.m	d- a- e  b- f c g
+BbmM7	Cm7b5	DbM7#5	Ebm7	F7	GbM7	Adim7	-5	Bb h.m	g- d- a  e- b- f c
+EbmM7	Fm7b5	GbM7#5	Abm7	Bb7	BM7	Ddim7	-6	Eb h.m	c- g- d a- e- b- f
 
-D#mM7	E#m7b5	F#M7#5		G#m7	A#7	BM7	Ddim7	+6	D# h.m	b f+ c++ g+ d+ a+ e+
-G#mM7	A#m7b5	BM7#5		C#m7	D#7	EM7	Gdim7	+5	G# h.m	e b f++ c+ g+ d+ a+
-C#mM7	D#m7b5	EM7#5		F#m7	G#7	AM7	Cdim7	+4	C# h.m	a e b+ f+ c+ g+ d+	
-F#mM7	G#m7b5	AM7#5		Bm7	C#7	DM7	Fdim7	+3	F# h.m	d a e+ b f+ c+ g+
-BmM7	C#m7b5	DM7#5		Em7	F#7	GM7	A#dim7	+2	B h.m	g d a+ e b f+ c+
-EmM7	F#m7b5	GM7#5		Am7	B7	CM7	D#dim7	+1	E h.m	c g d+ a e b f+	
-AmM7	Bm7b5	CM7#5		Dm7	E7	FM7	G#dim7	00	A h.m	f c g+ d a e b
-DmM7	Em7b5	FM7#5		Gm7	A7	BbM7	C#dim7	-1	D h.m	b- f c+ g d a e
-GmM7	Am7b5	BbM7#5		Cm7	D7	EbM7	F#dim7	-2	G h.m	e- b- f+ c g d a
-CmM7	Dm7b5	EbM7#5		Fm7	G7	AbM7	Bdim7	-3	C h.m	a- e- b  f c g d
-FmM7	Gm7b5	AbM7#5		Bbm7	C7	DbM7	Edim7	-4	F h.m	d- a- e  b- f c g
-BbmM7	Cm7b5	DbM7#5		Ebm7	F7	GbM7	Adim7	-5	Bb h.m	g- d- a  e- b- f c
-EbmM7	Fm7b5	GbM7#5		Abm7	Bb7	BM7	Ddim7	-6	Eb h.m	c- g- d a- e- b- f
 
+	※	疑似五度圏は、Circle of 5thの左から3つめを+とする
 
-	※	疑似五度圏は左から3つめを+とする
 　------
 
 		A	B	C		D	E	F	G
 	H.min	ImM7	IIm7b5	bIIIM7#5	IVm7	V7	bVIM7	VIIdim7
 		H.m	loc #6	ion #5		dor #4	H.mP5b	lyd #2	Sloc b7(ComDim)
 
-　------ コードの親和性
+　------ コードの親和性 Level
 	//Chord		//疑似五度圏		//適用モード
 
 	CM7	+1	c g d+ a e b f+		C lyd #2
@@ -38,7 +39,8 @@ EbmM7	Fm7b5	GbM7#5		Abm7	Bb7	BM7	Ddim7	-6	Eb h.m	c- g- d a- e- b- f
 	Cm7b5	-5	g- d- a  e- b- f c	C loc #6
 	Cdim7	+4	b-- f- c g- d- a- e-	C S.loc b7
 
-	※	親和性についてはダイアトニック通りアサイン
+
+	※全て違うコードなので、コードとスケールの親和性によるぶつかりはない。
 
 　------
 

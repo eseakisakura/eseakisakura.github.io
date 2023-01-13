@@ -21,15 +21,17 @@ lyd #5		lyd 7th	M.m	mixo b6	dor b2	loc n9		Altered				-5	Bb m.m	g d- a e- b- f c
 
 
 	※	疑似五度圏は左から1,3つめが+となる
+
+
 　------
 		A	B	C		D	E	F	G
 	A M.min	ImM7	IIm7	bIIIM7#5	IV7	V7	VIm7b5	VIIm7b5
 		M.m	dor b2	lyd #5		lyd 7th	mixo b6	loc n9	Altered
 
 
-	exp.	GAltered, Dblyd 7th は、+5 G# m.m
-		Glyd 7th, DbAltered は、-1 D m.m
-		Bloc n9 は、-1 D m.m
+	exp.	G Altered, Db lyd 7th は、level:+5 にある G# m.mと等価
+		G lyd 7th, Db Altered は、level:-1 にある D m.mと等価
+		             B loc n9 は、level:-1 にある D m.mと等価
 
 　------
 
