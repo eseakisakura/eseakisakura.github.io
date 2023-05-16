@@ -1,61 +1,94 @@
-﻿Scale-Change-System.txt ------
+﻿Scale-Change-System.txt ------ 
 
-　// Scale Change System  // 
-	 
+　// Scale Change System  //
+
  　------ 五度圏
 
-C Maj.	A min.
+C Maj.			A min.			x
 
-A#	
-D#	
-G#	
-C#	A#
-F#	D#	+6	[x outscale]
-B	G#	+5
-E	C#	+4
-A	F#	+3
-D	B	+2
-G	E	+1
-C	A	00
-F	D	-1
-Bb	G	-2
-Eb	C	-3
-Ab	F	-4
-Db	Bb	-5
-Gb	Eb	-6	[x bottom]
-	Ab	
-	Db	
-	Gb	
+A#
+D#
+G#
+C#			A#
+F#	[x outscale]	D#	[x top]		+6
+B			G#			+5
+E			C#			+4
+A			F#			+3
+D			B			+2
+G			E			+1
+C			A			00
+F			D			-1
+Bb			G			-2
+Eb			C			-3
+Ab			F			-4
+Db			Bb			-5
+Gb	[x bottom]	Eb	[x outscale]	-6
+			Ab
+			Db
+			Gb
 
 
-	-- 概念 -- 
+	-- 概念 --
+	ダイアトニックにおける調性感の構築
 
 　　■セオリー
+　　調性崩壊[outscale]と調性引力(調性重力)[top,bottom]
 
 
-　□滑らかな転調は、五度圏の[x bottom]方向のみ
+
+　□メジャースケールにおける滑らかな転調は、五度圏の[x bottom]方向のみ
+　　(マイナースケールにおいては、[x top]方向のみ)
 
 
-	-3 C -> -6 Eb	[3x bottom]	3つダウンと感じる
-	-3 C -> +1 E	[4x outscale]	8つダウンではなく、4つアップと感じる
+	Maj.
+	00 C -> -3 Eb	[3x bottom]	3つダウンと感じる
+	00 C -> +4 E	[4x outscale]	8つダウンではなく、4つアップと感じる
 
 
-	exp.	C -> Eb -> E -> C とすれば、滑らかにつながる。
+	exp.	Maj. C -> Eb -> E -> C とすれば、滑らかにつながる。
 
-	-3 C -> -6 Eb	[3x bottom]
-	-6 Eb -> -11 E	[5x bottom]
-	+1 E -> -3 C	[4x bottom]
-
-
-　□キーアウトとスケールアウト
-　(各minor Conversion.txt 参照)
+	00 C -> -3 Eb	[3x bottom]
+	-3 Eb -> +4(-8) E	[5x bottom]
+	+4 E -> 00 C	[4x bottom]
 
 
-	00 fcgdaeb -> +1 cgdaebf+では、[1x outscale]となり、調性崩壊感が発生する
+	exp.	Min. C -> E -> Eb -> C とすれば、滑らかにつながる。
+
+	-3 C -> +1 E	[4x top]
+	+1 E -> -6(+6) Eb	[5x top]
+	-6 Eb -> -3 C	[3x top]
+
+
+	五度圏を上側に積み上げたものが、"f cgdaeb" メジャースケールのため、
+	転調は、下側にシフトしないと調性感が維持しずらい。
+
+
+	これを下側に積んだものが、"a-e-b-f cgd" マイナースケールのため、
+	転調は、上側にシフトすると良い。
+
+
+	========					========
+
+		ダイアトニック調性世界を構築する上で、
+		メジャーなのか、マイナーなのかを、意識的に使い分ける必要がある。
+
+		Maj. におけるキーアウトoutscaleは、マイナー感でもあり、
+		Min. におけるキーアウトoutscaleは、メジャー感とも言える。
+
+		キーアウト調性崩壊を、エッセンスとして使用することでより魅力的に、
+		この度が過ぎれば、醜いだけとなる。
+
+		※ 以降、Maj. のみの説明とする。
+
+	========					========
 
 
 　□伴奏とスケールアウト
 
+　(各minor Conversion.txt 参照)
+
+
+	00 fcgdaeb -> +1 cgdaebf+では、[1x outscale]となり、キーアウト(調性崩壊)が緊張感を生む
 
 	スケール 00 fcgdaeb であれば、[2x outscale] まで交換できる
 
@@ -90,10 +123,8 @@ Gb	Eb	-6	[x bottom]
 
  -- 理論解説 --
 
-
 　　■調性崩壊感[outscale]と調性重力感[bottom]
 　　(各minor Conversion.txt 参照)
-
 
 　□増四度の浮遊感
 
@@ -183,12 +214,12 @@ Gb	Eb	-6	[x bottom]
 	Em
 	'egb'		| '<b>eg'
 
-	
+
 	Am
 	'<a>ce'		| 'cea'
 
 
- 
+
 　□コードワークは、クール(スリリング)を意識する
 
 	[x bottom]は、穏やかにつながり、調性重力感。
@@ -210,8 +241,9 @@ Gb	Eb	-6	[x bottom]
 
 　------
 
-　https://twitter.com/huangbaihonglan 
+　https://twitter.com/huangbaihonglan
 　= 黄白紅藍玄 =
 
 　https://eseakisakura.wordpress.com/about
 　Copyright(C) 04coreworks
+ 
