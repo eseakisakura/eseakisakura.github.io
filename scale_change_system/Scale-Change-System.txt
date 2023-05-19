@@ -28,7 +28,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 			Gb
 
 
-	-- 概念 --
+	-- 調性感の概念 --
 	ダイアトニックにおける調性感の構築
 
 
@@ -188,7 +188,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	Combination Of Diminished ====
 
-	G ComDim(= G dim7(=C#,E,+2 Bb[1x top])+ 00 G#dim7[1x bottom](=D,F,B))のため、ポリトーナル(多調)感が出る。
+	G ComDim(= G dim7(=C#,E,+2 Bb[1x top])+ 00 G#dim7[1x bottom](=D,F,B))と、上下から挟み込むため、ポリトーナル(多調)感が出る。
 	CM7(= +1 E minへ向うため、一過的なE minへのドミナントモーションと感じる。
 
 	IIIm7	VI7	IIm7	V7
@@ -205,18 +205,20 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 
- -- 実践 --
-
-　　■調性世界の構築
+	-- 調性感の実践 --
 
 
-　□コードのルートは、五度以上の跳躍は避ける
+　　■セオリー
+　　調性世界の構築
 
 
-	exp.	三度音列を意識したキーアウト感の少ないコードチェンジ
+　□コードは三度音列を意識しつつ、ルートは五度以上の跳躍は避ける
 
-	　    ａ   c   ｅ	Tonic系統	- 三度音列
-	　  g   ｂ  ｄ   f	Dominant系統	- 三度音列
+
+	exp.	三度音列を意識した、キーアウト感の少ないコードチェンジ
+
+	　    ａ   c   ｅ	Tonic系統 - 三度音列
+	　  g   ｂ  ｄ   f	Dominant系統 - 三度音列
 
 	CM7
 	'ceg'
@@ -229,7 +231,6 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	Em
 	'egb'		| '<b>eg'
-
 
 	Am
 	'<a>ce'		| 'cea'
@@ -253,6 +254,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	+1 Am7 -> +2 Em7	[1x outscale]
 	+2 Em7 -> +4 F#m711	[2x outscale] // キーアウト感
+
 
 
 　------
