@@ -16,7 +16,7 @@ E			C#			+4
 A			F#			+3
 D			B			+2
 G			E			+1
-C			A			00
+C	[x0 ]		A	[x0 ]		00
 F			D			-1
 Bb			G			-2
 Eb			C			-3
@@ -33,7 +33,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 　　■セオリー
-　　調性崩壊[outscale]と調性引力(調性重力)[top,bottom]　　
+　　調性崩壊[outscale]と調性引力(重力)[top,bottom]　　
 
 
 
@@ -41,19 +41,19 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 　　(マイナースケールにおいては、[x top]方向のみ)
 
 
-	Maj.
+	Maj.scale
 	00 C  ->	-3 Eb	[3x bottom]	3つダウンと感じる
 	00 C  ->	+4 E	[4x outscale]	8つダウンではなく、4つアップと感じる
 
 
-	exp.	Maj. C -> Eb -> E -> C とすれば、滑らかにつながる。
+	Maj.exp.	C -> Eb -> E -> C とすれば、滑らかにつながる。
 
 	00 C  ->	-3 Eb		[3x bottom]
 	-3 Eb ->	+4(-8) E	[5x bottom]
 	+4 E  ->	00 C		[4x bottom]
 
 
-	exp.	Min. C -> E -> Eb -> C とすれば、滑らかにつながる。
+	Min.exp.	C -> E -> Eb -> C とすれば、滑らかにつながる。
 
 	-3 C  ->	+1 E		[4x top]
 	+1 E  ->	-6(+6) Eb	[5x top]
@@ -64,7 +64,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	転調は、下側にシフトしないと調性感が維持しずらい。
 
 
-	これを下側に積んだものが、"a-e-b-f cgd" マイナースケールのため、
+	これを下側に積んだものが、"a-e-b-f cgd" とマイナースケールため、
 	転調は、上側にシフトすると調性感が崩れない。
 
 
@@ -74,11 +74,9 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 		diatonicの調性世界を構築する上で、
 		メジャーなのか、マイナーなのか、意識的に使い分ける必要がある。
 
-		Maj. におけるキーアウト[x outscale]は、マイナー的でもあり、
-		Min. におけるキーアウト[x outscale]は、メジャー感とも言える。
-
 		キーアウト(調性崩壊)をエッセンスとすれば、
 		より魅力的になるが、この度が過ぎれば、醜いだけとなる。
+
 
 		※ 以降、基本的にはMaj. のみの説明とする。
 
@@ -106,22 +104,29 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 　□スケールアウト感から見たコードのケーデンス
 
 
-	[x bottom][-方向]マイナスへの落下は、キーへの意識づけ
-	[x outscale][+方向]プラスは、キーアウト感
+	[x bottom]への落下は、キーへの意識づけ
 
 
 	基本ケーデンスの場合、
-	00 C Maj	+2 D Maj	+1 G Maj	00 C Maj	00 C Maj	+1 G Maj	00 C Maj
-	Bm7b5 ->	Em7 ->		Am7 ->		Dm7 ->		G7 ->		CM7 ->		FM7
+	Bm7b5		Em7		Am7		Dm7		G7		CM7		FM7
+	00 C Maj ->	+2 D Maj ->	+1 G Maj ->	00 C Maj ->	00 C Maj ->	+1 G Maj ->	00 C Maj
+			[2x outscale]	[1x bottom]	[1x bottom]	[x0 ]		[1x outscale]	[1x bottom]
 
-	コルトレーンチェンジ化の場合は、
-	-6 Eb h.m	-2 G h.m	+2 B h.m	+6(-6) D# h.m	-2 G h.m	+1 E h.m	-2 G h.m
-	BM7 ->		D7 ->		GM7 ->		Bb7 ->		EbM7 ->		Am7 ->		D7
+
+	[x top]への引力は、マイナーキーへの意識づけ
+
+	コルトレーンチェンジ化の場合、
+	BM7		D7		GM7		Bb7		EbM7		Am7		D7
+	-6 Eb h.m ->	-2 G h.m ->	+2 B h.m ->	+6(-6)D# h.m ->	-2 G h.m ->	+1 E h.m ->	+1 G Maj
+			[4x top]	[4x top]	[4x top]	[4x top]	[3x top]	[x0 ]
+	IM7
 	3 tonic system(aug)
 			V7		IM7
 					3 tonic system(aug)
 							V7		IM7
-									bVIM7		IIm7(b5)	V7
+									bVIM7		IIm7(b5)
+											Modal-Interchange
+											IIm7		V7
 
 
 	-- コード理論と調性感 --
@@ -142,8 +147,8 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 　□同主短調の借用和音(SDM)は、ダイアトニックの "-3 C Harmonic minor" への一時転調と考える。
 
 	AbM7 ->	Fm7 ->	Dm7b5 ->G7 ->	CM7
-	bVIM7	IVm7	IIm7b5	V7		-3 C H.m
-				V7		00 C Maj
+	bVIM7	IVm7	IIm7b5			-3 C H.m
+			IIm7	V7		00 C Maj
 					IM7	+1 G Maj [1x outscale]
 
 
@@ -152,35 +157,44 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	Altered ====
 
-	G Altered(= +5 G# m.m)[4x bottom]は、G7(= -3 C m.m)[4x top]と、上下から挟み込むため、ポリトーナル(多調)感が強く出る。
-	CM7(= +1 E min)へ向うのため、E minへの強いドミナントモーションを感じる。
+	G Alteredは"マイナーダイアトニック"のため、Dm7(II-Vモーション)であると繋がりが良い。
+
+	
+	Alteredの理論は、逆循環として見るとわかりやすい。
+	G Altered(+5 G# m.m)から、Dm7(-3 C m.m)[4x top]、Am7(-2 G m.m)[1x top]となるため、調性引力が強い。
 
 	VIm7	IIm7	V7	IM7
 			Altered
 
+	これを反転して使うため、強い調性重力となる。
+
+
+
 	Lydian 7th ====
 
-	G lyd 7th(= -1 D m.m)[2x top]は、G7(= -1 D m.m)[2x top]と同列で、
-	CM7(= +1 E min)へ向うため、調性崩壊を伴わないのでサブドミナント的に響く。
-
-	(bIIIM7	IIm7	V7	IM7	)
-	(		lyd 7th		)
-
-	Db lyd 7th(= +5 G# m.m)[4x bottom]と、Db7(= +5 G# m.m)[4x bottom]は同列で、
-	CM7(= +1 E min)へ向かうため、繋がりが綺麗なドミナント的モーションとなる。
+	Db lyd 7th(+5 G# m.m)は、CM7(+1 G Maj)[4x bottom]へ向かうため、
+	繋がりが綺麗なドミナントモーションとなる。
 
 	bIIIM7	IIm7	bII7	IM7
 			lyd 7th
 
+	G lyd 7th(-1 D m.m)は、CM7(+1 G Maj)[2x top]へ向うため、
+	サブドミナント的に響く。
+
+	bIIIM7	IIm7	V7	IM7
+			lyd 7th
+
+
 	Harmonic Minor Perfect 5th Below ====
 
-	G H.mP5b(= -3 C h.m)[4x top]は、G7(= -3 C h.m)[4x top]と同列で、
-	CM7= +1 E minへ向かう場合、となるため、サブドミナント感が強く出る。
+	G H.mP5b(-3 C h.m)は、CM7(+1 G Maj)[4x top]へ向かうため、
+	アウトスケール感が強く出る。
 
 	III7	VIM7	VIIm7	IV7
 	H.mP5b			ComDim
 
-	Cm7= -2 G h.mへ向かうのであれば、[1x top]となるため、サブドミナント的につながる。
+	G H.mP5b(-3 C h.m)から、Cm7(-2 G h.m)[1x top]となるため、
+	サブドミナント的につながる。
 
 	III7	VIm7	IIm7	V7
 	H.mP5b			ComDim
@@ -188,8 +202,10 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	Combination Of Diminished ====
 
-	G ComDim(= G dim7(=C#,E,+2 Bb[1x top])+ 00 G#dim7[1x bottom](=D,F,B))と、上下から挟み込むため、ポリトーナル(多調)感が出る。
-	CM7(= +1 E minへ向うため、一過的なE minへのドミナントモーションと感じる。
+	G ComDim(= G dim7(=G,C#,E,+2 Bb)[1x top]+ G#dim7(=00 G#,D,F,B)[1x bottom]は、
+	CM7(+1 G Maj)を上下から挟み込むため、ポリトーナル(多調)感が出る。
+
+	調性崩壊のち安定へと向かうので、ドミナントモーションと感じる。
 
 	IIIm7	VI7	IIm7	V7
 		ComDim		ComDim
@@ -197,10 +213,10 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	Diminished ====
 
-	同じポリトーナル系統の、Db Diminished(= Db dim7(E,G,+2 Bb[1x bottom])+ +1 Eb dim7[0x ](=C,F#,A))の場合、
-	CM7(= +1 E min)と同じレベルがあるため、ドミナントモーションが存在しない。
+	Db Diminished(= Db dim7(Db,E,G,+2 Bb)[1x bottom]+ Eb dim7(=+1 Eb,C,F#,A)[x0 ]の場合、
+	CM7(+1 E min)と同じレベルもあり、調性崩壊を伴わないため、ドミナントモーション的に響く。
 
-	IIm7	bIIdim7	Im7	VIIM7
+	IIm7	bIIdim7		Im7	VIIM7
 		Diminished
 
 
@@ -218,7 +234,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	exp.	三度音列を意識した、キーアウト感の少ないコードチェンジ
 
 	　    ａ   c   ｅ	Tonic系統 - 三度音列
-	　  g   ｂ  ｄ   f	Dominant系統 - 三度音列
+	　  g   ｂ  ｄ   f	(Sub)Dominant系統 - 三度音列
 
 	CM7
 	'ceg'
