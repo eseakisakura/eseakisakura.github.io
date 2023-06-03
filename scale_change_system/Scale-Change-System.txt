@@ -71,8 +71,8 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	========					========
 
-		diatonicの調性世界を構築する上で、
-		メジャーなのか、マイナーなのか、意識的に使い分ける必要がある。
+		diatonicの調性世界(C Maj./A min./A h.m/A m.m)を構築する上で、
+		今、メジャーなのか、マイナーなのか、意識的に使い分ける必要がある。
 
 		キーアウト(調性崩壊)をエッセンスとすれば、
 		より魅力的になるが、この度が過ぎれば、醜いだけとなる。
@@ -144,12 +144,13 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 
-　□同主短調の借用和音(SDM)IVm7は、ダイアトニックの "-3 C Harmonic minor" への一時転調と考える。
+　□同主短調 "C min." の借用和音(SDM)IVm7は、
+　ダイアトニックにおける "-3 C Harmonic minor" へのセカンダリー(一時転調)と考える。
 
 	AbM7 ->	Fm7 ->	Dm7b5 ->G7 ->	CM7
 	bVIM7	IVm7	IIm7b5			-3 C H.m
 			IIm7	V7		00 C Maj
-					IM7	+1 G Maj [1x outscale]
+					IM7	+1 G Maj
 
 
 
@@ -197,7 +198,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	G H.mP5b	Dm7	Am7
 
 	最後に、G H.mP5b(-3 C h.m)から、CM7(+1 E h.m)[4x top]へ向うと、
-	解決感が出ず、リセット(調性崩壊)された感じになる。(セカンダリー感が強く出る)
+	解決感が出ず、リセット(調性崩壊)された感じになる。(リスタート的なセカンダリー感が強く出る)
 
 
 	VIm7	IIm7 	V7	IM7	IVM7
@@ -209,7 +210,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	G ComDim(= G dim7(=G,C#,E,+2 Bb)[1x top]+ G#dim7(=00 G#,D,F,B)[1x bottom]は、
 	CM7(+1 G Maj)を上下から挟み込むため、ポリトーナル(多調)感が出る。
 
-	調性崩壊のち安定へと向かうので、セカンダリードミナントに向いている。
+	調性崩壊のち安定へと向かうので、セカンダリードミナント(移調)に向いている。
 
 	IIIm7	VI7	IIm7	V7	IM7	FM7
 		ComDim		ComDim
