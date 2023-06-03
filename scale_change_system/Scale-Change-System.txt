@@ -164,13 +164,13 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	G Altered(+5 G# m.m)から、Dm7(-3 C m.m)[4x top]、Am7(-2 G m.m)[1x top]となるため、調性引力が強い。
 	G Altered	Dm7	Am7
 
-	これを反転して使うため、強い調性重力となる。
+	これを反転して使うため、調性重力となる。
 
 	VIm7	IIm7	V7	IM7
 			Altered
 
 	最終的に、G Altered(+5 G# m.m)から、CM7(+1 G Maj)[4x bottom]へ向うので、
-	メジャースケールの解決感が強く出る。
+	メジャースケールの解決感が得られる。
 
 
 
