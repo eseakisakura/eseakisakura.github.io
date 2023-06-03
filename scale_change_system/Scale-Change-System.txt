@@ -144,7 +144,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 
-　□同主短調 "C min." の借用和音(SDM)IVm7は、
+　□同主短調である "C min." の借用和音(SDM) "IVm7" は、
 　ダイアトニックにおける "-3 C Harmonic minor" へのセカンダリー(一時転調)と考える。
 
 	AbM7 ->	Fm7 ->	Dm7b5 ->G7 ->	CM7
@@ -194,11 +194,11 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	Harmonic Minor Perfect 5th Below ====
 
 	H.mP5bの理論も、逆循環として見るとわかりやすい。
-	G H.mP5b(-3 C h.m)から、Dm7(00 A h.m)[3x top]、Am7(+1 E h.m)[1x top]となるため、調性引力がある。
+	G H.mP5b(-3 C h.m)から、Dm7(00 A h.m)[3x top]、Am7(+1 E h.m)[1x top]となるので、調性引力がある。
 	G H.mP5b	Dm7	Am7
 
-	最後に、G H.mP5b(-3 C h.m)から、CM7(+1 E h.m)[4x top]へ向うと、
-	解決感が出ず、リセット(調性崩壊)された感じになる。(リスタート的なセカンダリー感が強く出る)
+	最後に、G H.mP5b(-3 C h.m)から、CM7(+1 E h.m)[4x top]へ向うため、
+	解決感がなく、リセット(調性崩壊)された感じになる。(セカンダリー感が強くなり、リスタート的に映る)
 
 
 	VIm7	IIm7 	V7	IM7	IVM7
@@ -210,7 +210,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	G ComDim(= G dim7(=G,C#,E,+2 Bb)[1x top]+ G#dim7(=00 G#,D,F,B)[1x bottom]は、
 	CM7(+1 G Maj)を上下から挟み込むため、ポリトーナル(多調)感が出る。
 
-	調性崩壊のち安定へと向かうので、セカンダリードミナント(移調)に向いている。
+	調性崩壊のち、安定へと向かうので、セカンダリードミナント(移調)に向いている。
 
 	IIIm7	VI7	IIm7	V7	IM7	FM7
 		ComDim		ComDim
