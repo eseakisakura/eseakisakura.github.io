@@ -218,9 +218,9 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	Diminished ====
 
 	Db Diminished(= Db dim7(Db,E,G,+2 Bb)[1x bottom]+ Eb dim7(=+1 Eb,C,F#,A)[x0 ]の場合、
-	CM7(+1 E min)と同じレベルがあり、調性崩壊も伴わないため、セカンダリードミナント的に響く。
+	CM7(+1 G Maj)と同じレベルがあり、調性崩壊も伴わないため、セカンダリードミナント的に響く。
 
-	IIm7	bIIdim7		Im7	VIIM7
+	IIm7	bIIdim7		IM7
 		Diminished
 
 
