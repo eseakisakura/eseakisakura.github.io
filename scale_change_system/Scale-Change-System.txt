@@ -170,7 +170,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 			Altered
 
 	最終的に、G Altered(+5 G# m.m)から、CM7(+1 G Maj)[4x bottom]へ向うので、
-	メジャースケールの解決感が得られる。
+	メジャースケールのドミナントモーション(解決感)が得られる。
 
 
 
@@ -209,16 +209,16 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	G ComDim(= G dim7(=G,C#,E,+2 Bb)[1x top]+ G#dim7(=00 G#,D,F,B)[1x bottom]は、
 	CM7(+1 G Maj)を上下から挟み込むため、ポリトーナル(多調)感が出る。
 
-	調性崩壊のち安定へと向かうので、ドミナントモーションと感じる。
+	調性崩壊のち安定へと向かうので、セカンダリードミナントに向いている。
 
-	IIIm7	VI7	IIm7	V7
+	IIIm7	VI7	IIm7	V7	IM7	FM7
 		ComDim		ComDim
 
 
 	Diminished ====
 
 	Db Diminished(= Db dim7(Db,E,G,+2 Bb)[1x bottom]+ Eb dim7(=+1 Eb,C,F#,A)[x0 ]の場合、
-	CM7(+1 E min)と同じレベルもあり、調性崩壊を伴わないため、ドミナントモーション的に響く。
+	CM7(+1 E min)と同じレベルがあり、調性崩壊も伴わないため、セカンダリードミナント的に響く。
 
 	IIm7	bIIdim7		Im7	VIIM7
 		Diminished
