@@ -38,7 +38,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 　□メジャースケールにおける滑らかな転調は、五度圏の[x bottom]方向のみ
-　　(マイナースケールにおいては、[x top]方向のみ)
+　(マイナースケールにおいては、[x top]方向のみ)
 
 
 	Maj.scale
@@ -144,7 +144,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 
-　□同主短調の借用和音(SDM)は、ダイアトニックの "-3 C Harmonic minor" への一時転調と考える。
+　□同主短調の借用和音(SDM)IVm7は、ダイアトニックの "-3 C Harmonic minor" への一時転調と考える。
 
 	AbM7 ->	Fm7 ->	Dm7b5 ->G7 ->	CM7
 	bVIM7	IVm7	IIm7b5			-3 C H.m
@@ -162,11 +162,15 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	
 	Alteredの理論は、逆循環として見るとわかりやすい。
 	G Altered(+5 G# m.m)から、Dm7(-3 C m.m)[4x top]、Am7(-2 G m.m)[1x top]となるため、調性引力が強い。
+	G Altered	Dm7	Am7
+
+	これを反転して使うため、強い調性重力となる。
 
 	VIm7	IIm7	V7	IM7
 			Altered
 
-	これを反転して使うため、強い調性重力となる。
+	最終的に、G Altered(+5 G# m.m)から、CM7(+1 G Maj)[4x bottom]へ向うので、
+	メジャースケールの解決感が強く出る。
 
 
 
@@ -179,7 +183,8 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 			lyd 7th
 
 	G lyd 7th(-1 D m.m)は、CM7(+1 G Maj)[2x top]へ向うため、
-	サブドミナント的に響く。
+	アウトスケール感が強い。
+
 
 	bIIIM7	IIm7	V7	IM7
 			lyd 7th
@@ -187,17 +192,16 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	Harmonic Minor Perfect 5th Below ====
 
-	G H.mP5b(-3 C h.m)は、CM7(+1 G Maj)[4x top]へ向かうため、
-	アウトスケール感が強く出る。
+	H.mP5bの理論も、逆循環として見るとわかりやすい。
+	G H.mP5b(-3 C h.m)から、Dm7(00 A h.m)[3x top]、Am7(+1 E h.m)[1x top]となるため、調性引力がある。
+	G H.mP5b	Dm7	Am7
 
-	III7	VIM7	VIIm7	IV7
-	H.mP5b			ComDim
+	最後に、G H.mP5b(-3 C h.m)から、CM7(+1 E h.m)[4x top]へ向うと、
+	解決感が出ずに、リセットされた感じになる。(セカンダリー感が強く出る)
 
-	G H.mP5b(-3 C h.m)から、Cm7(-2 G h.m)[1x top]となるため、
-	サブドミナント的につながる。
 
-	III7	VIm7	IIm7	V7
-	H.mP5b			ComDim
+	VIm7	IIm7 	V7	IM7	IVM7
+			H.mP5b
 
 
 	Combination Of Diminished ====
