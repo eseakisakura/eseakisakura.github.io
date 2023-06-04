@@ -4,7 +4,7 @@
 
  　------ 五度圏
 
-C Maj.			A min.			x
+C Maj.			A min./A h.m/A m.m	x
 
 A#
 D#
@@ -167,12 +167,11 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	これを反転して使うため、調性重力となる。
 
-	VIm7	IIm7	V7	IM7
-			Altered
-
 	最終的に、G Altered(+5 G# m.m)から、CM7(+1 G Maj)[4x bottom]へ向うので、
 	メジャースケールのドミナントモーション(主調への解決感)が得られる。
 
+	VIm7	IIm7	V7	IM7
+			Altered
 
 
 	Lydian 7th ====
