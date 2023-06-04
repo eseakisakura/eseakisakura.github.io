@@ -33,7 +33,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 　　■セオリー
-　　調性崩壊[outscale]と調性引力(重力)[top,bottom]　　
+　　調性崩壊[x outscale]と調性引力(重力)[x top,bottom]　　
 
 
 
@@ -133,7 +133,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 
 　　■セオリー
-　　調性崩壊感[outscale]と調性重力感[bottom]
+　　セカンダリーと調性引力(重力)[x top,bottom]
 　　(各minor Conversion.txt 参照)
 
 
@@ -171,7 +171,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 			Altered
 
 	最終的に、G Altered(+5 G# m.m)から、CM7(+1 G Maj)[4x bottom]へ向うので、
-	メジャースケールのドミナントモーション(解決感)が得られる。
+	メジャースケールのドミナントモーション(主調への解決感)が得られる。
 
 
 
