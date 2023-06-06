@@ -140,7 +140,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 　□増四度の浮遊感
 
 	+6 C#7 -> 00 FM7 の場合、[6x bottom]は、[6x outscale]との判別が難しく、地に足が付かない。
-	+6 C#7 -> +1 CM7 では、[5x bottom]のため強く、キーという地面を感じる。
+	+6 C#7 -> +1 CM7 では、[5x bottom]のため強く、キー(主調)という地面を感じる。
 
 
 
@@ -163,6 +163,7 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 	
 	Alteredの理論は、逆循環として見るとわかりやすい。
 	G Altered(+5 G# m.m)から、Dm7(-3 C m.m)[4x top]、Am7(-2 G m.m)[1x top]となるため、調性引力が強い。
+
 	G Altered	Dm7	Am7
 
 	これを反転して使うため、調性重力となる。
@@ -194,10 +195,12 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 
 	H.mP5bの理論も、逆循環として見るとわかりやすい。
 	G H.mP5b(-3 C h.m)から、Dm7(00 A h.m)[3x top]、Am7(+1 E h.m)[1x top]となるので、調性引力がある。
+
 	G H.mP5b	Dm7	Am7
 
-	最後に、G H.mP5b(-3 C h.m)から、CM7(+1 E h.m)[4x top]へ向うため、
-	解決感がなく、リセット(調性崩壊)された感じになる。(セカンダリー感が強くなり、リスタート的に映る)
+	ただ最後に、G H.mP5b(-3 C h.m)から、CM7(+1 E h.m)[4x top]へ向うので、
+	セカンダリーが強くなり、リスタート的に映る。
+	(トニックで解決できず、リセット(調性崩壊)感が出るため、これからも続く風になる)
 
 
 	VIm7	IIm7 	V7	IM7	IVM7
