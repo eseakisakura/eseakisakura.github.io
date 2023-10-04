@@ -6,101 +6,104 @@
 <link rel="stylesheet" href="../main.css" type="text/css">
 </head>
 <body>
-<h4><img style="border-width:0" src="./image/FE_icon.png" /> FM Synthesis Chip - Tone Editor
+<h4><img style="border-width:0" src="./image/FE_icon.png"> FM Synthesis Chip - Tone Editor<br>
 <small> -- PMDのケースで説明します。--</small></h4>
-<hr/>
+<hr>
 
-<table><tr>
-<td class="txtbox"><div class="box">
-<h5>
+<table><tr><td class="imgbox">
+<img style="border-width:0" src="./image/FMedit/01.png">
+</td><td class="txtbox"><div class="box">
+<h4>
+<strong style="color:#ff0a0a">※</strong> Preset音色の準備<br>
+</h4>
 <span>
-<strong style="color:#ff0a0a">※</strong> Preset音色の準備<br/>
-<br/>
-PMD98用 Preset FM音色セットである、<br/>
-<strong style="color:#31314c"><span style="color:#ff0a0a">"</span>PC88.mml<span style="color:#ff0a0a">"</span>,<span style="color:#ff0a0a">"</span>X68ED.mml<span style="color:#ff0a0a">"</span>,<span style="color:#ff0a0a">"</span>EFFEC.mml<span style="color:#ff0a0a">"</span></strong>　3つのファイルを、<br/>
-<br/>
+PMD98用 Preset FM音色セットである、<br>
+<strong style="color:#31314c"><span style="color:#ff0a0a">"</span>PC88.mml<span style="color:#ff0a0a">"</span>,<span style="color:#ff0a0a">"</span>X68ED.mml<span style="color:#ff0a0a">"</span>,<span style="color:#ff0a0a">"</span>EFFEC.mml<span style="color:#ff0a0a">"</span></strong>　3つのファイルを、<br>
+<br>
 
-PMDコンパイラの<strong style="color:#31314c; border-bottom: 1px solid #ff0a0a">"<span style="border-bottom: 1px solid #ff0a0a">MC.EXEのフォルダ</span>"</strong>ないし、<br/>
+PMDコンパイラの<strong style="color:#31314c; border-bottom: 1px solid #ff0a0a">"<span style="border-bottom: 1px solid #ff0a0a">MC.EXEのフォルダ</span>"</strong>ないし、<br>
 
-mml_watch_GUI以下の<strong style="color:#31314c">"<span style="border-bottom: 1px solid #ff0a0a">script - presetフォルダ</span>"</strong>へ置く必要があります。<br/>
-<br/>
+mml_watch_GUI以下の<strong style="color:#31314c">"<span style="border-bottom: 1px solid #ff0a0a">script - presetフォルダ</span>"</strong>へ置く必要があります。<br>
+<br>
 起動(or presetリロード)時に、このpresetファイルが読み込まれます。
 </span>
-</h5>
 </div></td></tr></table>
-<br/>
+<br>
 
 <table><tr><td class="imgbox">
-<img style="border-width:0" src="./image/FMedit/11.png" />
+<img style="border-width:0" src="./image/FMedit/02.png">
 </td><td class="txtbox"><div class="box">
-fm_editor.exeを起動します。<br/>
-本体パネルの<strong>"Option - Setting"</strong>を選択します。<br/>
-</div></td></tr></table>
-
-<table><tr><td class="imgbox">
-<img style="border-width:0" src="./image/FMedit/12.png" />
-</td><td class="txtbox"><div class="box">
-環境設定パネルから、<br/>
-<br/>
-<strong>"binaryタブ"</strong>ラジオボタンでPMDを選択、<br/>
-"MC.EXE"を<strong>"リストボックス"</strong>へDrug&Dropで登録します。<br/>
-<br/>
-(mml_watch_GUIで、パス登録してある場合は選択のみ。)<br/>
-<br/>
-
-同じく、<strong>"playerタブ"</strong>をクリックし、<br/>
-"FMPMD.exe"を登録します。<br/>
+fm_editor.exeを起動します。<br>
+<br>
+本体パネルの<strong>"Option - Setting"</strong>を選択します。<br>
 </div></td></tr></table>
 
 <table><tr><td class="imgbox">
-<img style="border-width:0" src="./image/FMedit/13.png" />
+<img style="border-width:0" src="./image/FMedit/03.png">
 </td><td class="txtbox"><div class="box">
-<strong>"dosタブ"</strong>をクリックし、<br/>
-"msdos.exe"を登録します。<br/>
-<br/>
+環境設定パネルから、<br>
+<br>
+<strong>"binaryタブ"</strong>にある<strong>"ラジオボタン"</strong>でPMDを選択、<br>
+<br>
+"MC.EXE"を<strong>"リストボックス"</strong>へDrug&Dropで登録します。<br>
+<br>
+同じく、<strong>"playerタブ"</strong>を選択し、<br>
+"FMPMD.exe"を登録します。<br>
+<br>
+(mml_watch.exeで、パス登録してある場合は、クリック選択のみ行います。)
+</div></td></tr></table>
+
+<table><tr><td class="imgbox">
+<img style="border-width:0" src="./image/FMedit/04.png">
+</td><td class="txtbox"><div class="box">
+<strong>"dosタブ"</strong>を選択し、<br>
+"msdos.exe"を登録します。<br>
+<br>
 PMDは16bit appなので、<strong>"x64対応"</strong>にチェックを入れ、
-環境設定を閉じます。<br/>
+"msdos.exe"経由で起動するようにします。<br>
+<br>
+OKボタンを押し、環境設定を閉じます。
 </div></td></tr></table>
 
 <table><tr><td class="imgbox">
-<img style="border-width:0" src="./image/FMedit/14.png" />
+<img style="border-width:0" src="./image/FMedit/05.png">
 </td><td class="txtbox"><div class="box">
-本体パネルのメニューにある、<strong>"File - Preset"</strong>を選択し、Preset波形ウィンドウを開きます。<br/>
-<br/>
-<strong>"pc88タブ"</strong>を選択します。<br/>
-<br/>
-<strong>"リストボックス"</strong>内の"@000"などをクリック、これで音が出れば、環境設定がうまくいっています。<br/>
-<br/>
-続けて、<strong>"Import"ボタン</strong>を押すと、本体にpresetデータが読み込まれます。<br/>
-</div></td></tr></table>
-
-
-
+本体パネルのメニューにある、<strong>"File - Preset"</strong>を選択し、Preset波形ウィンドウを開きます。<br>
+<br>
+<strong>"pc88タブ"</strong>を選択します。<br>
+<br>
+<strong>"File - Preset reload"</strong>で、Presetデータを読み込みます。</div></td></tr></table>
 
 <table><tr><td class="imgbox">
-<img style="border-width:0" src="./image/FMedit/15.png" />
+<img style="border-width:0" src="./image/FMedit/06.png">
 </td><td class="txtbox"><div class="box">
-本体パネルのメニューにある、<br/>
-<strong>"window - FM OP window"</strong>をクリック、<br/>
-<br/>
-Operator windowが開きます。<br/>
-<br/>
-インポートしたエンベロープと波形が表示されます。<br/>
+<strong>"リストボックス"</strong>内の"@003"などをクリック、これで音が出れば、環境設定がうまくいっています。<br>
+<br>
+続けて、<strong>"Import"ボタン</strong>を押すと、本体にpresetデータが読み込まれます。
 </div></td></tr></table>
-
 
 <table><tr><td class="imgbox">
-<img style="border-width:0" src="./image/FMedit/16.png" />
+<img style="border-width:0" src="./image/FMedit/07.png">
 </td><td class="txtbox"><div class="box">
-本体パネルにある、Frequency Modulationの、<br/>
-<strong>"Multiple - overtone"</strong>のスライダーを、
-左右に動かすことで、Operator windowの表示が、変化します。<br/>
-<br/>
-この音色を聴いて確認するときは、<strong>"再生ボタン"</strong>(or スペースキー)を押します。<br/>
+本体パネルのメニューにある、<br>
+<strong>"window - FM OP window"</strong>をクリックすると、<br>
+<br>
+FM Operator windowが開きます。<br>
+<br>
+インポートしたエンベロープと波形が表示されます。
 </div></td></tr></table>
-<br/>
-<br/>
-<hr/>
+
+<table><tr><td class="imgbox">
+<img style="border-width:0" src="./image/FMedit/08.png">
+</td><td class="txtbox"><div class="box">
+本体パネルの、"Frequency Modulation"にある、<strong>"Total Level</strong>の<br>
+ノブを、上下にドラックすることで、FM Operator windowの表示が変化します。<br>
+<br>
+この音色を確認するときは、<strong>"▽再生ボタン"</strong>(or Spaceキー, Enterキー)を押します。<br>
+</div></td></tr></table>
+<br>
+<br>
+<hr>
 <table id="footer"><tr><td class="left">
 <a href="../home.html">home&gt;</a>
 <a href="./index.html">index&gt;</a>
@@ -109,7 +112,7 @@ Operator windowが開きます。<br/>
 </td><td class="right">
 <div style="text-align: right"><span><script src="../year.js"></script> 04coreworks</span></div>
 </td></tr></table>
-<br/>
+<br>
 </body>
 </html>
  

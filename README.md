@@ -1,4 +1,4 @@
-﻿<h1>HomePage Link</h1> 
+<h1>HomePage Link</h1> 
 
 <h4>
 ホームページへのリンク <br/>
