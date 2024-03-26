@@ -1,0 +1,939 @@
+#title "Gamma-Ray Burst --Betelgeuse--" 
+#Copyright "04coreworks"
+#Composer "黄白紅藍玄"
+#Code "nsd_all.bin"
+#Bank
+#timebase 48 //l4 <- 48* t112 / 112 over de step err
+#QReverse
+#rest 0 //r
+#wait 3 //w
+#ReleaseVolume 1
+//#include "patch.txt"
+//#include "delay.txt"
+
+//　-- 当テキストは、構造化エディタで組まれてます。--
+
+// 数値コメントは、計算してた時の名残です。
+ 
+E(901){ L0 } //o6c
+E(902){ L1 }
+E(903){ L1 }
+E(904){ L1 }
+E(905){ L1 }
+E(906){ L1 }
+
+E(907){ L1 } //o7c
+E(908){ L1 }
+E(909){ L1 }
+E(910){ L1 }
+E(911){ L1 }
+E(912){ L1 }
+
+E(913){ L1 } //o8c
+E(914){ L1 }
+E(915){ L2 }
+E(916){ L2 }
+E(917){ L2 }
+E(918){ L2 }
+
+Patch(900){ // detune レイルズバックパターン - ハイトーン伸長 
+	c6	Em901 // できるならtrごとにPatch適用、楽器特性を付帯する
+	d6	Em902 // -> 音階別ビブラートできるか否か
+	e6	Em903
+	g-6	Em904
+	a-6	Em905
+	b-6	Em906
+
+	c7	Em907
+	d7	Em908
+	e7	Em909
+	g-7	Em910
+	a-7	Em911
+	b-7	Em912
+
+	c8	Em913
+	d8	Em914
+	e8	Em915
+	g-8	Em916
+	a-8	Em917
+	b-8	Em918
+ }
+ 
+E(951){ L0 } //o5c
+E(952){ L0 }
+E(953){ L0 }
+E(954){ L1 }
+E(955){ L1 }
+E(956){ L1 }
+
+E(957){ L1 } //o6c
+E(958){ L1 }
+E(959){ L1 }
+E(960){ L1 }
+E(961){ L1 }
+E(962){ L1 }
+
+E(963){ L1 } //o7c
+E(964){ L2 }
+E(965){ L2 }
+E(966){ L2 }
+E(967){ L2 }
+E(968){ L2 }
+
+E(969){ L2 } //o8c
+E(970){ L2 }
+E(971){ L2 }
+E(972){ L3 }
+E(973){ L3 }
+E(974){ L3 }
+
+Patch(950){ // detune - ハイトーン伸長 
+	c5	Em951
+	d5	Em952
+	e5	Em953
+	g-5	Em954
+	a-5	Em955
+	b-5	Em956
+
+	c6	Em957
+	d6	Em958
+	e6	Em959
+	g-6	Em960
+	a-6	Em961
+	b-6	Em962
+
+	c7	Em963
+	d7	Em964
+	e7	Em965
+	g-7	Em966
+	a-7	Em967
+	b-7	Em968
+
+	c8	Em969
+	d8	Em970
+	e8	Em971
+	g-8	Em972
+	a-8	Em973
+	b-8	Em974
+ }
+ 
+E(321){ L%3 }
+E(322){ L%3 }
+E(323){ L%3 }
+E(324){ L%3 }
+E(325){ L%2 }
+E(326){ L%2 }
+E(327){ L%2 }
+E(328){ L%2 }
+E(329){ L%1 }
+E(330){ L%1 }
+E(331){ L%1 }
+E(332){ L%1 }
+E(333){ L%1 }
+E(334){ L%0 }
+E(335){ L%0 }
+
+Patch(320){ // detune レイルズバックパターンの逆 - 高低域とのズレ対策 
+	a1	Em321
+	e2	Em322
+	a2	Em323
+
+	e3	Em324
+	a3	Em325
+	e4	Em326
+	a4	Em327
+
+	e5	Em328
+	a5	Em329
+	e6	Em330
+	a6	Em331
+
+	e7	Em332
+	a7	Em333
+	e8	Em334
+	a8	Em335
+ }
+ 
+; Part1,5 
+	 
+Sub(50){ [8 r%144] r%96 } 
+ 
+; vrc6 ------ 
+ 
+E(200){ // Ev 
+	2 D5 1 D3
+	1 D5 0 D3
+	1 D5 0 D3
+	2 D5 1 D3
+
+	3 D5 1 D3
+	5 D5 1 D3
+	7 D5 1 D3
+	9 D5 2 D3
+
+	11 D5 2 D3
+	13 D5 3 D3
+	15 D5 3 D3 // revディレイ
+	12 D5 3 D3
+
+	9 D5 2 D3
+	6 D5 1 D3
+	3 D5 1 D3
+	1 D5 L0 }
+ 
+E(230){ // En 
+	-48 D8
+	-36 D8
+	-24 D8
+	L -12 }
+ 
+E(110){	9  D3 3 D5 
+	11 D3 3 D5
+	13 D3 4 D5
+	15 D3 4 D5 // longディレイ
+
+	13 D3 4 D5
+	11 D3 3 D5
+	9  D3 3 D5
+	7  D3 2 D5
+
+	5  D3 2 D5
+	3  D3 1 D5
+	2  D3 1 D5
+	1  D3 L0 }
+ 
+E(500){ L 0 0 3 3 7 7 3 3 } // E@ 
+ 
+; apu,mmc5 ------ 
+ 
+E(2000){ (0,6,24) (6,12,72) L12  } // 45:63 Ev 
+ 
+E(2010){ (4,12,8) (15,8,64) (7,0,32) L0 } 
+ 
+E(2020){ (4,12,8) (12,4,88) L4  } // 45:63 Ev 
+ 
+E(2030){ (4,8,30) (8,6,120) (6,0,90) L0 } 
+ 
+E(2050){ (1,3,144) L3 } // 45:63 Ev 
+ 
+E(2150){  L 5 5 5 5  0 0 0 0  } // En 
+ 
+E(2160){  L 6 6 6 6  0 0 0 0  } // En 
+ 
+E(2170){  L 0 0 0 0  7 7 7 7  } // En 
+  
+; Part2 
+	 
+Sub(2){ [5 r1r1] } 
+ 
+Sub(20){ [5 r1:r1]r2r4r8 } 
+ 
+Sub(200){ [5 r1:r1]r2r%9 } // %48+%36+%3 
+ 
+; mmc5 ------ 
+ 
+E(780){ (15,1,72) L1 } 
+E(730){ L 17 D4 14 D4 10 D4 7 D4 3 D4 0 D4 } //En m11 - 0,3,4,3,4,..
+ 
+; apu BD ------ 
+ 
+DPCM{ 
+
+// note	filename				rate	mode	vol	offset	size
+   a3,	".\BDlow_size16_sn48k_rate13.dmc",	13,	0,	96,	6,	11	//BDlow
+   c3,	".\BDhigh_size16_hh2_rate13.dmc",	13,	0,	96,	8,	15	//BDhigh
+//					urauchi no a3 ha fast de short/	timing	gate
+ }
+
+E(2500){ (12,-18,10) L-18 } // En
+E(2600){ 15 D11 L0 } // Ev
+
+Patch(2000){
+	a2	_+0	En2500 Ev2600
+	c3	_+0	En2500 Ev2600
+	a3	_+0	En2500 Ev2600
+ }
+ 
+$dr{	l16 
+	c arca  rcra
+
+	carr  rcra	// dnb kihonn
+	carr  rcra
+	carr  rcra
+	crra  rrcr	// dnb ouyoh
+
+	arrc  rcra	// BD ->frb fb
+	carr  rcra
+	carr  rcra
+	crra  rrar	// stopfill
+ }
+$drtwo{	l16
+	a crra  rcra
+	carr  rcra
+	carr  rcra
+	crra  rrcr
+
+	arrc  rcra	// umeru bass busoku
+	carc  rcra
+	carc  rcra
+	crra  rrar
+ }
+
+ 
+Sub(2100){  q7 o3 @P2000 $dr } 
+Sub(2150){  q7 o3 @P2000 $drtwo } // patch teigi ha @P2000 S2100 fuka -> naihou hitsuyou
+ 
+Sub(3100){ o3 v15 @P2000 $dr } 
+Sub(3150){ o3 v15 @P2000 $drtwo }
+ 
+; apu HH ------ 
+ 
+E(1030){ -48 D4 L12 } // p.Em
+E(1130){ -12 D4 L48 } // p.Em
+
+E(1000){ (15, 4, 4) (6, 1, 18) L0 } // Ev 4-> 6はノイズのSn表現
+E(1100){ (12, 2, 4) (4, 1, 18) L0 } // Ev
+
+Patch(1000){ // noise cycle 
+	e3	_+48 @0	 Em1030 Ev1000	// @0 長周期, @1 短周期
+	g3	_+28 @0	 Em1130 Ev1100
+ }
+ 
+ $y{ l32 v9 e v6 g v15 l16 } // vercity ni shibia 
+ $k{ l32 v9 g v6 e v15 l16 }
+
+ $q{ l32 v4 e v8 g v15 l16 }
+ $w{ l32 v4 g v8 e v15 l16 }
+
+ $d{ v8 g v15 }
+ $f{ v8 e v15 }
+
+ 
+Sub(1100){  l16 q4 o3 v15 @P1000 // 2:14, 26, 39 
+
+	gre$d  $qg$d$f	// top&bottom
+
+	rre$q  $w$fg$d
+	rrg$w  $q$weg
+	rre$q  $k$fg$d
+	gre$d  $wrg$f	// nextfill $dre$d <- err
+
+	rre$q  $w$fg$d
+	rrg$w  $q$weg
+	$frg$w $w$fg$d
+	rrer  $qg$d$f	// stopfill
+ }
+ 
+Sub(1200){  l16 q4 o3 v15 @P1000 // 2:14, 26, 39 
+
+	rre$q  $w$fg$d
+	rrg$w  $q$weg
+	$k$q$y$w  g$qe$w // flum uchi de betsu you -> break
+	gre$d $wrg$f	 // nextfill $dre$d <- err
+
+	rre$q  $w$fg$d
+	rrg$w  $q$weg
+	$frg$w $w$fg$d
+	rrer  $qg$d$f	// stopfill
+ }
+ 
+; vrc7 HH ------ 
+ 
+VRC7(101){ 
+; TL  FB
+@  5   6
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  14   1  15  15   0  13   0   0   0   0   0
+   7   8  12   7   0   0   0   0   0   0   0
+ }
+
+VRC7(102){
+; TL  FB
+@  0   7
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  14   1  15  15   0   8   0   0   0   0   0
+   7   8  12   7   0   3   0   0   0   0   0
+ }
+
+$c{ @V102 o4 a }
+$o{ @V101 o6 f }
+  
+; Part3 
+	
+Sub(30){ [2 r%240] [20 r%8] } 
+ 
+Sub(300){ [2 r%240] [21 r%8] } //vrc7以外早める 
+ 
+VRC7(122){ 
+; TL  FB
+@ 10   0
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  10   0  15  15   3   0   0   0   0   0   0
+  15   0  15  15   0  11   0   0   0   1   0
+ }
+
+VRC7(111){
+; TL  FB
+@  0   0
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  15   0  15  15   1  15   0   0   0   1   0
+  15   0  15  15   0  13   0   0   0   1   0
+ }
+  
+; Part4 
+	 
+Sub(4){ [68 r4] } 
+ 
+E(1110){ 
+	10 D10	1 D10
+	//14 D14	1 D2
+	//13 D13	1 D3
+	8 D8	1 D8
+	//11 D11	1 D5
+	//10 D10	1 D6
+	6 D6	1 D6
+	//8 D8	1 D8
+	//7 D7	1 D9
+	4 D4	1 D4
+	//5 D5	1 D11
+	//4 D4	1 D12
+	3 D2	1 D2
+	3 D1	1 D1
+	3 D1	1 D1
+
+	3 D1	1 D1
+	3 D1	1 D1
+	3 D1	1 D1
+	L2
+ }
+ 
+E(111){ L (96,0,12)(0,96,12)  } // En 
+ 
+E(113){ 2 
+  8 15 14 14  12 11 10 10     9  9  8  8   7  7  7  8 ;D12-2
+  9  9  8  8   8  8  7  6     6  6  5  5   5  5  5  6 ;D10-2
+  7  7  6  6   6  6  6  6     4  4  4  4   4  4  3  3 ;D8-2
+  5  5  5  5   5  5  5  4     4  4  3  3   3  3  3  3 ;D6-1
+  3  3  3  3   3  3  3  3     3  2  2  2   1  1  1  1 ;D4-1
+  2  2  2  2   2  2  2  2     2  2  2  2   2  1  1  1 ;D3-1
+  2  2  2  2 L1 } //v
+ 
+E(114){ 4 
+  8 15 14 14  13 13 11 10     9  9  8  8   7  7  7  8 ;D10-2
+  8  8  8  8   8  8  8  8     6  5  5  5   5  5  5  6 ;D8-2
+  6  6  6  6   6  6  6  6     6  6  3  3   3  3  3  3 ;D6-2
+  5  5  5  4   4  4  4  4     4  4  4  4   2  2  2  2 ;D4-1
+  3  3  3  3   3  2  2  2     2  2  2  2   2  1  1  1 ;D3-1
+  2 2 2 L1 } //v
+ 
+N163(11){	//E.P [32sample] 
+  6  5  4  6  10 14 15 14
+ 10  6  3  1   0  1  2  2
+  2  3  3  4   5  6  8  9
+ 11 11 11 11  10 10  9  7
+ }
+  
+BGM(0){ 
+	 
+$$two{ r%21 } 
+$$three{ r%7 }
+$$four{ r%8 }
+$$one{ r%2 r%12 r2r8 }
+ 
+; Part5 
+	
+TR1 t86	r%3 //j1//j0 
+TR2	r%6
+TR6
+TR7
+TR15	r%9
+
+TR3,4,5, 8,9,10,11,12,13,14, 16,17,18,19,20 S50
+
+ 
+TR1  o5 q3 l%144 v9 @2 @P900 //v-1 de real kann 
+TR2  o4 q3 l%144 v10 @2 @P900
+TR15 o6 q3 l%144 v8 @2 @P900
+
+TR1  k0 o4 Ev2000 En2150 d  Ev2020 En2170 c  Ev2000 En2150 g  Ev2020 En2170 c
+TR2  k0 o5 Ev2000 En2170 c  Ev2020 En2170 e- Ev2000 En2150 e- Ev2020 En2170 d-
+TR15 k0 o6 Ev2000 En2150 e  Ev2020 En2170 f  Ev2000 En2170 g+ Ev2020 En2170 f
+
+//[4 <cg>dega>da<] //MajP
+//[4 <cg>e-fgb->e-b-<] //minP
+//[4 <cg>de- ga->da-<] //yona tann
+//[4 <cg>d-fga->d-a-<] //kumoi,tosetsu
+
+TR1  k0  Ev2000 En2170 d  Ev2020 En2170 e- Ev2000 En2150 f  En2150 g  Ev2010 ^ En* Ev* @P*
+TR2  k0  Ev2000 En2170 c  Ev2020 En2170 f  Ev2000 En2170 c  En2170 f  Ev2010 ^ En* Ev* @P*
+TR15 k0  Ev2000 En2170 f  Ev2020 En2170 g+ Ev2000 En2160 g  En2170 e  Ev2010 ^ En* Ev* @P*
+
+//[4 <cg>d fga>da<] //bicho
+//[4 ce- fg+b-] //kakucho
+//[4 cd- fgb-] //kage
+//[4 ce fgb] //ryohkyoh
+ 
+TR6 @6 l%6 o5 q8 EC2,3,%2 @P900 k0 // EC3 -> EC2 delay efx 
+v6
+[4 <ega>cdg ]		//MajorPenta ヨナ抜き
+)[4 <fgb->ce-g ]	//MinorPenta マイナーペンタ
+[4 <e-ga->cdg ]		//yona tann ヨナ抜き短音階
+[4 <fga->cd-g ]		//kumoi,tosetsu 雲井,都節スケール
+//j0
+[4 <fga>cdg ]		//bicho 徴調式
+[4 <fa-b->ce-a- ]	//kakucho 角調式
+[4 <fgb->cd-g ]		//kage 陰スケール
+[4 <fgb>ceg ]		//ryohkyoh 琉球スケール
+//j0
+[2 (<fg ( b>c ( eg  ] // loop相対vol v6 -> v0 umaku ikanai
+[2 (<fg ( b>c ( eg  ] @P* EC*
+
+ 
+TR7 @4 @P900 q8 v11 k0 l%12 r%144 r%36 
+
+
+r%144 r%72 o5
+r >>>> c<d-<f<g<a- [6r] r%72 En230 Ev110 o6 `d%144 En* Ev*
+
+r%144 r%72 r%72 o6
+r >>>> c<e<f<g<b [3r]
+ | Ev110 E@500 q8 o8 "a%3 { d<<< <<<<a }1& a^^ En* Ev* @P*
+  
+; Part2 
+	 
+TR1		r4		r%18 
+TR2		r4		r%15
+
+TR3			r%9	r%3	//r16早め
+TR4			$two	//r%2
+TR5			r%9	r%1	//r16早め
+
+TR6		r4	$two
+TR7		r4	$two	S200
+
+TR8 t84 r4	t82 r4	$two	r%1
+TR9	r4	r4	$two	r%1
+TR10	r4	r4	$two	r%1
+
+TR11			$two
+TR12	r4	r4	$two	S20
+TR13	r4	r4	$two	S20
+TR14	r4	r4	$two	S20
+
+TR15		r4	r%12	r%1
+
+TR16	r4	r4	$two	r%2 r24
+TR17	r4	r4	$two	S2
+TR18	r4	r4	$two	S2
+TR19	r4	r4	$two	S2
+TR20	r4	r4	$two	S2
+ 
+TR1 q7 o3 v5 l48 @2 @P320 EC5,3,%2 //4,v2,l96 @P900 awanai 
+
+[4 r1:r1]r2r4r8r16	// r1r1r16 -> [99 r48]
+//j0
+[3
+>>>>>  >f <c g <d a <e b < f+  <c+  g+		//10
+>>>   >a- <e- b- <f : <c g <d a < e^r		//11	:14
+>>>>  >b <f+ <c+ g+ <d+ a+ <e+ b+ <f++		//9
+>>>>  d a <e b <f+ <c+ g+ <d+ a+		//9
+]
+>>>>>  f <c g<d  a  <e << b // < f+< c+		//7	r48* (45*2+21)=111
+EC* @P*
+
+TR2 q7 o3 v5 l48 k-5 @2 @P320 EC5,3,%2
+
+[4 r1:r1]r2r4r8r16 //r16= [3 r48]
+
+>>>>>  /* >f<c */ g <d a <e b < f+ <c+ g+	//8
+[3
+>>>  >a- <e-  b- <f <c g <d   a < e^r		//11
+>>>>  >b <f+ <c+  g+ : <d+ a+ <e+ b+ <f++	//9	:15
+>>>>  d a <e b <f+ <c+ g+ <d+ a+		//9
+>>>>>  f <c g <d a <e b <f+ <c+			//9	r48*111= r1r1 [15 r48]
+]
+k0 EC* @P*	//[5 r1r1]
+ 
+TR3 // triangle BD 
+
+S2100
+r1 r2r4r8r16
+S2150
+
+ 
+TR4 // noise Sn 
+
+S1100
+r2r4 rr$y$w  r2 g$qe$w  $k$q$y$w
+S1200
+
+ 
+TR5	// delta BD 
+
+S3100
+r1 r2r4r8r16
+S3150
+
+ 
+TR6 @5 o2 q8 l32 @P320 v8 //EC3,2,%2 @P340 
+k0
+[2 r2]
+[4 r]
+>[4 "a-ce->]<<	//Cn.m a-(b-)[c](d)e-(f)g
+[4 e-c"a-<]>
+[4 r]
+k5
+[2 r2]
+[4 r]
+[4 fa`c>]<<	//Dn.m [d](e)f(g)a(b)c
+[4 `caf<]
+[4 r]
+	//[2 [2 r2][32 r32] ]
+
+[3 r1r1] k0 @P*
+
+ 
+$$psaw{ q7 crrr rr q6 "a32`g32``d32```f32 q7 } 
+$$qsaw{ q7 f`c>g<`d >e-<`b-g`c }		// bassハンマリングのような ->トリッキーでin
+$$wsaw{ q7 < f`c>g<`d >"e-<`b-`g`c > }
+
+
+$$rsaw{ q8      {f+>>>>e}%192& <<<<	// d+f: g+a+>cc+<	(r2+)
+	     [2 {d+>>>>c+}%96& <<<< ] }	// d+f: g+a+>cc+<	(r2+)
+$$tsaw{ q8 > [2 {a+>>>g+}%48& <<< ] < }	// <g+a+>: cc+d+f>
+$$vsaw{ q8>> [2 {f+>>e }%48& << ]<<}	// f+g+: b>c+d+e<
+
+$$xsaw{ q8>>				// q8 shitei suru <- err $ssaw q8
+	  [2 {a+>>g+}%24& <<]
+	//[2 {b >>>>a+}%24& <<<<]
+	> [4  >{f+ >e}%12&<<]		// f+>g+ dato kerenmi..
+	  [8  >{f+ >e}%6& <<]
+	  [16 >{f+ >e}%3& <<]		// 12*3+6*8+3*16
+
+	>>> e1^2^4 <<< r8		// peee
+	// f+'s Love's Theme
+	// a-'s Either Way
+<<< }
+ 
+$$ssaw{ 
+	l16 k-5 $psaw k-5 $psaw k-2 $qsaw k-2 $wsaw	// k-2 Dominant bottom
+	l16 k-4 $psaw k-8 $psaw k0  $qsaw k2  $wsaw	// k0 Dominant bottom ->k2 Double D bottom - kirei
+
+	l16 k-5 $rsaw k-5 $tsaw k2  $vsaw k2  $xsaw	// l16 shitei suru <- err TR l16
+ }
+
+	// [2 r1r1] r%192 [2 r%96][4 r%48][2 r%24][4 r%12][8 r%6][16 r%3] r1^2
+	// [2 r1r1] r1    [2 r2]  [4 r4]  [2 r8]  [4 r16] [8 r32][16 r64] r1^2
+	// [2 r1r1] r1     r1      r1     r4      r4      r4     r4       r1r2
+	// [4 r1r1] r1r2 r4r8
+
+ 
+TR8      v4 @P320 o2 l24 
+$ssaw @P*
+
+TR9  @12 v6 @P320 o3 l24
+$ssaw @P*
+
+TR10 @12 v7 @P320 o3 l24
+$ssaw @P*
+ 
+TR11	; H.H スピード感の演出 
+
+v11 q4 o5 @0 l32	// dnb [a] ha urauchi [frfr -> ra^a]
+			// last ^ ha Sn ga utareru tame
+
+[2 $crrr $crr($o)]	// $cr$c($o) -> $crr($o) to dnb
+
+[8
+$cr($or) $cr($or)  $cr($or) $crr($o)
+]
+
+$cr rr $cr rr  $cr rr $cr rr
+$cr rr $cr rr  $cr rr $cr r($o)
+$cr($or) $cr($or)  $cr($or) $cr($or)
+$cr($or) $cr($or)  $cr($or) $crr($o)
+
+[8
+$cr($or) $cr($or)  $cr($or) $c:rr($o)
+]
+
+ 
+$$min{ @2 q4 o4 l2 //up 
+
+	k-5 cg> e-<b-
+	c+a>f<`c
+	d+a+>f+<`c+
+	eb>g<`c+
+	e`c> g+<`d
+
+	En* Ev* @P* k0
+ }
+
+$$min2{ @2 q6 o4 l2 //up
+
+	k2 cg> e-<b-
+	c+a>f<`c
+	rrrr //d+a+>f+<`c+
+	eb>g<`c+
+	e`c> g+<`d
+
+	En* Ev* @P* k0
+ }
+ 
+TR15 
+v8 En730 Ev780 @P900 $min Ev* En* @P* // delay ha q4 kirei
+
+
+TR16
+v6 En730 Ev780 @P900 $min2 Ev* En* @P* // min +7
+
+//	[5 r1r1] r%2r24
+  
+; Part3 
+	
+TR1	t72 $three t62 S300 // t82<t71<t60 
+TR2	$three	S300
+//TR3
+//TR4
+//TR5
+TR6	$three	S300
+TR7	$three	S300
+TR8	r%13	S300
+TR9	r%13 //13	//-r8(%24)+%1+%13=-10
+TR10	r%13 //13
+TR11	r%10		//-[3 r32(%6)]+%11=-7
+TR12	r%13 //14	//-r8(%24)+%14=-10
+TR13	r%13 //14
+TR14	r%13 //14
+TR15	r%7	S300
+TR16		S30
+TR17	$three	S300
+TR18	$three	S300
+TR19	$three	S300
+TR20	$three	S300
+ 
+TR9  @0 q8 v9 l%8 k-2 
+TR10 @0 q8 v9 l%8 k-2
+TR11 @0 q8 v9 l%8 k-2
+TR12 @0 q8 v9 l%8 k-2
+TR13 @0 q8 v9 l%8 k-2
+TR14 @0 q8 v9 l%8 k-2
+
+
+TR9  @V111 o2 d-^^^ ^^^^ Ev* {d- >> >> >> e }%240& e^^	  // m3up
+TR10 @V111 o3 a-^^^ ^^^^ Ev* {a- >> >>    b }%240& b^^	  // Chord Morphing
+TR11 @V111 o4 e-^^^ ^^^^ Ev* {e- >>       f+}%240& f+^^%5 // sus2 'd-a-e-' ryuh sound
+TR12 @V111 o6 d-^^^ ^^^^ Ev* {d- <<       e }%240& e^^
+TR13 @V111 o7 a-^^^ ^^^^ Ev* {a- << <<    b }%240& b^^
+TR14 @V111 o8 e-^^^ ^^^^ Ev* {e- << << << f+}%240& f+^^
+
+//j0
+TR9  @V122 o2 e^^^ ^  {e  >> >> >> c}%240& c^^^ ^^^^    k0 // M3down
+TR10 @V122 o3 b^^^ ^  {b  >> >>    g}%240& g^^^ ^^^^    k0 // Chord Morphing
+TR11 @V122 o4 f+^^^ ^ {f+ >>       d}%240& d^^^ ^^^^^%3 k0
+TR12 @V122 o6 e^^^ ^  {e  <<       c}%240& c^^^ ^^^^    k0
+TR13 @V122 o7 b^^^ ^  {b  << <<    g}%240& g^^^ ^^^^    k0
+TR14 @V122 o8 f+^^^ ^ {f+ << << << d}%240& d^^^ ^^^^    k0
+  
+; Part4 
+	
+TR1  t76 $four t92 
+TR2  $four
+//TR3
+//TR4
+//TR5
+TR6  $four	S4
+TR7  $four	S4
+TR8  r%1
+TR9  r%1
+TR10 r%1
+//TR11
+//TR12
+//TR13
+//TR14
+TR15 $four
+TR16 $four
+TR17 r%1
+TR18 r%3
+TR19 r%2
+TR20 r%4
+ 
+TR1  v6 q6 l4 o7 Ev1110 @P900 @2 K{-ea} EC1,4,%2 
+TR2  v6 q6 l4 o7 Ev1110 @P900 @2 K{-ea} EC1,4,%2
+TR15 v6 q6 l4 o7 Ev1110 @P900 @2 K{-ea} EC1,4,%2
+TR16 v6 q6 l4 o7 Ev1110 @P900 @2 K{-ea} EC1,4,%2
+TR1   [2 [4 a-^^ `a^ ^^^ k_-3 ] )) k0 ]  Ev* @P* EC* K{=ea}
+TR2  rr  [2 [4 g-^^ `f+^ ^^^ k_-3 ] )) k0 ] Ev* @P* EC* K{=ea}
+TR15 rrrr  [2 [4 `e-^^ `e^ ^^^ k_-3 ] )) k0 ] Ev* @P* EC* K{=ea}
+TR16 rrrrrr  [2 [4 `d-^^`d^ ^^^ k_-3 ] )) k0 ] Ev* @P* EC* K{=ea}
+// Lydian cde f+gab
+// Locrian cd-e- fg-a-b-
+// できるだけ調性外音で効果音らしく
+ 
+$$bom{ 
+
+>> l24 k2 // 爆発音
+
+[2
+[4
+ ``g+``c+`b- `e-g+ c+c [2"f] [2""a+]
+ ``g ``f`b- `e-a+ d+ d [2"f] [2""g]
+ ``e`a`g f c"f"e [2"d] [2""a]		//sus4
+ ``e``d-`b- `ee-c-"a- [2"d-] [2""f]
+k_-3 ]
+k2 ( ] << k0
+
+ }
+
+$$bom2{
+
+>> l24 k2 // 爆発音
+
+[4
+ ``g+``c+`b- `e-g+ c+c [2"f] [2""a+]
+ ``g ``f`b- `e-a+ d+ d [2"f] [2""g]
+ ``e`a`g f c"f"e [2"d] [2""a]		//sus4
+ ``e``d-`b- `ee-c-"a- [2"d-] [2""f]
+k_-3 ]
+
+k2 (
+
+
+ ``g+``c+`b- `e-g+ c+c [2"f] [2""a+]
+ ``g ``f`b- `e-a+ d+ d [2"f] [2""g]
+ ``e`a`g f c"f"e [2"d] [2""a]		//sus4
+ ``e``d-`b- `ee-c-"a- [2"d-] [2""f]
+k_-3
+
+ }
+ 
+TR8 q8 v3 r%1 @P320 K{-ea} En111 
+o2
+
+r24 $bom @P* K{=ea} En*
+
+TR9 @12 q8 v5 r%1 @P320 K{-ea} En111
+o3
+
+r24 $bom $bom2 @P* K{=ea} En*
+
+TR10 @12 q8 v5 r%1 @P320 K{-ea} En111
+o3
+
+r24 $bom $bom2 @P* K{=ea} En*
+ 
+TR17 NC4 @NL64,11 ; 音色指定 
+
+TR17 @NS64,32 Ev113 ; ch8
+TR18 @NS64,32 Ev113
+TR19 @NS64,32 Ev114
+TR20 @NS64,32 Ev114
+// 内声 -> 係留 -> タイミング -> 音量
+
+TR17 o5 q7 k3 K{-ea} @P900 v15 l1
+TR18 o5 q7 k3 K{-ea} @P900 v15 l1
+TR19 o5 q7 k3 K{-ea} @P900 v14 l1 //v-1 de real kann
+TR20 o5 q7 k3 K{-ea} @P900 v14 l1
+//j0
+TR17 (e		e%182	)e^%6	c%190^%2 // bottom key wo hikkakeru kanji de hayaku
+TR18 (g		"g%184	)g^%6	e%94e%96
+TR19 (b-	b%184	)b-^%6	g2g%94	// g>>a`3
+TR20 (`d	`d%184	)`d^%6	b-%190
+//j0
+TR17 (f^%2	"b%186	)e^%2	"a%190
+TR18 (a^%2	d%188	)g^%2	c%90)c%98(
+TR19 (g^%2	f%188	)b-^%2	e%98)e%94(	// e->>f`3
+TR20 (e^%2	a%188	)`d^%2	g2^4^%24)g%20(	// hibiki kara `4
+//j0
+TR17 (d		d-^%2	)c	c%186^%2
+TR18 (f^%2	f	)f^%2	e%96e%90	// e->>f`1
+TR19 (a^%2	a	)g^%2	(`d+%186)
+TR20 (`c^%2	b-	)b-^%2	b-%186
+//j0
+TR17 (f^%2	f^%2^%2	)	"a^^^8	@P* Ev* k0 K{=ea}
+TR18 (a^%2^%2 	a-%96^%2g%94	)c^^^8	@P* Ev* k0 K{=ea} // g>>a`1 saisyo no ippo
+TR19 ("c^%2^%2	b^%2		)e^^^8	@P* Ev* k0 K{=ea}
+TR20 (e^%2^%2	e-^%2^%2	)g^^^8	@P* Ev* k0 K{=ea}
+
+; Chord <- e-,a- Harmonic minor Scale
+; Em7b5 Em7   | Em7b5  C7
+; FM79  Bm7b5 | Em7b5  Am7
+; Dm7   Db7   | C7sus4 C7#9
+; F7    Fm7b5 | Am7    -
+  
+; Part1 
+	 
+TR1  [4 r4] t89	$one t86 r%2 //P1より%0遅め 
+TR2  [2 r4]	$one r%5
+TR6		$one
+TR7		$one
+TR15		$one r%8
+
+//TR3,4,5, 8,9,10,11,12,13,14, 16,17,18,19,20
+ 
+TR1  o5 l%144 @2 @P950 v8 
+TR2  o4 l%144 @2 @P950 v10
+TR15 o6 l%144 @2 @P950 v9
+
+TR1  k-7 En2170 Ev2050 q8 Ev2000 q3 d  Ev2020 En2170 c  Ev2000 En2150 g  Ev2020 En2170 c
+TR2  k-7 En2170 Ev2050 q8 Ev2000 q3 c  Ev2020 En2170 e- Ev2000 En2150 e- Ev2020 En2170 d-
+TR15 k-7 En2170 Ev2050 q8 Ev2000 q3 f  Ev2020 En2170 f  Ev2000 En2170 g+ Ev2020 En2170 f
+//		       dcでドミナントボトムで高く
+//[4 <cg>d fga>da<]	//bicho
+//[4 <cg>e-fgb->e-b-<]	//minP
+//[4 <cg>de- ga->da-<]	//yona tann
+//[4 <cg>d-fga->d-a-<]	//kumoi,tosetsu
+
+TR1  k-7 Ev2000 En2170 c  Ev2020 En2170 f  Ev2000 En2160 c  Ev2020 En2150 f
+TR2  k-7 Ev2000 En2150 d  Ev2020 En2170 e- Ev2000 En2150 d- Ev2020 En2170 c
+TR15 k-7 Ev2000 En2150 e  Ev2020 En2170 g+ Ev2000 En2150 f  Ev2020 En2170 g
+
+//[4 <cg>dega>da<]	 //MajP
+//[4 <cg+>e-fg+b->e-b-<] //kakucho
+//[4 <cg->d-fg-b->d-b-<] //iwato
+//[4 <cg>d fgb->db-<]	 //itsu,shocho
+
+TR1  k0 Ev2030 En2170 f%240 Ev* En* @P*
+TR2  k0 Ev2030 En2170 d%240 Ev* En* @P*
+TR15 k0 Ev2030 En2170 c%240 Ev* En* @P*
+//	逆コードで浮揚感
+ 
+TR6 @6 l%6 o6 q8 EC2,3,%2 @P950 k-7 // v6 delay v4 
+//r%144
+v6
+//[2 <<g>dafg>c])
+[4 <<g>dafg>c])		//bicho 徴調式
+[4 <<g>e-gfb->c]	//MinorPenta マイナーペンタ
+[4 <<g>dge- a->c]	//yona tan ヨナ抜き短音階
+[4 <<g>d-gfa->c]	//kumoi,tosetsu 雲井,都節スケール
+
+
+[4 <<g>dgea>c]		//MajorPenta ヨナ抜き
+[4 <<a->e-a-fb->c]	//kakucho 角調式
+[4 <<g->d-g-fb->c]	//iwato 岩戸スケール
+[4 <<g>dgfb->c]		//ritsu,shocho 律スケール、商調式
+ | k0 o5
+[3 <ega>cdg] //MajP
+<eg ( a>c ( dg (
+<eg ( a>c ( dg (
+
+EC* @P*
+ 
+TR7 @4 @P950 q8 v10 k-7 l%12 r%144 r%36 r16 r32 
+// r16 de j1 gi err
+//r%144
+
+r%144 r%72 o6
+r >>>> c<d-<f<g<a- [6r] r%72 En230 Ev110 a%144 En* Ev*
+
+r%144 r%72 r%36 r%36 o5
+r >>>> c<d<f<g<b- [4r]
+
+ | Ev200 E@500 k0 o6 b%33 f%3 { b>>f }1& f^ Ev* @P*
+  
+ } 
+ 
+/* 
+ 
+*/ 
+ 	 
