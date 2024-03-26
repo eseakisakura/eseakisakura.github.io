@@ -1,0 +1,201 @@
+// '21 4/13 
+// モダンドラムン
+
+Include(gs.h) ResetGS()r4
+CH=10  GS_RHYTHM(1)r8
+CH=11  GS_RHYTHM(2)r8
+CH=12  GS_RHYTHM(2)r8
+
+TimeBase=192
+Tempo=154
+ 
+//section0---- 
+	 
+#Chip= { EP.W(107,127,#?1) M.W(127,30,#?1) } 
+#Chip2= { EP.W(107,127,#?1) M.W(30,0,#?1) }
+ 
+// #Hihat 
+
+$x{t_+2'n69v_=-6 n54v_=0't_-2}
+$v{t_+2'n82n70't_-2}
+$u{t_+2'n69n42't_-2}
+$s{t_+2'n82n44't_-2}
+ 
+// #Dr 
+
+$n{p%=55   v_-16 'n38 t_+1 n37 t_-1' v_+16 } //kickのため下げ
+$m{p%=4988 v_-21 'n40 t_+1 n37 t_-1' v_+21 }
+
+$k{p%=21   t_+1 v_-21 'n38' v_+21 t_-1 }
+$j{p%=4733 t_+1 v_-26 'n40' v_+26 t_-1 }
+
+$b{p%=5211 't_+1 n36 t_+1 n32' t_-2}
+$a{p%=1111 't_+1 n35 t_+1 n32' t_-2}
+
+$z{p%=6666 t_+2 'n36' t_-2}
+$y{p%=3333 t_+2 'n35' t_-2}
+ 
+Array LL= ((!1)); 
+  
+//section1---- kitai 
+	 
+Key=3 
+ 
+TR 5  @82,1 BR=1 p%.W(-88,0,!16) CHO=3 REV=36 
+v_.onCycle(!4,-4,0,-2,0) // backbeat
+t-3
+Time=LL(0)
+[
+ l1 o3 q98 v99 TrackKey=0 #Chip2({(!1*2)})
+'a>ce>gba<<'^ // Am69
+'a>c+e>g+bf+<<'^ //AM913
+r^
+l16 [5r-] o2 q111 v106 t=-1 #Chip2({(!8)})
+TrackKey=0  <b>ea>dg>cfb>ea>dg<<<<
+TrackKey=1 >>>>ae<bfc<gd<a<
+>
+TrackKey=2 >dg>cfb>ea>dg<<<<
+:TrackKey=7 >>>e<bfc<gd<ae
+<
+]
+TrackKey=11 >>bfc<gd<ae<b>
+<
+
+LL= (LL,Time);
+t0 l1 o5 q99 v99 TrackKey=0
+//abcdefg
+ 
+Key=0 
+ 
+TR=10 @26 REV=55 v88 l16 
+BR=9 p%=1111 t-1 // BR,p%はタイムの後
+Time=LL(0)
+r //dnb
+
+Rhythm{
+[4
+   vsvx ux [6r-]
+[3 rrrr rrvx uxvx uxvx | usvx ux [6r-] ]
+   uxvx uxvx sxvx uxvx : | vsvx ux [6r-]
+]
+
+//r-32[8 sxvx sxvx vxux sxvx ] r32 [8[16r-]]
+//[8 sxvx uvxv] //蒸気機関 [8[16r-]] // Sub{}不可
+ }
+ 
+#Dr1={ Rhythm{ 
+[   zryr [4r-]
+ [1 arrr nrjk rkbk mrzy] //std
+    arrr nkjk zkbk mkzk  | zryr [4r-]
+ [4 arrr nrjk rkbk mrzy]
+    arrr nkjk zkbk mkzk  | zryr [4r-]
+    arrr nkjk zkbk mkzk  //:| zryr [4r-]
+]
+ } }
+
+TR=11 v116 @26 REV=21 l16 BR=11 t-1
+TR=12 v76  @26 REV=21 l16 BR=11 t-1
+
+TR=11 Time=LL(0) #Dr1
+TR=12 Time=LL(0) #Dr1
+  
+//section2---- utsuroi 
+	 
+Key=3 
+ 
+TR 5 o4 q98 t0 @82,1 BR=2 p%.W(-88,0,!16) CHO=3 REV=36 
+TrackKey=0
+Time= LL(1)
+[
+ #Chip2({(!1*2)})
+ [l1 '"ace`g' //Am7
+  'egb`d' //Em7 [1x outscale]
+ : 'df`a`e' l16 >>>>[4 ae<fd<]>>>> //Dm7->madd9 [2x bottom] <- FM7'(d)fa`c`e'
+ ]l2 'f+`ab`e'^^ l16 >>>[bf+<ae<]> //F#m7->m711 [2x outscale]
+]
+ 
+TR 6 V=127 @81,1 t0 q100 BR=2 p%=-88 CHO=3 REV=36 
+v_.onCycle(!4,-4,0,-2,0)
+TrackKey=0
+ Time=  LL(1)
+[
+ [
+  #Chip({!12}) l48 o5 q_1 v111 v__2.N(0,-3,-6)
+  [8 e>g>b<< v_-9][2 r4] //r4
+  v_=0 v__2=0
+  #Chip({!12}) l48 o5 q_1 v111 v__2.N(0,-3,-6)
+  [8 d>f>a<< v_-9][2 r4] //r4
+  v_=0 v__2=0
+  :
+  #Chip({!8}) l32 [r-] o5 q_1 v21 v__2.N(0,4,8,12)
+  [8 d>f>a>c<<< v_+16][8 d>f>a>c<<< v_-16][r] //r2
+  v_=0 v__2=0
+ ]
+ #Chip({!8}) l32 o5 q_1 v111 v__2.N(0,-5,-10,-15)
+ [4 f+>a>c+>e<<< v_-20][6 r4]  //r2
+ v_=0 v__2=0
+]
+ 
+TR 1 Time=  LL(1); o5 q102 @81,1 BR=2 p%=-88 CHO=3 REV=36 
+l16 t0 #Chip({!2})//Sub{r-2 ?}
+v_.onCycle(!4,-4,0,-2,0)
+TrackKey=0
+[
+[[3 cd:e fgab>]<<
+ [3 cd:e fgab>]<<
+:[3 cd:e fgab>]<<[8r] "g"a"bc defg
+][[3 c+d:e f+gab>]<<]
+]
+ 	
+Key=0 
+ 
+TR=10 Time=  LL(1); 
+
+Rhythm{
+[4
+   xsxv uv [6r-]
+[3 rrrr rrxv uvxv uvxv | usxv uv [6r-] ]
+   uvxv uvxv svxv uvxv : | xsxv uv [6r-]
+]
+ }
+ 
+#Dr2={ Rhythm{ // Sn rev. [n<->m, j<->k] 
+[   zryr [4r-]
+ [2 arrr mrkj rjbj nrzy] //rev
+    arrr mjkj zjbj njzj  | zryr [4r-]
+ [3 arrr mrkj rjbj nrzy]
+    arrr mjkj zjbj njzj  | zryr [4r-]
+    arrr mjkj zjbj njzj //:| zryr [4r-]
+]
+ } }
+TR=11 Time= LL(1); #Dr2
+TR=12 Time= LL(1); #Dr2
+  
+//section3---- saudade 
+ 
+//section4---- main theme 
+ 
+End; 
+	
+Int JJ= 0 
+
+#Bass={ l8 Time=(!1) o3 @39,1
+v99
+JJ=6; v33
+v_.N(0,JJ*1,JJ*2,JJ*3, JJ*4,JJ*5,JJ*6,JJ*7)
+[
+<[4 [4b][4b]]>
+<[4 [4c+][4c+]]>
+<[4 [4a-][4a-]]>
+<[4 [4f+][4f+]]>
+: JJ=-6; v99
+v_.N(0,JJ*1,JJ*2,JJ*3, JJ*4,JJ*5,JJ*6,JJ*7)
+]
+
+}
+
+TR=16
+//TrackKey=-12 Sub{ #Bass }
+//TrackKey=12 Sub{ #Bass }
+//TrackKey=0 #Bass
+  
