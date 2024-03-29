@@ -1,0 +1,463 @@
+#title "awase2" 
+#Code "nsd_all.bin"
+#Bank
+#timebase 48
+#QReverse
+//#TieMode 1 //&!=^
+#rest 0
+#wait 1
+#ReleaseVolume 1
+//#OffsetPCM  $C000
+
+//#include ""
+
+ 
+E(40){	15 D4  12 D4 // tolemro 
+	13 D4  10 D4
+	11 D4  8 D4
+	9 D4  6 D4
+	7 D4  4 D4
+	5 D4 2 D4
+	3 D4 0 D4
+	1 D4 0 D4
+	0 D4 0 D4
+	0 D4 0 D4
+	0 D4 0 D4
+	0 D4 L0 }
+ 
+E(901){ L3 } 
+E(902){ L3 }
+E(903){ L3 }
+E(904){ L3 }
+E(905){ L2 }
+E(906){ L2 }
+E(907){ L2 }
+E(908){ L2 }
+E(909){ L1 }
+E(910){ L1 }
+E(911){ L1 }
+E(912){ L1 }
+E(913){ L1 }
+E(914){ L0 }
+E(915){ L0 }
+
+Patch(900){ // detune レイルズバックパターンの逆 - 低域のズレ対策
+	a1	Em901
+	e2	Em902
+	a2	Em903
+
+	e3	Em904
+	a3	Em905
+	e4	Em906
+	a4	Em907
+
+	e5	Em908
+	a5	Em909
+	e6	Em910
+	a6	Em911
+
+	e7	Em912
+	a7	Em913
+	e8	Em914
+	a8	Em915
+ }
+ 
+Sub(9000){ //[1] space 
+	j1
+	r2 r2 r4 r4
+	j0
+	r8 r8 r8 r8 r2
+ }
+ 
+//---- 
+ 
+// kukei ---- 
+	
+E(2020){  (4,12,8) (12,4,88) L4   }//45:63 Ev 
+E(2000){  (0,4,24) (4,12,72) L12   }//45:63 Ev
+E(2010){  (4,12,8) (15,8,64) (7,0,32) L0   }
+ 
+E(2120){  L   0 0 0 0   0 0 0 0  0 0 0 0 12 12 12 12  12 12 12 12   12 12 12 12    } // En 
+E(2170){  L 7 7 7 7  0 0 0 0  19 19 19 19  0 0 0 0  31 31 31 31  0 0 0 0    } // En
+E(2160){  L 6 6 6 6  0 0 0 0  18 18 18 18  0 0 0 0  30 30 30 30  0 0 0 0    } // En
+E(2150){  L 5 5 5 5  0 0 0 0  17 17 17 17 0 0 0 0  29 29 29 29  0 0 0 0   } // En
+  
+// Sq ---- 
+	
+E(4030){  L 3 3 3  0 0 0  } // En 3度 
+E(4060){  L 0 0 0  6 6 6  }
+E(4070){  L 0 0 0  7 7 7  }
+
+E(4000){ (12,4,3)(8,0,21) L0 } // Ev
+
+E(4100){ 1 1 1  L2 } // E@
+ 
+Sub(4000){  E@4100 Ev4000  @P900  } 
+
+Sub(4100){  k-1 q3 o4  l16  En4030 v13 <a^^ v10 a  aa^a  ^a a^a  v12 e^^>  }
+Sub(4200){  k-1 q3 o4  l16  En4070 v13  g^^ v10 g  gg^g  ^g g^g   v12 d^^  }
+
+Sub(4110){  k-1 q3 o4  l16  En4030 v11 c^^^ v9    c^^c  ^c  ccc   v11 <e^^>  }
+Sub(4210){  k-1 q3 o4  l16  En4060 v11 b^^^ v9    b^^b  ^b  bbb   v11  En4070 d^^  }
+  
+// Bass ---- 
+	
+//E(10){ (31,25,10)(25,0,105) L0  } // (27,0,52) made 64Byte (26,0,255) ha tohru 
+//E(20){ (0,6,3)(6,31,84) L31  }
+
+E(10){ (25,31,3)(31,25,5)(25,0,52) L0  } // (27,0,52) made 64Byte (26,0,255) ha tohru
+E(20){ (31,6,36)(6,0,13)(0,6,11) L6  }
+ 
+Sub(5010){  @P900 k-1 q8   r8  En10 "g8 ^4 ^2   r8 En* En20 "g8 ^4 ^2  } 
+  
+VRC7(202){ 
+; TL  FB
+@ 40   4
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  15   0   1   0   0   4   0   0   0   0   0
+  13   3   3   4   0   0   0   0   0   0   0
+ }
+ 
+//---- 
+ 
+VRC7(101){ 
+; TL  FB
+@  5   6
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  14   1  15  15   0  13   0   0   0   0   0
+   7   8  12   7   0   0   0   0   0   0   0
+ }
+
+VRC7(102){
+; TL  FB
+@  0   7
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  14   1  15  15   0   8   0   0   0   0   0
+   7   8  12   7   0   3   0   0   0   0   0
+ }
+
+$c{ @V102 o4 a }
+$o{ @V101 o6 f }
+ 
+;Drum - 1000 
+
+
+
+
+
+;BD ------ 2000
+
+DPCM{
+	a2,	".\radio_wave.dmc",			14,	0,	108,	0,	255	//
+//	note	filename				rate	mode	vol	offset	size
+	a3,	".\BDlow_size16_sn48k_rate13.dmc",	13,	0,	96,	6,	11	//BDlow
+	c3,	".\BDhigh_size16_hh2_rate13.dmc",	13,	0,	96,	8,	15	//BDhigh
+//						urauchi no a3 ha fast de short/	timing	gate
+//
+ }
+
+E(2500){ (12,-18, 10)  L-18 } // En
+E(2600){ 15 D11 L0 } // Ev
+
+Patch(2000){
+	a2	_+0	En2500 Ev2600
+	c3	_+0	En2500 Ev2600
+	a3	_+0	En2500 Ev2600
+ }
+
+
+	
+E(1030){ -48 D4 L12 } // p.Em 
+ 
+E(1000){ (15, 4, 4) (6, 1, 18) L0 } // Ev 
+ 
+//---- 
+ 
+E(1130){ -12 D4 L48 } // p.Em 
+ 
+E(1100){ (12, 2, 4) (4, 1, 18) L0 } // Ev 4-> 6はノイズのSn表現 
+ 
+//---- 
+ 
+Patch(1000){ 
+	e3	_+48 	Em1030 Ev1000	// @0 長周期, @1 短周期
+	g3	_+28 	Em1130 Ev1100
+ }
+  
+// Sn ---- 
+	
+ $y{ l32 v9 e v6 g v15 l16 } // vercity ni shibia 
+ $k{ l32 v9 g v6 e v15 l16 }
+
+ $q{ l32 v4 e v8 g v15 l16 }
+ $w{ l32 v4 g v8 e v15 l16 }
+
+
+ $z{ l48 v4 g v8 e v4 g v15 l16 }
+ $x{ l48 v4 e v8 g v4 e v15 l16 }
+
+ $d{ v8 g v15 }
+ $f{ v8 e v15 }
+
+ $m{ l32 r v15 e l16 }
+ $v{ l32 r v15 g l16 }
+ 
+Sub(1100){  q4 o3 v15 @P1000 // 2:14, 26, 39 
+
+	//l16 $k$q$y$w  g$qe$w // flum uchi de betsu you -> break;
+
+
+	//l16 rr$y$k  $yge^	// dnb kihonn ^ mo ari
+	//l16 rre$q  $yreg	// dnb ouyoh
+	l16 rre$q  $w$fg$d
+	l16 rre$q  $w$fg$d
+	l16 rre$q  $k$fg$d
+	l16 $dre$d  $wrg$f	//nextfill
+
+	//l16 rr$k$y  $k$de$q
+	l16 rrg$w  $q$weg
+	l16 rrg$w  $q$weg
+	l16 $frg$w  $q$deg
+	l16 rrer  $qg$d$f	// stopfill
+ }
+
+//	l16 rr $y{ l32 v9 e v6 g v15 l16 }$k{ l32 v9 g v6 e v15 l16 }
+//	$y{ l32 v9 e v6 g v15 l16 }$d{ v8 g v15 }e^
+
+//	l32 a^a^ a^a^  rara rara
+ 
+Sub(1200){  q4 o3 v15 @P1000 // 2:14, 26, 39 
+
+
+
+	//l16 rr$y$k  $yge^	// dnb kihonn ^ mo ari
+	//l16 rre$q  $yreg	// dnb ouyoh
+	l16 rre$q  $w$fg$d
+	l16 rre$q  $w$fg$d
+	l16 $k$q$y$w  g$qe$w     // flum uchi de betsu you -> break;
+	l16 $dre$d  $wrg$f	//nextfill
+
+	//l16 rr$k$y  $k$de$q
+	l16 rrg$w  $q$weg
+	l16 rrg$w  $q$weg
+	l16 $frg$w  $q$deg
+	l16 rrer  $qg$d$f	// stopfill
+}
+  
+// BD ---- 
+	 
+Sub(3000){  o2 v15 // [1] 
+	a2 a2 a4 a4
+	a8 a8 a8 a8 a2
+ }
+ 
+$dr{ 
+	l16 carr  rcra	// dnb kihonn
+	l16 carr  rcra
+	l16 carr  rcra
+	l16 crra  rcra	// dnb ouyoh
+
+	l16 carr  rcra	// BD ->frb fb
+	l16 carr  rcra
+	l16 carr  rcra
+	l16 crra  rrar	// stopfill
+ }
+
+Sub(2100){  q7 o3 @P2000	// patch teigi ha @P2000 S2100 fuka
+	$dr
+ }
+Sub(3100){ o3 v15
+	$dr
+ }
+
+  
+$mro{ // k7 no tame 
+
+// l1 En770 //a^^^
+//	crg^>e-r<b-^
+//	c+ra^>fr<`c^
+//	d+ra+^>f+r<`c+^
+//	erb^>gr<`c+^
+//	er`c^>g+r<`d^
+}
+
+
+$maj{	Ev790 //down
+En700
+o5l2	`d >g+< `c e
+o4	`c+>g<be
+o3	`c+>f+<a+d+
+	`c>f<ac+
+	b->e- <gc
+ }
+
+$min{	Ev790 //up
+En720
+o3l2	cg> e-<b-
+	c+a>f<`c
+	d+a+>f+<`c+
+o4	eb>g<`c+
+o5	e`c> g+<`d
+ }
+ 
+E(720){ L 0 D3 3 D3 7 D3 10 D3 14 D3 17 D3 } //En m11 - 0,3,4,3,4,.. 
+E(700){ L 18 D3 14 D3 11 D3 7 D3 4 D3 0 D3 } //En M#11 - 0,3,4,3,4,..
+E(790){ (15,1,84) L1 }
+ 
+Sub(700){  } 
+ 
+E(301){ L3 } 
+E(302){ L3 }
+E(303){ L3 }
+E(304){ L3 }
+E(305){ L2 }
+E(306){ L2 }
+E(307){ L2 }
+E(308){ L2 }
+E(309){ L1 }
+E(310){ L1 }
+E(311){ L1 }
+E(312){ L1 }
+E(313){ L1 }
+E(314){ L0 }
+E(315){ L0 }
+
+Patch(300){ // detune レイルズバックパターンの逆 - 低域のズレ対策
+	a1	Em301
+	e2	Em302
+	a2	Em303
+
+	e3	Em304
+	a3	Em305
+	e4	Em306
+	a4	Em307
+
+	e5	Em308
+	a5	Em309
+	e6	Em310
+	a6	Em311
+
+	e7	Em312
+	a7	Em313
+	e8	Em314
+	a8	Em315
+ }
+ 
+BGM(0){ t82 
+
+// ceg-b/d
+// M7b5/G-	m7b5 /D
+
+
+ 
+TR1  o3 q7 v6 @2 @P300 
+l48
+[4 r1r1][40 r24]
+>>>>>  >f <c g <d a <e b < f+ <c+ g+
+>>>  >a- <e- b- <f <c g <d a < e^r
+>>>>  >b <f+ <c+ g+ <d+ a+ <e+ b+ <f++
+>>>>  d a <e b <f+ <c+ g+ <d+ a+
+>>>>  f <c g<d  a  <e /*b*/ </*f+*/ </*c+*/
+
+TR2  o3 q7 v6 @2 @P300
+l48 k-5
+[4 r1r1][40 r24]
+>>>>>  >/*f*/ </*c g*/ <d a <e b < f+ <c+ g+
+>>>  >a- <e- b- <f <c g <d a < e^r
+>>>>  >b <f+ <c+ g+ <d+ a+ <e+ b+ <f++
+>>>>  d a <e b <f+ <c+ g+ <d+ a+
+>>>>  f <c g <d a <e b <f+ <c+
+
+
+TR8 q6 v6 j0 [45 r] l12 j0 @P300
+l24 o5
+[4 r1r1]
+```f``g+``c+`b-`e-g+ c+c"f""a+
+```d+``g ``f`b-`e-a+ d+ d"f  ""g
+```d``e`a`g f c"f"e "d ""a
+```b-``e``d-`b- `ee-c-"a- "d- ""f
+
+TR15
+v8 @2 q8 r%1
+k-1	$maj
+//k-5	$min
+
+TR16
+v4 @2 q8 r%2 r24
+k6	$maj // maj +7
+//k-12	$min // min -7が良
+
+ 	
+//TR1  o2 q3 l2 v11 @2 // @P900 
+//TR2  o4 q3 l2 v11 @2 r%4  // @P900
+//TR15  o6 q3 l2 v9 @1 //r%1 //@P900
+//TR16  o4 q8 l2 v8  //E@2100 Ev2000 q2 r%1 //@P900
+
+//TR9  o5 q8 l2 v15 @1 r%1  // @P900
+//TR10  o5 q8 l2 v15 @1 r%1 //@P900
+
+//TR2 k-3  Ev2000  En2160  g-^^^ ^^^^
+//TR15 k-3  Ev2000  En2170  a+^^^ ^^^^
+//			GbM7b5,9
+
+//TR1 k-3  Ev2000  En2120   f+  Ev2020  En2120 g  Ev2000  En2120  c  Ev2020  En2120 f
+//TR2 k-3  Ev2000  En2160    c  Ev2020  En2170 f  Ev2000  En2170  b-  Ev2020  En2170 e-
+//TR15 k-3  Ev2000  En2170   e Ev2020  En2170  a  Ev2000  En2170  d  Ev2020  En2160 g
+//		CM7b5,#11		FM7,9			Bbm7,9		Eb7,9
+
+//TR1 k-3  Ev2000  En2120    d   Ev2020  En2120 e-  Ev2000  En2120  a-  Ev2020  En2120  c+
+//TR2 k-3  Ev2000  En2160    a-  Ev2020  En2170 d-  Ev2000  En2160  g-  Ev2020  En2160  b
+//TR15 k-3  Ev2000  En2170   c   Ev2020  En2170 f   Ev2000  En2170  a+   Ev2020  En2160  d+
+//		AbM7b5,11		DbM7,9		GbM7b5,9		Bdim7,9
+ 
+TR3 S700 r%3	; triangle BD 
+S2100
+	l16 rcra  rcra
+	l16 carr  rcar
+	l16 rcra  rcra
+	l16 carr  rcra
+S2100
+ 
+TR5 S700 r%1	; delta BD 
+S3100
+	l16 rcra  rcra
+	l16 carr  rcar
+	l16 rcra  rcra
+	l16 carr  rcra
+S3100
+ 
+TR4  S700 //r%2	; noise Sn 
+S1100 r1 r2l16 g$qe$w  $k$q$y$w S1200
+
+ 
+TR11 S700 r%1	; H.H 
+v9 q1 o5 @0 @V101 l32	// dnb [a] ha urauchi [frfr -> ra^a]
+			// last ^ ha Sn ga utareru tame
+[8
+$cr $or $cr $or  $cr $or $cr $or
+]
+r1r1
+[8
+$cr $or $cr $or  $cr $or $cr $or
+]
+
+//a^^^ rr
+//f^fr ra^a  rafa ra^a
+ 
+//TR9	; Bass 
+//@13 o3 v10  S5010
+
+ 
+//TR10	; Bass 
+//@14 o2 v10  S5010
+
+ 
+//TR15 
+//r%1 S4000  S4100  S4110
+
+ 
+//TR16 
+//r%2 S4000  S4200  S4210
+ 
+ } 
+ 

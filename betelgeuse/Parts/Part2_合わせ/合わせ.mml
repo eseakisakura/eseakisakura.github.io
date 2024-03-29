@@ -1,0 +1,168 @@
+#title "awase" 
+#Code "../bin/nsd_all.bin"
+#Bank
+#timebase 48
+#QReverse
+//#TieMode 1 //&!=^
+#rest 0
+#wait 1
+#ReleaseVolume 1
+//#OffsetPCM  $C000
+
+#include "patch.txt"
+#include "drum.txt"
+#include "sq.txt"
+ 
+Sub(2000){ //[1] 
+	j1
+	r2 r2 r4 r4
+	j0
+	r8 r8 r8 r8 r2
+ }
+ 
+// Bass ---- 
+	
+//E(10){ (31,25,10)(25,0,105) L0  } // (27,0,52) made 64Byte (26,0,255) ha tohru 
+//E(20){ (0,6,3)(6,31,84) L31  }
+
+E(10){ (25,31,3)(31,25,5)(25,0,52) L0  } // (27,0,52) made 64Byte (26,0,255) ha tohru
+E(20){ (31,6,36)(6,0,13)(0,6,11) L6  }
+ 
+Sub(5000){  @P900  } 
+ 
+Sub(5010){  k-1 q8   r8  En10 "g8 ^4 ^2   r8 En* En20 "g8 ^4 ^2  } 
+ 
+$bass1{	 @13 o3 v10 S2000  S5000  S5010  } 
+$bass2{	 @14 o2 v10 S2000  S5000  S5010  }
+  
+//Sn ---- 
+	 
+ $y{ l32 v9 e v6 g v15 l16 } // vercity ni shibia 
+ $k{ l32 v9 g v6 e v15 l16 }
+
+ $q{ l32 v4 e v8 g v15 l16 }
+ $w{ l32 v4 g v8 e v15 l16 }
+
+
+ $z{ l48 v4 g v8 e v4 g v15 l16 }
+ $x{ l48 v4 e v8 g v4 e v15 l16 }
+
+ $d{ v8 g v15 }
+ $f{ v8 e v15 }
+ $i{ l32 v8 re v15 l16 }
+ $j{ l32 v8 rg v15 l16 }
+ 
+Sub(1100){  q4 o3 v15 @P1000 
+
+	l16 rr$y$k  $y$de^	// dnb kihonn ^ mo ari
+	l16 rr$y$k  $y$de$q
+	l16 rrg$w  $q$we$d	// dnb ouyoh
+	//l16 rre$y  $k$dg$f
+	l16 rre$d  rrg$y	//nextfill
+
+	l16 rr$k$y  $k$de$q
+	l16 rrg$w  $q$we^
+	l16 rrg$w  $q$we$f
+	//l16 rre$q  $w$dg$f
+	l16 rrer  rg$d$d	// stopfill
+ }
+
+//	l16 rr $y{ l32 v9 e v6 g v15 l16 }$k{ l32 v9 g v6 e v15 l16 }
+//	$y{ l32 v9 e v6 g v15 l16 }$d{ v8 g v15 }e^
+
+//	l32 a^a^ a^a^  rara rara
+ 
+$SN{  S2000  S1100  } 
+
+  
+// BD ---- 
+	
+Sub(3000){  o2 v15 // [1] 
+	a2 a2 a4 a4
+	a8 a8 a8 a8 a2
+ }
+ 
+$dr{ 
+	l16 carr  rcra	// dnb kihonn
+	l16 carr  rcra
+	l16 carr  rcra
+	l16 crra  rcra	// dnb ouyoh
+
+	l16 carr  rcra	// BD ->frb fb
+	l16 carr  rcra
+	l16 carr  rcra
+	l16 crra  rrar	// stopfill
+ }
+
+Sub(2100){  q7 o3 @P2000	// patch teigi ha @P2000 S2100 fuka
+	$dr
+ }
+Sub(3100){ o3 v15
+	$dr
+ }
+
+ 
+$BD_tri{	S2000  S2100  } 
+$BD_dlta{	S3000  S3100  }
+  
+// Sq ---- 
+	 
+E(4030){  L 3 3 3  0 0 0  } // En 3“x 
+E(4060){  L 0 0 0  6 6 6  }
+E(4070){  L 0 0 0  7 7 7  }
+
+E(4000){ (12,4,3)(8,0,21) L0 } // Ev
+
+E(4100){ 1 1 1  L2 } // E@
+ 
+Sub(4000){  E@4100 Ev4000  @P900  } 
+
+Sub(4100){  k-1 q3 o4  l16  En4030 v13 <a^^ v10 a  aa^a  ^a a^a  v12 e^^>  }
+Sub(4200){  k-1 q3 o4  l16  En4070 v13  g^^ v10 g  gg^g  ^g g^g   v12 d^^  }
+
+Sub(4110){  k-1 q3 o4  l16  En4030 v11 c^^^ v9    c^^c  ^c  ccc   v11 <e^^>  }
+Sub(4210){  k-1 q3 o4  l16  En4060 v11 b^^^ v9    b^^b  ^b  bbb   v11  En4070 d^^  }
+ 
+$sq_15{ r%1 S2000  S4000  S4100  S4110  } 
+$sq_16{ r%2 S2000  S4000  S4200  S4210  }
+  
+VRC7(101){ 
+; TL  FB
+@  5   6
+; AR  DR  SL  RR KSL  ML  AM VIB  EG KSR  DT
+  14   1  15  15   0  13   0   0   0   0   0
+   7   8  12   7   0   0   0   0   0   0   0
+ }
+ 
+BGM(0){ t82 
+
+TR3		; triangle BD
+$BD_tri
+
+TR5 r%1		; delta BD
+$BD_dlta
+
+TR4 r%1		; noise Sn
+$SN
+
+TR9	; Bass
+$bass1
+
+TR10	; Bass
+$bass2
+
+TR11
+v10 q2 o5 @0 @V101 S2000 l32 [8 frfr frfa  fafr faf^ ]
+//a^^^ rr
+
+
+
+TR15
+//$sq_15
+
+TR16
+//$sq_16
+
+
+ }
+ 	
