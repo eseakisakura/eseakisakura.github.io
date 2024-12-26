@@ -4,7 +4,8 @@
 
  　------ 五度圏
 
-C Maj.			A min./A h.m/A m.m	x
+
+	C Maj.			A min./A h.m/A m.m
 
 A#
 D#
@@ -27,13 +28,15 @@ Gb	[x bottom]	Eb	[x outscale]	-6
 			Db
 			Gb
 
+	C Maj.			A min./A h.m/A m.m
+
 
 	-- 調性感の概念 --
 	ダイアトニックにおける調性感の構築
 
 
 　　■セオリー
-　　調性崩壊[x outscale]と調性引力(重力)[x top,bottom]　　
+　　調性崩壊[x outscale]と調性引力(重力)[x top,bottom]
 
 
 

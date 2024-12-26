@@ -1,22 +1,25 @@
 ﻿Chord - Natural minor Conversion.txt ------
 
-■□Chord - Natural minor Conversion
-Degree							Level	Key		Circle of 5th		Scale
-Im7	IIm7b5	bIIIM7,6IVm7	Vm7	bVIM7,6	bVII7
+■□ Chord - Natural minor Conversion
+
+
+
+Degree							Level	Key		Scale			Circle of 5th
 +1	00	+1	00	+2	00	00
-Abm7	Fm7b5	CbM7	G#m7	Ebm7	BM7	C#7	+6	D# min	F# Maj	b f+ c+ g+ d+ a+ e+	c+ d+   f f+ g+ a+ b
-G#m7	A#m7b5	BM7	C#m7	Abm7	EM7	F#7	+5	G# min	B Maj	e b f+ c+ g+ d+ a+	c+ d+ e   f+ g+ a+ b
-C#m7	D#m7b	EM7	5F#m7	G#m7	AM7	B7	+4	C# min	E Maj	a e b f+ c+ g+ d+	c+ d+ e   f+ g+ a b
-F#m7	G#m7b	AM7	5Bm7	C#m7	DM7	E7	+3	F# min	A Maj	d a e b f+ c+ g+	c+ d e   f+ g+ a b
-Bm7	C#m7b5	DM7	Em7	F#m7	GM7	A7	+2	B min	D Maj	g d a e b f+ c+		c+ d e   f+ g a b
-Em7	F#m7b5	GM7	Am7	Bm7	CM7	D7	+1	E min	G Maj	c g d a e b f+		c d e   f+ g a b
-Am7 --	Bm7b5	CM7 --	Dm7	Em7 --	FM7	G7 --	00 ----	A min	C Maj	f c g d a e b --------	c d e   f g a b
-Dm7	Em7b5	FM7	Gm7	Am7	BbM7	C7	-1	D min	F Maj	b- f c g d a e		c d e   f g a b-
-Gm7	Am7b5	BbM7	Cm7	Dm7	EbM7	F7	-2	G min	Bb Maj	e- b- f c g d a		c d e-   f g a b-
-Cm7	Dm7b5	EbM7	Fm7	Gm7	AbM7	Bb7	-3	C min	Eb Maj	a- e- b- f c g d	c d e-   f g a- b-
-Fm7	Gm7b5	AbM7	Bbm7	Cm7	DbM7	Eb7	-4	F min	Ab Maj	d- a- e- b- f c g	c d- e-   f g a- b-
-Bbm7	Cm7b5	DbM7	Ebm7	Fm7	GbM7	Ab7	-5	Bb min	Db Maj	g- d- a- e- b- f c	c d- e-   f g- a- b-
-Ebm7	Fm7b5	GbM7	Abm7	Bbm7	CbM7	Db7	-6	Eb min	Gb Maj	c- g- d- a- e- b- f	b   d- e-   f g- a- b-
+Im7	IIm7b5	bIIIM7,6IVm7	Vm7	bVIM7,6	bVII7
+Abm7	Fm7b5	CbM7	G#m7	Ebm7	BM7	C#7	+6	D# min	F# Maj	c+ d+  f f+ g+ a+ b	b f+ c+ g+ d+ a+ e+
+G#m7	A#m7b5	BM7	C#m7	Abm7	EM7	F#7	+5	G# min	B Maj	c+ d+ e  f+ g+ a+ b	e b f+ c+ g+ d+ a+
+C#m7	D#m7b	EM7	5F#m7	G#m7	AM7	B7	+4	C# min	E Maj	c+ d+ e  f+ g+ a b	a e b f+ c+ g+ d+
+F#m7	G#m7b	AM7	5Bm7	C#m7	DM7	E7	+3	F# min	A Maj	c+ d e  f+ g+ a b	d a e b f+ c+ g+
+Bm7	C#m7b5	DM7	Em7	F#m7	GM7	A7	+2	B min	D Maj	c+ d e  f+ g a b	g d a e b f+ c+	
+Em7	F#m7b5	GM7	Am7	Bm7	CM7	D7	+1	E min	G Maj	c d e  f+ g a b		c g d a e b f+	
+Am7 --	Bm7b5	CM7 --	Dm7	Em7 --	FM7	G7 --	00 ----	A min	C Maj	c d e  f g a b ----	f c g d a e b -----
+Dm7	Em7b5	FM7	Gm7	Am7	BbM7	C7	-1	D min	F Maj	c d e  f g a b-		b- f c g d a e	
+Gm7	Am7b5	BbM7	Cm7	Dm7	EbM7	F7	-2	G min	Bb Maj	c d e-  f g a b-	e- b- f c g d a	
+Cm7	Dm7b5	EbM7	Fm7	Gm7	AbM7	Bb7	-3	C min	Eb Maj	c d e-  f g a- b-	a- e- b- f c g d
+Fm7	Gm7b5	AbM7	Bbm7	Cm7	DbM7	Eb7	-4	F min	Ab Maj	c d- e-  f g a- b-	d- a- e- b- f c g
+Bbm7	Cm7b5	DbM7	Ebm7	Fm7	GbM7	Ab7	-5	Bb min	Db Maj	c d- e-  f g- a- b-	g- d- a- e- b- f c
+Ebm7	Fm7b5	GbM7	Abm7	Bbm7	CbM7	Db7	-6	Eb min	Gb Maj	d- e-  f g- a- b- b	c- g- d- a- e- b- f
 
 　------
 		C	D	E	F	G	A	B
